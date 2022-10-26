@@ -5,7 +5,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 
 export const Hero = () => {
   return (
-    <Box as="main">
+    <Box as="main" bg="url('/images/bg-hero.jpg')">
       <Flex
         w="100%"
         maxWidth={'7xl'}
@@ -18,7 +18,7 @@ export const Hero = () => {
         textAlign="center"
         gap={2}
       >
-        <Heading as="h2" size="lg" color="gray.500">
+        <Heading as="h2" size="lg" color="secondary.500">
           Guilherme Guain
         </Heading>
         <Heading as="h1" size="2xl" color="gray.300">
@@ -29,7 +29,7 @@ export const Hero = () => {
           Quisquam, quod.
         </Text>
         <HStack
-          bg="secondary.400"
+          bg="primary.400"
           gap={4}
           mt={6}
           py={2}

@@ -6,10 +6,17 @@ import { languages } from './languages';
 export const Languages = () => {
   return (
     <Flex direction="column" gap={4} flex={1}>
-      <Heading as="h3" fontSize="2xl" borderBottom="1px" borderColor="gray.200">
+      <Heading
+        as="h3"
+        fontSize="xl"
+        fontWeight="medium"
+        borderBottom="1px"
+        pb={2}
+        borderColor="gray.400"
+      >
         Languages
       </Heading>
-      <Flex gap={8}>
+      <Flex gap={12}>
         {languages.map(({ code, name, profficiency }) => (
           <Flex key={code} direction="column" gap={4}>
             <Text textTransform="uppercase" fontSize="xs" fontWeight="bold" color="gray.500" pr={2}>
@@ -19,7 +26,7 @@ export const Languages = () => {
               {profficiency.map(({ label, value }) => (
                 <Flex key={label} gap={2} alignItems="center">
                   <CircularProgress size={6} value={value} color="tertiary.400" thickness={16} />
-                  <Text fontSize="xs" fontWeight="medium" color="gray.300">
+                  <Text fontSize="xs" fontWeight="medium" color="gray.500">
                     {label}
                   </Text>
                 </Flex>

@@ -61,6 +61,11 @@ export const config: ThemeOverride = {
     },
   },
   components: {
+    Text: {
+      baseStyle: {
+        color: 'gray.300',
+      },
+    },
     Heading: {
       baseStyle: {
         color: 'secondary.400',

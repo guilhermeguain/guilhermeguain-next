@@ -21,43 +21,60 @@ const Home: NextPage = () => {
   return (
     <Page title={title} description={description}>
       <Hero />
-      <Content py={8}>
-        <Flex gap={8} py={8}>
+      <Content py={12}>
+        <Flex gap={8} alignItems="center">
           <Avatar name="Guilherme Guain" src="/images/guilherme-guain.jpg" size="2xl" />
-          <Flex direction="column" gap={2} flex={1}>
-            <Heading as="h3" fontSize="2xl" borderBottom="1px" borderColor="gray.200">
+          <Flex direction="column" gap={4} flex={1}>
+            <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
               Guilherme Emilio Guain Peixinho
             </Heading>
 
-            <Heading fontSize="xl" fontWeight="medium" color="gray.600">
+            <Heading fontSize="lg" fontWeight="medium" color="gray.300">
               Front-end Developer
             </Heading>
             <HStack fontSize="2xl" gap={2} mt={4}>
-              <BsLinkedin />
-              <BsGithub />
-              <BsInstagram />
+              <Image
+                as={BsLinkedin}
+                alt="LinkedIn - Guilherme Guain"
+                title="LinkedIn - Guilherme Guain"
+                color="gray.200"
+              />
+              <Image
+                as={BsGithub}
+                alt="GitHub - Guilherme Guain"
+                title="GitHub - Guilherme Guain"
+                color="gray.200"
+              />
+              <Image
+                as={BsInstagram}
+                alt="Instagram - Guilherme Guain"
+                title="Instagram - Guilherme Guain"
+                color="gray.200"
+              />
             </HStack>
           </Flex>
         </Flex>
 
-        <Box>
-          <Text textAlign="justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod.
-            Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-            Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quod. Quisquam, quod. Quisquam, quod.
-          </Text>
-          <Text textAlign="justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod.
-            Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-            Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quod. Quisquam, quod. Quisquam, quod.
-          </Text>
-        </Box>
-
         <Flex direction={['column', 'column', 'column', 'row']} gap={8}>
+          <Box>
+            <Text textAlign="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
+              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+            </Text>
+            <Text textAlign="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
+              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+            </Text>
+          </Box>
           <HardSkills />
           <SoftSkills />
+        </Flex>
+
+        <Flex>
           <TechsTools />
           <Languages />
         </Flex>

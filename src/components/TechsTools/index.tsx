@@ -6,7 +6,14 @@ import { techs } from './techs';
 export const TechsTools = () => {
   return (
     <Flex direction="column" gap={4} flex={1}>
-      <Heading as="h3" fontSize="2xl" borderBottom="1px" borderColor="gray.200">
+      <Heading
+        as="h3"
+        fontSize="xl"
+        fontWeight="medium"
+        borderBottom="1px"
+        pb={2}
+        borderColor="gray.400"
+      >
         Techs & Tools
       </Heading>
       <Flex direction="column" gap={8}>
