@@ -1,6 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import NextLink from 'next/link';
-import { Box, Flex, HStack, Link, Image } from '@chakra-ui/react';
+import { Box, Flex, HStack, Link } from '@chakra-ui/react';
 
 type Props = {
   title: string;
@@ -26,7 +27,11 @@ export const Header = ({ title, logo = '/images/logo.svg' }: Props) => {
         gap={8}
         p={4}
       >
-        <Image src={logo} h={10} alt={title} title={title} />
+        <NextLink href="/" passHref>
+          <Link>
+            <Image src={'/images/logo.svg'} width="48px" height="48px" alt={title} title={title} />
+          </Link>
+        </NextLink>
         <HStack fontSize="lg" gap={4}>
           {items.map(({ href, label }) => (
             <NextLink key={href} href={href} passHref>

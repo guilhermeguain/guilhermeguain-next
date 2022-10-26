@@ -1,7 +1,9 @@
 import { extendTheme, ThemeOverride } from '@chakra-ui/react';
 import { lighten, darken } from 'polished';
 
-const colorPrimary = '#4072a0';
+const colorPrimary = '#C40A32';
+const colorSecondary = '#078C64';
+const colorTertiary = '#9FCA0A';
 
 export const config: ThemeOverride = {
   initialColorMode: 'light',
@@ -14,6 +16,9 @@ export const config: ThemeOverride = {
     global: {
       html: {
         scrollBehavior: 'smooth',
+      },
+      body: {
+        backgroundColor: 'gray.800',
       },
     },
   },
@@ -30,11 +35,35 @@ export const config: ThemeOverride = {
       800: darken(0.15, colorPrimary),
       900: darken(0.2, colorPrimary),
     },
+    secondary: {
+      50: lighten(0.25, colorSecondary),
+      100: lighten(0.2, colorSecondary),
+      200: lighten(0.15, colorSecondary),
+      300: lighten(0.1, colorSecondary),
+      400: lighten(0.05, colorSecondary),
+      500: colorSecondary,
+      600: darken(0.05, colorSecondary),
+      700: darken(0.1, colorSecondary),
+      800: darken(0.15, colorSecondary),
+      900: darken(0.2, colorSecondary),
+    },
+    tertiary: {
+      50: lighten(0.25, colorTertiary),
+      100: lighten(0.2, colorTertiary),
+      200: lighten(0.15, colorTertiary),
+      300: lighten(0.1, colorTertiary),
+      400: lighten(0.05, colorTertiary),
+      500: colorTertiary,
+      600: darken(0.05, colorTertiary),
+      700: darken(0.1, colorTertiary),
+      800: darken(0.15, colorTertiary),
+      900: darken(0.2, colorTertiary),
+    },
   },
   components: {
     Heading: {
       baseStyle: {
-        color: 'primary.400',
+        color: 'secondary.400',
         fontWeight: 'normal',
       },
     },

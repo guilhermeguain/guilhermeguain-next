@@ -19,7 +19,7 @@ export const HardSkills = () => {
             isAnimated
             value={value}
             flex={1}
-            color="primary.400"
+            colorScheme="primary"
             borderRadius="xl"
             size="sm"
             background="gray.300"

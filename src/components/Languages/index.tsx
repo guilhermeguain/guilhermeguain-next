@@ -18,8 +18,8 @@ export const Languages = () => {
             <Flex direction="column" gap={4}>
               {profficiency.map(({ label, value }) => (
                 <Flex key={label} gap={2} alignItems="center">
-                  <CircularProgress size={6} value={value} thickness={16} />
-                  <Text fontSize="xs" fontWeight="medium">
+                  <CircularProgress size={6} value={value} color="tertiary.400" thickness={16} />
+                  <Text fontSize="xs" fontWeight="medium" color="gray.300">
                     {label}
                   </Text>
                 </Flex>

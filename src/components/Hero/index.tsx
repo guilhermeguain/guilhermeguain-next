@@ -5,7 +5,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 
 export const Hero = () => {
   return (
-    <Box as="main" bg="gray.800">
+    <Box as="main">
       <Flex
         w="100%"
         maxWidth={'7xl'}
@@ -29,7 +29,7 @@ export const Hero = () => {
           Quisquam, quod.
         </Text>
         <HStack
-          bg="primary.400"
+          bg="secondary.400"
           gap={4}
           mt={6}
           py={2}
