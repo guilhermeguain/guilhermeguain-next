@@ -8,6 +8,7 @@ import {
   SiMysql,
   SiWordpress,
   SiGraphql,
+  SiAmp,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaGitAlt, FaNodeJs } from 'react-icons/fa';
@@ -91,6 +92,12 @@ export const techs = {
       title: 'GraphQL',
       icon: SiGraphql,
       color: '#e10098',
+    },
+    {
+      id: 'amp',
+      title: 'AMP',
+      icon: SiAmp,
+      color: '#0379c4',
     },
   ],
   design: [

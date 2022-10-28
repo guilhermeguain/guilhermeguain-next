@@ -6,7 +6,11 @@ import {
   SiPhp,
   SiMysql,
   SiWordpress,
+  SiGulp,
+  SiAmp,
 } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { FaSass } from 'react-icons/fa';
 
 export const experiences = [
   {
@@ -15,8 +19,8 @@ export const experiences = [
     period: '09/2020 - now',
     badges: [
       {
-        id: 'react',
-        title: 'React',
+        id: 'reactjs',
+        title: 'React.js',
         color: '#61dafb',
         icon: SiReact,
       },
@@ -25,6 +29,12 @@ export const experiences = [
         title: 'TypeScript',
         color: '#3178c6',
         icon: SiTypescript,
+      },
+      {
+        id: 'nextjs',
+        title: 'Next.js',
+        color: '#000',
+        icon: TbBrandNextjs,
       },
       {
         id: 'eslint',
@@ -37,6 +47,51 @@ export const experiences = [
         title: 'Tailwind CSS',
         color: '#38bdf8',
         icon: SiTailwindcss,
+      },
+    ],
+    summary:
+      'Front-end developer at Toxicologia Pardini, a company that provides toxicological analysis services.',
+  },
+  {
+    role: 'Full-stack Developer',
+    company: 'Toxicologia Pardini',
+    period: '08/2018 - now',
+    badges: [
+      {
+        id: 'wordpress',
+        title: 'WordPress',
+        color: '#000',
+        icon: SiWordpress,
+      },
+      {
+        id: 'php',
+        title: 'PHP',
+        color: '#7a86b8',
+        icon: SiPhp,
+      },
+      {
+        id: 'mysql',
+        title: 'MySQL',
+        color: '#0074a3',
+        icon: SiMysql,
+      },
+      {
+        id: 'amp',
+        title: 'AMP',
+        color: '#0379c4',
+        icon: SiAmp,
+      },
+      {
+        id: 'sass',
+        title: 'Sass',
+        color: '#bf4080',
+        icon: FaSass,
+      },
+      {
+        id: 'gulp',
+        title: 'Gulp',
+        color: '#cf4647',
+        icon: SiGulp,
       },
     ],
     summary:
@@ -65,32 +120,17 @@ export const experiences = [
         color: '#0074a3',
         icon: SiMysql,
       },
-    ],
-    summary:
-      'Front-end developer at Toxicologia Pardini, a company that provides toxicological analysis services.',
-  },
-  {
-    role: 'Full-stack Developer',
-    company: 'Toxicologia Pardini',
-    period: '08/2018 - now',
-    badges: [
       {
-        id: 'wordpress',
-        title: 'WordPress',
-        color: '#000',
-        icon: SiWordpress,
+        id: 'sass',
+        title: 'Sass',
+        color: '#bf4080',
+        icon: FaSass,
       },
       {
-        id: 'php',
-        title: 'PHP',
-        color: '#7a86b8',
-        icon: SiPhp,
-      },
-      {
-        id: 'mysql',
-        title: 'MySQL',
-        color: '#0074a3',
-        icon: SiMysql,
+        id: 'gulp',
+        title: 'Gulp',
+        color: '#cf4647',
+        icon: SiGulp,
       },
     ],
     summary:

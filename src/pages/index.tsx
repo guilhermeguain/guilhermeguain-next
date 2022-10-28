@@ -9,6 +9,7 @@ import { Hero } from '../components/Hero';
 import { Content } from '../components/Content';
 import { HardSkills } from '../components/HardSkills';
 import { SoftSkills } from '../components/SoftSkills';
+import { DataDrivenSeo } from '../components/DataDrivenSeo';
 import { TechsTools } from '../components/TechsTools';
 import { Languages } from '../components/Languages';
 import { Experiences } from '../components/Experiences';
@@ -92,6 +93,10 @@ const Home: NextPage = () => {
           </Flex>
           <TechsTools />
           <Languages />
+        </Flex>
+
+        <Flex direction="column">
+          <DataDrivenSeo />
         </Flex>
 
         <Flex direction="column">
