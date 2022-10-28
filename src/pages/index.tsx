@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage, GetServerSideProps } from 'next';
-import { Box, Flex, Avatar, Heading, Image, Text, HStack } from '@chakra-ui/react';
+import { Flex, Avatar, Heading, Image, Text, HStack } from '@chakra-ui/react';
 import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 import { Page } from '../components/Page';
@@ -11,6 +11,7 @@ import { HardSkills } from '../components/HardSkills';
 import { SoftSkills } from '../components/SoftSkills';
 import { TechsTools } from '../components/TechsTools';
 import { Languages } from '../components/Languages';
+import { Experiences } from '../components/Experiences';
 
 import { extra } from '../lib/extra';
 
@@ -56,7 +57,7 @@ const Home: NextPage = () => {
         </Flex>
 
         <Flex direction={['column', 'column', 'column', 'row']} gap={8}>
-          <Box>
+          <Flex direction="column" gap={4}>
             <Text textAlign="justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
               quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -69,18 +70,36 @@ const Home: NextPage = () => {
               Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
             </Text>
-          </Box>
+          </Flex>
           <HardSkills />
           <SoftSkills />
         </Flex>
 
-        <Flex>
+        <Flex direction={['column', 'column', 'column', 'row']} gap={8} py={12}>
+          <Flex direction="column" gap={4}>
+            <Text textAlign="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
+              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+            </Text>
+            <Text textAlign="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
+              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+            </Text>
+          </Flex>
           <TechsTools />
           <Languages />
         </Flex>
 
+        <Flex direction="column">
+          <Experiences />
+        </Flex>
+
         <Flex direction="column" gap={4}>
-          <Heading as="h3" fontSize="2xl" borderBottom="1px" borderColor="gray.200">
+          <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
             Extra
           </Heading>
           <Flex direction="column" gap={4}>

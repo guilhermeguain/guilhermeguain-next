@@ -5,22 +5,25 @@ import { techs } from './techs';
 
 export const TechsTools = () => {
   return (
-    <Flex direction="column" gap={4} flex={1}>
+    <Flex direction="column" minWidth={72}>
       <Heading
         as="h3"
-        fontSize="xl"
-        fontWeight="medium"
-        borderBottom="1px"
-        pb={2}
-        borderColor="gray.400"
+        fontSize="sm"
+        fontWeight="semibold"
+        px={4}
+        py={2}
+        borderTopRadius="xl"
+        bg="primary.500"
+        color="gray.200"
+        textTransform="uppercase"
       >
         Techs & Tools
       </Heading>
-      <Flex direction="column" gap={8}>
+      <Flex direction="column" gap={8} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
         <Box>
           <Heading
             as="h4"
-            fontSize="sm"
+            fontSize="xs"
             textTransform="uppercase"
             fontWeight="bold"
             color="gray.500"
@@ -37,7 +40,7 @@ export const TechsTools = () => {
         <Box>
           <Heading
             as="h4"
-            fontSize="sm"
+            fontSize="xs"
             textTransform="uppercase"
             fontWeight="bold"
             color="gray.500"
@@ -54,7 +57,7 @@ export const TechsTools = () => {
         <Box>
           <Heading
             as="h4"
-            fontSize="sm"
+            fontSize="xs"
             textTransform="uppercase"
             fontWeight="bold"
             color="gray.500"
