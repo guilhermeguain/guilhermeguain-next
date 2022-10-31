@@ -1,9 +1,12 @@
 import React from 'react';
 import { Flex, Heading, Text, CircularProgress } from '@chakra-ui/react';
 
-import { languages } from './languages';
+import { texts } from '../../lib/texts';
 
 export const Languages = () => {
+  const { about } = texts;
+  const { languages } = about;
+
   return (
     <Flex direction="column" flex={1} minWidth={72}>
       <Heading
@@ -17,10 +20,10 @@ export const Languages = () => {
         color="gray.200"
         textTransform="uppercase"
       >
-        Languages
+        {languages.title}
       </Heading>
       <Flex gap={8} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
-        {languages.map(({ code, name, profficiency }) => (
+        {languages.items.map(({ code, name, profficiency }) => (
           <Flex key={code} direction="column" gap={4}>
             <Heading
               as="h4"

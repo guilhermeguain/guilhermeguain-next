@@ -27,9 +27,9 @@ import { Languages } from '../components/Languages';
 import { Experiences } from '../components/Experiences';
 import { Projects } from '../components/Projects';
 import { Events } from '../components/Events';
+import { Education } from '../components/Education';
 import { Extracurricular } from '../components/Extracurricular';
 
-import { knowledges } from '../lib/knowledges';
 import { texts } from '../lib/texts';
 
 const Home: NextPage = () => {
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         <Flex direction={['column', 'column', 'column', 'row']} gap={8}>
           <Flex direction="column">
             <Flex direction="column" gap={8}>
-              {texts.about.paragraphs.map(({ highlights, text }, index) => (
+              {about.paragraphs.map(({ highlights, text }, index) => (
                 <Text key={index} textAlign="justify">
                   <Highlight
                     query={highlights}
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             </Flex>
 
             <List spacing={4} textAlign="justify" mt={2}>
-              {knowledges.map(({ area, summary }) => (
+              {about.knowledges.map(({ area, summary }) => (
                 <ListItem key={area} display="flex" alignItems="baseline" lineHeight="tall">
                   <ListIcon as={FaChevronRight} color="secondary.400" fontSize="xs" />
                   <Text fontSize="sm">
@@ -125,7 +125,8 @@ const Home: NextPage = () => {
           <Projects />
         </Flex>
 
-        <Flex direction="column">
+        <Flex gap={8}>
+          <Education />
           <Events />
         </Flex>
 

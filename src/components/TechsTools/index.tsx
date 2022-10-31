@@ -1,9 +1,13 @@
 import React from 'react';
 import { Box, Flex, Heading, Image, HStack } from '@chakra-ui/react';
 
+import { texts } from '../../lib/texts';
 import { techs } from './techs';
 
 export const TechsTools = () => {
+  const { about } = texts;
+  const { techsTools } = about;
+
   return (
     <Flex direction="column" flex={1} minWidth={72}>
       <Heading
@@ -17,7 +21,7 @@ export const TechsTools = () => {
         color="gray.200"
         textTransform="uppercase"
       >
-        Techs & Tools
+        {techsTools.title}
       </Heading>
       <Flex direction="column" gap={8} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
         <Box>
@@ -29,7 +33,7 @@ export const TechsTools = () => {
             color="gray.500"
             mb={2}
           >
-            Primary
+            {techsTools.primary}
           </Heading>
           <HStack fontSize="3xl" gap={2}>
             {techs.primary.map(({ id, title, icon, color }) => (
@@ -46,7 +50,7 @@ export const TechsTools = () => {
             color="gray.500"
             mb={2}
           >
-            Secondary
+            {techsTools.secondary}
           </Heading>
           <HStack fontSize="3xl" gap={2}>
             {techs.secondary.map(({ id, title, icon, color }) => (
@@ -63,7 +67,7 @@ export const TechsTools = () => {
             color="gray.500"
             mb={2}
           >
-            Design
+            {techsTools.design}
           </Heading>
           <HStack fontSize="3xl" gap={2}>
             {techs.design.map(({ id, title, icon }) => (

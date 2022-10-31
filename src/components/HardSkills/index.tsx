@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Progress } from '@chakra-ui/react';
 
-import { hardSkills } from './hardSkills';
+import { texts } from '../../lib/texts';
 
 export const HardSkills = () => {
+  const { about } = texts;
+
   return (
     <Flex direction="column" flex={1} minWidth={72}>
       <Heading
@@ -20,7 +22,7 @@ export const HardSkills = () => {
         Hard Skills
       </Heading>
       <Flex direction="column" gap={4} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
-        {hardSkills.map(({ slug, label, value }) => (
+        {about.hardSkills.map(({ slug, label, value }) => (
           <Box key={slug}>
             <Text textTransform="uppercase" fontSize="xs" fontWeight="bold" color="gray.500">
               {label}

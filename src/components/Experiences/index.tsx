@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
 
-import { experiences } from './experiences';
+import { texts } from '../../lib/texts';
 
 export const Experiences = () => {
+  const { experiences } = texts;
+
   return (
     <Flex direction="column" gap={8}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">

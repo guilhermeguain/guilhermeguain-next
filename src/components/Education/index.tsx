@@ -1,18 +1,18 @@
 import React from 'react';
-import { Flex, Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 
 import { texts } from '../../lib/texts';
 
-export const Events = () => {
-  const { events } = texts;
+export const Education = () => {
+  const { education } = texts;
 
   return (
     <Flex direction="column" gap={8} flex={1}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-        Events
+        {education.title}
       </Heading>
       <Flex direction="column" gap={4}>
-        {events.items.map(({ title, host, date, location }, index) => (
+        {education.items.map(({ title, institution, period, location }, index) => (
           <Flex
             key={index}
             bg="gray.100"
@@ -28,12 +28,12 @@ export const Events = () => {
                 {title}
               </Heading>
               <Text color="gray.500" fontSize="xs" textTransform="uppercase" fontWeight="semibold">
-                {host}
+                {institution}
               </Text>
             </Box>
             <Box>
               <Text fontSize="sm" fontWeight="medium" color="gray.500">
-                {date}
+                {period}
               </Text>
               <Text fontSize="xs" fontWeight="medium" color="gray.500">
                 {location}
