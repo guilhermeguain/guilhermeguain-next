@@ -1,7 +1,19 @@
 import React from 'react';
 import type { NextPage, GetServerSideProps } from 'next';
-import { Flex, Avatar, Heading, Image, Text, HStack } from '@chakra-ui/react';
+import {
+  Flex,
+  Avatar,
+  Heading,
+  Image,
+  Highlight,
+  Text,
+  HStack,
+  List,
+  ListItem,
+  ListIcon,
+} from '@chakra-ui/react';
 import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { FaChevronRight } from 'react-icons/fa';
 
 import { Page } from '../components/Page';
 
@@ -17,25 +29,27 @@ import { Projects } from '../components/Projects';
 import { Events } from '../components/Events';
 import { Extracurricular } from '../components/Extracurricular';
 
+import { knowledges } from '../lib/knowledges';
+import { texts } from '../lib/texts';
+
 const Home: NextPage = () => {
-  const title = 'Guilherme Guain - Front-end Developer';
-  const description = 'Guilherme Guain - Front-end Developer';
+  const { meta, about } = texts;
 
   return (
-    <Page title={title} description={description}>
+    <Page title={meta.title} description={meta.desc}>
       <Hero />
       <Content py={12}>
         <Flex gap={8} alignItems="center">
           <Avatar name="Guilherme Guain" src="/images/guilherme-guain.jpg" size="2xl" />
           <Flex direction="column" gap={4} flex={1}>
             <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-              Guilherme Emilio Guain Peixinho
+              {about.name}
             </Heading>
 
             <Heading fontSize="lg" fontWeight="medium" color="gray.300">
-              Front-end Developer
+              {about.role}
             </Heading>
-            <HStack fontSize="2xl" gap={2} mt={4}>
+            <HStack fontSize="2xl" gap={2} mt={2}>
               <Image
                 as={BsLinkedin}
                 alt="LinkedIn - Guilherme Guain"
@@ -59,41 +73,44 @@ const Home: NextPage = () => {
         </Flex>
 
         <Flex direction={['column', 'column', 'column', 'row']} gap={8}>
-          <Flex direction="column" gap={4}>
-            <Text textAlign="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
-              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
-            </Text>
-            <Text textAlign="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
-              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
-            </Text>
-          </Flex>
-          <HardSkills />
-          <SoftSkills />
-        </Flex>
+          <Flex direction="column">
+            <Flex direction="column" gap={8}>
+              {texts.about.paragraphs.map(({ highlights, text }, index) => (
+                <Text key={index} textAlign="justify">
+                  <Highlight
+                    query={highlights}
+                    styles={{ fontWeight: 'semibold', color: 'gray.300' }}
+                  >
+                    {text}
+                  </Highlight>
+                </Text>
+              ))}
+            </Flex>
 
-        <Flex direction={['column', 'column', 'column', 'row']} gap={8} py={12}>
-          <Flex direction="column" gap={4}>
-            <Text textAlign="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
-              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
-            </Text>
-            <Text textAlign="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam,
-              quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quod. Quisquam, quod. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
-            </Text>
+            <List spacing={4} textAlign="justify" mt={2}>
+              {knowledges.map(({ area, summary }) => (
+                <ListItem key={area} display="flex" alignItems="baseline" lineHeight="tall">
+                  <ListIcon as={FaChevronRight} color="secondary.400" fontSize="xs" />
+                  <Text fontSize="sm">
+                    <Text as="span" fontWeight="medium" color="secondary.400">
+                      {area}:
+                    </Text>{' '}
+                    {summary}
+                  </Text>
+                </ListItem>
+              ))}
+            </List>
           </Flex>
-          <TechsTools />
-          <Languages />
+          <Flex direction="column" gap={8}>
+            <Flex direction={['column', 'row']} gap={8}>
+              <HardSkills />
+              <SoftSkills />
+            </Flex>
+            <Flex direction={['column', 'row']} gap={8}>
+              <TechsTools />
+              <Languages />
+            </Flex>
+          </Flex>
         </Flex>
 
         <Flex direction="column">

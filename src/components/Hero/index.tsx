@@ -3,7 +3,11 @@ import { Box, Flex, Image, Heading, Text, HStack } from '@chakra-ui/react';
 import { SiReact, SiTypescript, SiEslint } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
+import { texts } from '../../lib/texts';
+
 export const Hero = () => {
+  const { name, role, desc } = texts.hero;
+
   return (
     <Box as="main" bg="url('/images/bg-hero.jpg')">
       <Flex
@@ -18,15 +22,14 @@ export const Hero = () => {
         textAlign="center"
         gap={2}
       >
-        <Heading as="h2" size="lg" color="secondary.500">
-          Guilherme Guain
+        <Heading as="h2" size="lg" color="gray.500">
+          {name}
         </Heading>
         <Heading as="h1" size="2xl" color="gray.300">
-          Front-end Developer
+          {role}
         </Heading>
-        <Text color="gray.400" my={4}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod.
-          Quisquam, quod.
+        <Text as="h3" color="gray.400" fontSize="xl" my={2}>
+          {desc}
         </Text>
         <HStack
           bg="primary.400"

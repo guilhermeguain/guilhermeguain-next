@@ -25,7 +25,7 @@ export const Experiences = () => {
                   {company}
                 </Heading>
                 <Flex gap={4}>
-                  <Text fontSize="sm" fontWeight="medium" color="secondary.500">
+                  <Text fontSize="sm" fontWeight="medium" color="secondary.400">
                     {role}
                   </Text>
                   <Text fontSize="sm" fontWeight="medium" color="gray.600">

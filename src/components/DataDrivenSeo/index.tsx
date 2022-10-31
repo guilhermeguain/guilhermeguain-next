@@ -50,7 +50,7 @@ export const DataDrivenSeo = () => {
           <List spacing={4}>
             {semrushItems.map((item, index) => (
               <ListItem key={index} display="flex" alignItems="baseline">
-                <ListIcon as={FaChevronRight} color="secondary.500" fontSize="xs" />
+                <ListIcon as={FaChevronRight} color="secondary.400" fontSize="xs" />
                 <Text fontSize={['sm', 'sm', 'md']}>{item}</Text>
               </ListItem>
             ))}
@@ -72,7 +72,7 @@ export const DataDrivenSeo = () => {
           <List spacing={4}>
             {tagManagerItems.map((item, index) => (
               <ListItem key={index} display="flex" alignItems="baseline">
-                <ListIcon as={FaChevronRight} color="secondary.500" fontSize="xs" />
+                <ListIcon as={FaChevronRight} color="secondary.400" fontSize="xs" />
                 <Text fontSize={['sm', 'sm', 'md']}>{item}</Text>
               </ListItem>
             ))}
@@ -94,7 +94,7 @@ export const DataDrivenSeo = () => {
           <List spacing={4}>
             {analyticsItems.map((item, index) => (
               <ListItem key={index} display="flex" alignItems="baseline">
-                <ListIcon as={FaChevronRight} color="secondary.500" fontSize="xs" />
+                <ListIcon as={FaChevronRight} color="secondary.400" fontSize="xs" />
                 <Text fontSize={['sm', 'sm', 'md']}>{item}</Text>
               </ListItem>
             ))}

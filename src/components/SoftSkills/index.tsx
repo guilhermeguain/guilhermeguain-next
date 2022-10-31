@@ -5,7 +5,7 @@ import { softSkills } from './softSkills';
 
 export const SoftSkills = () => {
   return (
-    <Flex direction="column" minWidth={72}>
+    <Flex direction="column" flex={1} minWidth={72}>
       <Heading
         as="h3"
         fontSize="sm"
