@@ -13,8 +13,9 @@ import { DataDrivenSeo } from '../components/DataDrivenSeo';
 import { TechsTools } from '../components/TechsTools';
 import { Languages } from '../components/Languages';
 import { Experiences } from '../components/Experiences';
-
-import { extra } from '../lib/extra';
+import { Projects } from '../components/Projects';
+import { Events } from '../components/Events';
+import { Extracurricular } from '../components/Extracurricular';
 
 const Home: NextPage = () => {
   const title = 'Guilherme Guain - Front-end Developer';
@@ -103,20 +104,16 @@ const Home: NextPage = () => {
           <Experiences />
         </Flex>
 
-        <Flex direction="column" gap={4}>
-          <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-            Extra
-          </Heading>
-          <Flex direction="column" gap={4}>
-            {extra.map(({ slug, label, icon }) => (
-              <Flex key={slug} gap={2} alignItems="center">
-                <Image as={icon} title={label} alt={label} />
-                <Text color="gray.600" fontWeight="medium">
-                  {label}
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
+        <Flex direction="column">
+          <Projects />
+        </Flex>
+
+        <Flex direction="column">
+          <Events />
+        </Flex>
+
+        <Flex direction="column">
+          <Extracurricular />
         </Flex>
       </Content>
     </Page>

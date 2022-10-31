@@ -16,7 +16,7 @@ export const experiences = [
   {
     role: 'Front-end Developer',
     company: 'Health Protection',
-    period: '09/2020 - now',
+    period: '09/2020 - 10/2022',
     badges: [
       {
         id: 'reactjs',
@@ -50,7 +50,7 @@ export const experiences = [
       },
     ],
     summary:
-      'Front-end developer at Toxicologia Pardini, a company that provides toxicological analysis services.',
+      'Projeto desenvolvido em Next.js com TypeScript. Entre as principais ferramentas usadas no projeto estão Context API, Axios, Tailwind CSS, Chakra UI, ESLint e React Query. Para gerenciamento de conteúdo utilizamos o Prismic CMS. Minhas atividades envolviam o desenvolvimento do front-end, integração com APIs, criação de componentes e páginas, manutenção e correção de bugs e implantação contínua com Netlify e Vercel.',
   },
   {
     role: 'Full-stack Developer',
@@ -95,7 +95,7 @@ export const experiences = [
       },
     ],
     summary:
-      'Front-end developer at Toxicologia Pardini, a company that provides toxicological analysis services.',
+      'Empresa de exame toxicológico onde atuo como desenvolvedor full-stack, responsável por desenvolver e manter o site da empresa, além de desenvolver integrações com sistemas internos, CRM e ERP. Entre as principais atividades, estão a otimização de SEO, desenvolvimento de novas funcionalidades, correção de bugs e manutenção de sites.',
   },
   {
     role: 'WordPress Developer',
@@ -134,12 +134,12 @@ export const experiences = [
       },
     ],
     summary:
-      'Front-end developer at Toxicologia Pardini, a company that provides toxicological analysis services.',
+      'Projeto desenvolvido com WordPress Multisite visando unificar os sites da organização, facilitando a manutenção e gerenciamento dos conteúdos. Atualmente sou responsável pelo monitoramento e manutenção do servidor, pela atualização dos plugins e temas do WordPress e pelo gerenciamento de conteúdo do site.',
   },
   {
     role: 'WordPress Developer',
     company: '360 Comunicação Digital',
-    period: '05/2013 - now',
+    period: '05/2013 - 08/2018',
     badges: [
       {
         id: 'wordpress',
@@ -161,6 +161,6 @@ export const experiences = [
       },
     ],
     summary:
-      'Front-end developer at Toxicologia Pardini, a company that provides toxicological analysis services.',
+      'Agência de comunicação onde desenvolvi diversos projetos em WordPress, participando de todo o processo de desenvolvimento, desde a criação do layout até a publicação do site. Minhas atividades envolviam a criação e customização de temas e plugins para WordPress, otimização de performance e SEO, criação de landing pages e integração com APIs.',
   },
 ];

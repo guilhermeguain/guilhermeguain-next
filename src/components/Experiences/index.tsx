@@ -5,7 +5,7 @@ import { experiences } from './experiences';
 
 export const Experiences = () => {
   return (
-    <Flex direction="column" gap={4}>
+    <Flex direction="column" gap={8}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
         Experience
       </Heading>
@@ -39,7 +39,7 @@ export const Experiences = () => {
                 ))}
               </Flex>
             </Flex>
-            <Text color="gray.600" fontWeight="medium" textAlign="justify" mt={4}>
+            <Text color="gray.500" fontWeight="medium" textAlign="justify" mt={4}>
               {summary}
             </Text>
           </Box>

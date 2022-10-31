@@ -1,7 +1,7 @@
-import { GoogleAnalytics } from '../assets/GoogleAnalytics';
-import { GoogleTagManager } from '../assets/GoogleTagManager';
+import { GoogleAnalytics } from '../../assets/GoogleAnalytics';
+import { GoogleTagManager } from '../../assets/GoogleTagManager';
 
-export const extra = [
+export const badges = [
   {
     slug: 'google-analytics',
     label: 'Google Analytics',

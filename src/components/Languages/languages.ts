@@ -12,7 +12,7 @@ export const languages = [
     code: 'en-us',
     name: 'English',
     profficiency: [
-      { label: 'Speaking', value: 30 },
+      { label: 'Speaking', value: 40 },
       { label: 'Listening', value: 80 },
       { label: 'Writing', value: 90 },
     ],
