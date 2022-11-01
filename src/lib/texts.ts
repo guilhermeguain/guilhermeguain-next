@@ -458,13 +458,13 @@ export const texts = {
         location: 'Online',
       },
       {
-        title: 'Lógica de programação, tecnologia web e PHP',
+        title: 'Programming logic, web technology and PHP',
         institution: 'Impacta',
         period: '10/2012 - 06/2014',
         location: 'São Paulo, SP',
       },
       {
-        title: 'Técnico em Design Gráfico',
+        title: 'Graphic Design Technician',
         institution: 'Alpha Channel',
         period: '05/2012 - 05/2013',
         location: 'São Paulo, SP',

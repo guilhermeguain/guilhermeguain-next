@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Heading, Text } from '@chakra-ui/react';
+import { Flex, Box, Heading, Text, VStack, StackDivider } from '@chakra-ui/react';
 
 import { texts } from '../../lib/texts';
 
@@ -11,27 +11,18 @@ export const Events = () => {
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
         Events
       </Heading>
-      <Flex direction="column" gap={4}>
+      <VStack divider={<StackDivider borderColor="gray.700" />} alignItems="flex-start" spacing={4}>
         {events.items.map(({ title, host, date, location }, index) => (
-          <Flex
-            key={index}
-            bg="gray.100"
-            borderRadius="xl"
-            py={2}
-            px={4}
-            gap={8}
-            justifyContent="space-between"
-            alignItems="center"
-          >
+          <Flex key={index} gap={8} justifyContent="space-between" alignItems="center" width="100%">
             <Box>
-              <Heading as="h3" fontSize="md" fontWeight="medium" color="primary.500">
+              <Heading as="h3" fontSize="md" fontWeight="medium" color="gray.50">
                 {title}
               </Heading>
               <Text color="gray.500" fontSize="xs" textTransform="uppercase" fontWeight="semibold">
                 {host}
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="right">
               <Text fontSize="sm" fontWeight="medium" color="gray.500">
                 {date}
               </Text>
@@ -41,7 +32,7 @@ export const Events = () => {
             </Box>
           </Flex>
         ))}
-      </Flex>
+      </VStack>
     </Flex>
   );
 };
