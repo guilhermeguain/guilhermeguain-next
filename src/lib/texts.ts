@@ -32,33 +32,33 @@ export const texts = {
     paragraphs: [
       {
         highlights: ['2012', 'WordPress', 'React.js', 'Clean Code', 'SOLID', 'resolver problemas'],
-        text: 'Trabalho com desenvolvimento web desde 2012, quando comecei a desenvolver sites em WordPress em uma agência de comunicação. Foram aproximadamente 8 anos me aprofundando nessa tecnologia, até que em 2020 decidi migrar e me especializar em React.js. Desde então tenho usado tecnologias como React.js, Next.js, TypeScript, ESLint, Tailwind CSS, Axios, Chakra UI, Styled Components, React Query, Git, entre outras. Sigo príncipios e práticas como Clean Code e SOLID e minha especialidade é resolver problemas.',
+        text: "I've been working with web development since 2012, when I started developing WordPress websites at a communication agency. It took me approximately 8 years to delve into this technology, until in 2020 I decided to migrate and specialize in React.js. Since then I've been using technologies like React.js, Next.js, TypeScript, ESLint, Tailwind CSS, Axios, Chakra UI, Styled Components, React Query, Git, among others. I follow principles and practices such as Clean Code and SOLID and my specialty is problem solving.",
       },
       {
         highlights: [],
-        text: 'Ao longo da minha carreira também assumi tarefas em áreas relacionadas, onde adquiri conhecimentos em:',
+        text: 'Throughout my career I also took on tasks in related areas, where I acquired knowledge in:',
       },
     ],
     knowledges: [
       {
         area: 'Design',
         summary:
-          'Criação de layouts, manipulação de imagens, uso de ferramentas como Figma, Photoshop e Illustrator. Conhecimento em UX/UI.',
+          'Layout creation, image manipulation, use of tools like Figma, Photoshop and Illustrator. Knowledge of UX/UI.',
       },
       {
         area: 'SEO',
         summary:
-          'SEO técnico, otimização de código, configuração de cabeçalhos e diretivas, criação de sitemap e uso de ferramentas como Semrush, Google Tag Manager, Google Analytics e Google Search Console.',
+          'Technical SEO, code optimization, headers and directives configuration, sitemap creation and use of tools like Semrush, Google Tag Manager, Google Analytics and Google Search Console.',
       },
       {
         area: 'DevOps',
         summary:
-          'CI/CD, Git e Git Flow, padronização de configurações, definição de ambientes, senso de urgência, adaptabilidade e trabalho em equipe.',
+          'CI/CD, Git and Git Flow, standardization of settings, definition of environments, sense of urgency, adaptability and teamwork.',
       },
       {
         area: 'Infrastructure',
         summary:
-          'Configuração de servidores Linux (Debian/Ubuntu), configuração de servidores web como Apache e Nginx, criação de máquinas virtuais e bancos de dados no Google Cloud, instalação de componentes diversos, configuração de conexão SSH, ajuste de firewall e abertura de portas e configuração de certificados SSL.',
+          'Configuration of Linux servers (Debian/Ubuntu), configuration of web servers such as Apache and Nginx, creation of virtual machines and databases on Google Cloud, installation of various components, SSH connection configuration, firewall adjustment and opening of ports and configuration of SSL certificates.',
       },
     ],
     hardSkills: [
@@ -163,9 +163,9 @@ export const texts = {
         title: 'Semrush',
         icon: Semrush,
         items: [
-          'Pesquisa e análise de palavras-chave e concorrentes',
-          'Acompanhamento e correção de erros apontados pela auditoria',
-          'Monitoramento de desempenho e posicionamento',
+          'Keyword and competitor research and analysis',
+          'Monitoring and correction of errors identified by the audit',
+          'Performance and positioning monitoring',
         ],
       },
       {
@@ -173,10 +173,10 @@ export const texts = {
         title: 'Google Tag Manager',
         icon: GoogleTagManager,
         items: [
-          'Configuração de tags, gatilhos e variáveis',
-          'Criação de gatilhos baseados em eventos personalizados',
-          'Configuração para comunicação entre iframes',
-          'Captura de informações através de data layer',
+          'Setup of tags, triggers and variables',
+          'Creation of triggers based on custom events',
+          'Configuration for communication between iframes',
+          'Capture of information through data layer',
         ],
       },
       {
@@ -184,11 +184,11 @@ export const texts = {
         title: 'Google Analytics',
         icon: GoogleAnalytics,
         items: [
-          'Instalação de tag usando Google Tag Manager',
-          'Configuração de dimensões e métricas personalizadas',
-          'Configuração do GA4',
-          'Configuração de filtros e metas de conversão',
-          'Uso de data layer para obter dados',
+          'Tag installation using Google Tag Manager',
+          'Setup of custom dimensions and metrics',
+          'GA4 Setup',
+          'Setup of filters and conversion goals',
+          'Use of data layer to get data',
         ],
       },
     ],
@@ -231,7 +231,7 @@ export const texts = {
         },
       ],
       summary:
-        'Projeto desenvolvido em Next.js com TypeScript. Entre as principais ferramentas usadas no projeto estão Context API, Axios, Tailwind CSS, Chakra UI, ESLint e React Query. Para gerenciamento de conteúdo utilizamos o Prismic CMS. Minhas atividades envolviam o desenvolvimento do front-end, integração com APIs, criação de componentes e páginas, manutenção e correção de bugs e implantação contínua com Netlify e Vercel.',
+        'Project developed in Next.js with TypeScript. Among the main tools used in the project are Context API, Axios, Tailwind CSS, Chakra UI, ESLint and React Query. For content management we used Prismic CMS. My activities involved front-end development, integration with APIs, creation of components and pages, maintenance and bug fixing and continuous deployment with Netlify and Vercel.',
     },
     {
       role: 'Full-stack Developer',
@@ -276,7 +276,7 @@ export const texts = {
         },
       ],
       summary:
-        'Empresa de exame toxicológico onde atuo como desenvolvedor full-stack, responsável por desenvolver e manter o site da empresa, além de desenvolver integrações com sistemas internos, CRM e ERP. Entre as principais atividades, estão a otimização de SEO, desenvolvimento de novas funcionalidades, correção de bugs e manutenção de sites.',
+        "Toxicological examination company where I work as a full-stack developer, responsible for developing and maintaining the company's website, in addition to developing integrations with internal systems, CRM and ERP. Among the main activities are SEO optimization, development of new features, bug fixing and website maintenance.",
     },
     {
       role: 'WordPress Developer',
@@ -315,7 +315,7 @@ export const texts = {
         },
       ],
       summary:
-        'Projeto desenvolvido com WordPress Multisite visando unificar os sites da organização, facilitando a manutenção e gerenciamento dos conteúdos. Atualmente sou responsável pelo monitoramento e manutenção do servidor, pela atualização dos plugins e temas do WordPress e pelo gerenciamento de conteúdo do site.',
+        "Project developed with WordPress Multisite to unify the organization's websites, facilitating the maintenance and management of content. I am currently responsible for monitoring and maintaining the server, updating WordPress plugins and themes, and managing website content.",
     },
     {
       role: 'WordPress Developer',
@@ -342,7 +342,7 @@ export const texts = {
         },
       ],
       summary:
-        'Agência de comunicação onde desenvolvi diversos projetos em WordPress, participando de todo o processo de desenvolvimento, desde a criação do layout até a publicação do site. Minhas atividades envolviam a criação e customização de temas e plugins para WordPress, otimização de performance e SEO, criação de landing pages e integração com APIs.',
+        'Communication agency where I developed several projects in WordPress, participating in the entire development process, from the creation of the layout to the publication of the website. My activities involved creating and customizing WordPress themes and plugins, optimizing performance and SEO, creating landing pages and integrating with APIs.',
     },
   ],
   projects: {

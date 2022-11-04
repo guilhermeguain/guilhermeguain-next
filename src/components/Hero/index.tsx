@@ -9,7 +9,7 @@ export const Hero = () => {
   const { name, role, desc } = texts.hero;
 
   return (
-    <Box as="main" bg="url('/images/bg-hero.jpg')">
+    <Box as="main" bg="url('/images/bg-hero.jpg')" position="relative" zIndex="10">
       <Flex
         w="100%"
         maxWidth={'7xl'}
@@ -22,13 +22,13 @@ export const Hero = () => {
         textAlign="center"
         gap={2}
       >
-        <Heading as="h2" size="lg" color="gray.500">
+        <Heading as="h2" size={['sm', 'lg']} color="gray.500">
           {name}
         </Heading>
-        <Heading as="h1" size="2xl" color="gray.300">
+        <Heading as="h1" size={['lg', '2xl']} color="gray.300">
           {role}
         </Heading>
-        <Text as="h3" color="gray.400" fontSize="xl" my={2}>
+        <Text as="h3" color="gray.400" fontSize={['md', 'xl']} my={2}>
           {desc}
         </Text>
         <HStack

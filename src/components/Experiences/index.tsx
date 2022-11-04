@@ -15,9 +15,10 @@ export const Experiences = () => {
         {experiences.map(({ role, company, period, badges, summary }) => (
           <Box key={company} bg="gray.200" p={4} borderRadius="xl">
             <Flex
+              direction={['column', 'column', 'row']}
               justifyContent="space-between"
-              alignItems="center"
-              gap={8}
+              alignItems={['flex-start', 'flex-start', 'center']}
+              gap={[4, 4, 8]}
               borderBottom="1px"
               borderColor="gray.400"
               pb={2}

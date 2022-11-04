@@ -14,16 +14,21 @@ export const Events = () => {
       <VStack divider={<StackDivider borderColor="gray.700" />} alignItems="flex-start" spacing={4}>
         {events.items.map(({ title, host, date, location }, index) => (
           <Flex key={index} gap={8} justifyContent="space-between" alignItems="center" width="100%">
-            <Box>
-              <Heading as="h3" fontSize="md" fontWeight="medium" color="gray.50">
+            <Box flex={1}>
+              <Heading as="h3" fontSize={['sm', 'md']} fontWeight="medium" color="gray.50">
                 {title}
               </Heading>
-              <Text color="gray.500" fontSize="xs" textTransform="uppercase" fontWeight="semibold">
+              <Text
+                color="gray.500"
+                fontSize={['2xs', 'xs']}
+                textTransform="uppercase"
+                fontWeight="semibold"
+              >
                 {host}
               </Text>
             </Box>
             <Box textAlign="right">
-              <Text fontSize="sm" fontWeight="medium" color="gray.500">
+              <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.500">
                 {date}
               </Text>
               <Text fontSize="xs" fontWeight="medium" color="gray.500">

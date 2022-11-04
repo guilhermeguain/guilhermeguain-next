@@ -7,7 +7,7 @@ export const HardSkills = () => {
   const { about } = texts;
 
   return (
-    <Flex direction="column" flex={1} minWidth={72}>
+    <Flex direction="column" flex={1} w={72}>
       <Heading
         as="h3"
         fontSize="sm"

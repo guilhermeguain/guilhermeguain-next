@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { NextSeo } from 'next-seo';
 
 import { Header } from '../Header';
+import { Footer } from '../Footer';
 
 type Props = {
   title: string;
@@ -15,6 +16,7 @@ export const Page = ({ title, description, children }: Props) => {
       <NextSeo title={title} description={description} />
       <Header title={title} />
       {children}
+      <Footer />
     </>
   );
 };
