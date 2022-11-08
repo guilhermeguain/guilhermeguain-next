@@ -11,6 +11,9 @@ import {
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaSass } from 'react-icons/fa';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 
 import { Semrush } from '../assets/Semrush';
 import { GoogleAnalytics } from '../assets/GoogleAnalytics';
@@ -27,8 +30,30 @@ export const texts = {
     desc: 'Since 2012 solving problems and creating web solutions.',
   },
   about: {
-    name: 'Guilherme Guain',
+    name: 'Guilherme Emilio Guain Peixinho',
     role: 'Front-end Developer',
+    contacts: [
+      {
+        icon: BsLinkedin,
+        url: 'https://www.linkedin.com/in/guilhermeguain/',
+        alt: 'LinkedIn - Guilherme Guain',
+      },
+      {
+        icon: BsGithub,
+        url: 'https://github.com/guilhermeguain/',
+        alt: 'GitHub - Guilherme Guain',
+      },
+      {
+        icon: GoMail,
+        url: 'mailto:guilherme.guain@gmail.com',
+        alt: 'E-mail - Guilherme Guain',
+      },
+      {
+        icon: IoDocumentTextOutline,
+        url: '/documents/curriculum-guilherme-guain-en.pdf',
+        alt: 'Curriculum - Guilherme Guain',
+      },
+    ],
     paragraphs: [
       {
         highlights: ['2012', 'WordPress', 'React.js', 'Clean Code', 'SOLID', 'resolver problemas'],
@@ -236,7 +261,7 @@ export const texts = {
     {
       role: 'Full-stack Developer',
       company: 'Toxicologia Pardini',
-      period: '08/2018 - now',
+      period: '08/2018 - present',
       badges: [
         {
           id: 'wordpress',
@@ -281,7 +306,7 @@ export const texts = {
     {
       role: 'WordPress Developer',
       company: 'Inter-American Coalition',
-      period: '08/2021 - now',
+      period: '08/2021 - 09/2021',
       badges: [
         {
           id: 'wordpress',
@@ -440,7 +465,7 @@ export const texts = {
         location: 'Online',
       },
       {
-        title: 'GoStack - Node.js, React.js e React Native',
+        title: 'GoStack - Node.js, React.js and React Native',
         institution: 'Rocketseat',
         period: '10/2020 - 03/2021',
         location: 'Online',
@@ -452,13 +477,13 @@ export const texts = {
         location: 'Online',
       },
       {
-        title: 'HTML5, CSS3, JavaScript, Flexbox e Bootstrap',
+        title: 'HTML5, CSS3, JavaScript and Bootstrap',
         institution: 'Alura',
         period: '11/2017 - 02/2018',
         location: 'Online',
       },
       {
-        title: 'Programming logic, web technology and PHP',
+        title: 'Programming logic and PHP',
         institution: 'Impacta',
         period: '10/2012 - 06/2014',
         location: 'São Paulo, SP',

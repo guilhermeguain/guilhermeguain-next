@@ -13,9 +13,7 @@ import {
   ListItem,
   ListIcon,
 } from '@chakra-ui/react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaChevronRight } from 'react-icons/fa';
-import { GoMail } from 'react-icons/go';
 
 import { Page } from '../components/Page';
 
@@ -57,30 +55,11 @@ const Home: NextPage = () => {
               {about.role}
             </Heading>
             <HStack fontSize="2xl" gap={2} mt={2} justifyContent={['center', 'flex-start']}>
-              <Link href="https://www.linkedin.com/in/guilhermeguain/" target="_blank">
-                <Image
-                  as={BsLinkedin}
-                  alt="LinkedIn - Guilherme Guain"
-                  title="LinkedIn - Guilherme Guain"
-                  color="gray.200"
-                />
-              </Link>
-              <Link href="https://github.com/guilhermeguain" target="_blank">
-                <Image
-                  as={BsGithub}
-                  alt="GitHub - Guilherme Guain"
-                  title="GitHub - Guilherme Guain"
-                  color="gray.200"
-                />
-              </Link>
-              <Link href="mailto:guilherme.guain@gmail.com" target="_blank">
-                <Image
-                  as={GoMail}
-                  alt="E-mail - Guilherme Guain"
-                  title="E-mail - Guilherme Guain"
-                  color="gray.200"
-                />
-              </Link>
+              {about.contacts.map(({ icon, url, alt }, index) => (
+                <Link key={index} href={url} target="_blank">
+                  <Image as={icon} alt={alt} title={alt} color="gray.200" />
+                </Link>
+              ))}
             </HStack>
           </Flex>
         </Flex>
