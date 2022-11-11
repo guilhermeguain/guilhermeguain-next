@@ -10,22 +10,22 @@ const nextConfig = {
       {
         domain: 'www.guilhermeguain.com',
         defaultLocale: 'en-US',
-        locales: ['en']
+        locales: ['en-US']
       },
       {
         domain: 'guilhermeguain.com',
         defaultLocale: 'en-US',
-        locales: ['en']
+        locales: ['en-US']
       },
       {
         domain: 'www.guilhermeguain.com.br',
         defaultLocale: 'pt-BR',
-        locales: ['pt']
+        locales: ['pt-BR']
       },
       {
         domain: 'guilhermeguain.com.br',
         defaultLocale: 'pt-BR',
-        locales: ['pt']
+        locales: ['pt-BR']
       }
     ]
   }
