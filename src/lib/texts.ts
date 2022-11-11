@@ -24,6 +24,13 @@ export const texts = {
     title: 'Front-end Developer - Guilherme Guain',
     desc: 'Front-end Developer since 2012, specialist in React.js, Next.js, TypeScript and WordPress',
   },
+  menu: {
+    items: [
+      { label: 'About', href: '#about' },
+      { label: 'Experience', href: '#experience' },
+      { label: 'Projects', href: '#projects' },
+    ],
+  },
   hero: {
     name: 'Guilherme Guain',
     role: 'Front-end Developer',
