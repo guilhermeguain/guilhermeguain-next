@@ -29,10 +29,11 @@ import { Projects } from '../components/Projects';
 import { Events } from '../components/Events';
 import { Education } from '../components/Education';
 
-import { texts } from '../lib/texts';
+import { useApp } from '../contexts/App';
 
 const Home: NextPage = () => {
-  const { meta, about } = texts;
+  const { content } = useApp();
+  const { meta, about } = content;
 
   return (
     <Page title={meta.title} description={meta.desc}>

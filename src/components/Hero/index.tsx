@@ -3,10 +3,12 @@ import { Box, Flex, Image, Heading, Text, HStack } from '@chakra-ui/react';
 import { SiReact, SiTypescript, SiEslint } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
-import { texts } from '../../lib/texts';
+import { useApp } from '../../contexts/App';
 
 export const Hero = () => {
-  const { name, role, desc } = texts.hero;
+  const { content } = useApp();
+  const { hero } = content;
+  const { name, role, desc } = hero;
 
   return (
     <Box as="main" bg="url('/images/bg-hero.jpg')" position="relative" zIndex="10">

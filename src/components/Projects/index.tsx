@@ -1,10 +1,11 @@
 import React from 'react';
 import { Flex, Heading, SimpleGrid, Image, Link } from '@chakra-ui/react';
 
-import { texts } from '../../lib/texts';
+import { useApp } from '../../contexts/App';
 
 export const Projects = () => {
-  const { projects } = texts;
+  const { content } = useApp();
+  const { projects } = content;
 
   return (
     <Flex direction="column" gap={8}>

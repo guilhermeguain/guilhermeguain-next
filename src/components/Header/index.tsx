@@ -3,9 +3,11 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { Box, Flex, Link } from '@chakra-ui/react';
 
-import { useWindowSize } from '../../hooks/useWindowSize';
-
+import { When } from '../shared/When';
+import { MobileMenu } from './components/MobileMenu';
 import { DesktopMenu } from './components/DesktopMenu';
+
+import { useHeader } from './hooks/useHeader';
 
 type Props = {
   title: string;
@@ -13,17 +15,7 @@ type Props = {
 };
 
 export const Header = ({ title, logo = '/images/logo.svg' }: Props) => {
-  const { width } = useWindowSize();
-
-  const MOBILE_BREAKPOINT = 768;
-
-  const isMobile = width < MOBILE_BREAKPOINT;
-
-  const items = [
-    { label: 'About', href: '#about' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Projects', href: '#projects' },
-  ];
+  const { isMobile } = useHeader();
 
   return (
     <>
@@ -55,7 +47,12 @@ export const Header = ({ title, logo = '/images/logo.svg' }: Props) => {
               </Link>
             </NextLink>
           </Box>
-          <DesktopMenu />
+          <When value={isMobile}>
+            <MobileMenu />
+          </When>
+          <When value={!isMobile}>
+            <DesktopMenu />
+          </When>
         </Flex>
       </Box>
     </>

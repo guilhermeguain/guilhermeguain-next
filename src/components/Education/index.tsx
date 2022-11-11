@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, VStack, StackDivider } from '@chakra-ui/react';
 
-import { texts } from '../../lib/texts';
+import { useApp } from '../../contexts/App';
 
 export const Education = () => {
-  const { education } = texts;
+  const { content } = useApp();
+  const { education } = content;
 
   return (
     <Flex direction="column" gap={8} flex={1}>

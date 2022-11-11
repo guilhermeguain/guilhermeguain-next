@@ -13,12 +13,13 @@ import {
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { texts } from '../../../../lib/texts';
+import { useApp } from '../../../../contexts/App';
 
 export const MobileMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const { menu } = texts;
+  const { content } = useApp();
+  const { menu } = content;
 
   return (
     <>
@@ -32,7 +33,13 @@ export const MobileMenu = () => {
         onClick={onOpen}
         position="relative"
       />
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="xs">
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        returnFocusOnClose={false}
+        size="xs"
+      >
         <DrawerOverlay />
         <DrawerContent bg="gray.300">
           <DrawerCloseButton />

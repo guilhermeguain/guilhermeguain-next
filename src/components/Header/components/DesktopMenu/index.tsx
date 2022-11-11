@@ -1,10 +1,11 @@
 import React from 'react';
 import { HStack, Link } from '@chakra-ui/react';
 
-import { texts } from '../../../../lib/texts';
+import { useApp } from '../../../../contexts/App';
 
 export const DesktopMenu = () => {
-  const { menu } = texts;
+  const { content } = useApp();
+  const { menu } = content;
 
   return (
     <HStack fontSize={['sm', 'md', 'lg']} gap={[2, 4]}>

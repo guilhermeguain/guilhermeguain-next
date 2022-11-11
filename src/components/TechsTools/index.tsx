@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Flex, Heading, Image, HStack } from '@chakra-ui/react';
 
-import { texts } from '../../lib/texts';
 import { techs } from './techs';
+import { useApp } from '../../contexts/App';
 
 export const TechsTools = () => {
-  const { about } = texts;
+  const { content } = useApp();
+  const { about } = content;
   const { techsTools } = about;
 
   return (

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Progress } from '@chakra-ui/react';
 
-import { texts } from '../../lib/texts';
+import { useApp } from '../../contexts/App';
 
 export const SoftSkills = () => {
-  const { about } = texts;
+  const { content } = useApp();
+  const { about } = content;
 
   return (
     <Flex direction="column" flex={1} w={72}>

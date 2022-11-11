@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
 
-import { texts } from '../../lib/texts';
+import { useApp } from '../../contexts/App';
 
 export const Experiences = () => {
-  const { experiences } = texts;
+  const { content } = useApp();
+  const { experiences } = content;
 
   return (
     <Flex direction="column" gap={8}>

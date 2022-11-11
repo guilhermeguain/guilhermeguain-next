@@ -2,10 +2,11 @@ import React from 'react';
 import { Box, Flex, Heading, Text, List, ListItem, ListIcon, Image } from '@chakra-ui/react';
 import { FaChevronRight } from 'react-icons/fa';
 
-import { texts } from '../../lib/texts';
+import { useApp } from '../../contexts/App';
 
 export const DataDrivenSeo = () => {
-  const { dataDrivenSeo } = texts;
+  const { content } = useApp();
+  const { dataDrivenSeo } = content;
 
   return (
     <Flex direction="column" gap={8}>
