@@ -5,8 +5,6 @@ import { Box, Flex, Link } from '@chakra-ui/react';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
 
-import { When } from '../shared/When';
-import { MobileMenu } from './components/MobileMenu';
 import { DesktopMenu } from './components/DesktopMenu';
 
 type Props = {
@@ -57,12 +55,7 @@ export const Header = ({ title, logo = '/images/logo.svg' }: Props) => {
               </Link>
             </NextLink>
           </Box>
-          <When value={isMobile}>
-            <MobileMenu />
-          </When>
-          <When value={!isMobile}>
-            <DesktopMenu />
-          </When>
+          <DesktopMenu />
         </Flex>
       </Box>
     </>
