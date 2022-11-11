@@ -31,7 +31,7 @@ export const content = {
     contacts: contacts.map(({ id, icon, url }) => ({
       icon,
       url,
-      label: labels.about.contacts.find((contact) => contact.id === id)?.label || '',
+      alt: labels.about.contacts.find((contact) => contact.id === id)?.label || '',
     })),
     paragraphs: labels.about.paragraphs,
     knowledges: labels.about.knowledges,
