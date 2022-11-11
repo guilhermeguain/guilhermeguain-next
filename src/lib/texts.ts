@@ -256,7 +256,7 @@ export const texts = {
         },
       ],
       summary:
-        'Project developed in Next.js with TypeScript. Among the main tools used in the project are Context API, Axios, Tailwind CSS, Chakra UI, ESLint and React Query. For content management we used Prismic CMS. My activities involved front-end development, integration with APIs, creation of components and pages, maintenance and bug fixing and continuous deployment with Netlify and Vercel.',
+        'Project developed in Next.js with TypeScript. Among the main tools used in the project are Context API, Axios, Tailwind CSS, Chakra UI, ESLint and React Query. For content management we used Sanity CMS. My activities involved front-end development, integration with APIs, creation of components and pages, maintenance and bug fixing and continuous deployment with Netlify and Vercel.',
     },
     {
       role: 'Full-stack Developer',
