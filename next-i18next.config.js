@@ -6,7 +6,7 @@ module.exports = {
     locales: ['en-US', 'pt-BR'],
     defaultLocale: 'en-US',
     localeDetection: false,
-    localePath: path.resolve('./public/static/locales'),
+    localePath: path.resolve('./public/locales'),
     domains: [
       {
         domain: process.env.NEXT_PUBLIC_EN_URL || 'https://www.guilhermeguain.com',
