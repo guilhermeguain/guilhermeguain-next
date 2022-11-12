@@ -5,12 +5,12 @@ module.exports = {
     localeDetection: false,
     domains: [
       {
-        domain: process.env.NEXT_PUBLIC_EN_URL,
+        domain: process.env.NEXT_PUBLIC_EN_URL || 'https://www.guilhermeguain.com',
         defaultLocale: 'en-US',
         locales: ['en-US']
       },
       {
-        domain: process.env.NEXT_PUBLIC_PT_URL,
+        domain: process.env.NEXT_PUBLIC_PT_URL || 'https://www.guilhermeguain.com.br',
         defaultLocale: 'pt-BR',
         locales: ['pt-BR']
       }
