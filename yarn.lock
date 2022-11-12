@@ -1267,6 +1267,14 @@
   dependencies:
     "tslib" "^2.4.0"
 
+"@types/hoist-non-react-statics@^3.3.1":
+  "integrity" "sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA=="
+  "resolved" "https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz"
+  "version" "3.3.1"
+  dependencies:
+    "@types/react" "*"
+    "hoist-non-react-statics" "^3.3.0"
+
 "@types/json-schema@^7.0.9":
   "integrity" "sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.11.tgz"
@@ -1665,6 +1673,11 @@
 "core-js-pure@^3.25.1":
   "integrity" "sha512-LiN6fylpVBVwT8twhhluD9TzXmZQQsr2I2eIKtWNbZI1XMfBT7CV18itaN6RA7EtQd/SDdRx/wzvAShX2HvhQA=="
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.26.0.tgz"
+  "version" "3.26.0"
+
+"core-js@^3":
+  "integrity" "sha512-+DkDrhoR4Y0PxDz6rurahuB+I45OsEUv8E1maPTB6OuHRohMMcznBq9TMpdpDMm/hUPob/mJJS3PqgbHpMTQgw=="
+  "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.26.0.tgz"
   "version" "3.26.0"
 
 "cosmiconfig@^7.0.0":
@@ -2388,7 +2401,7 @@
   "resolved" "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
   "version" "1.0.8"
 
-"hoist-non-react-statics@^3.3.1":
+"hoist-non-react-statics@^3.3.0", "hoist-non-react-statics@^3.3.1", "hoist-non-react-statics@^3.3.2":
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   "version" "3.3.2"
@@ -2401,6 +2414,18 @@
   "version" "3.0.1"
   dependencies:
     "void-elements" "3.1.0"
+
+"i18next-fs-backend@^1.1.5":
+  "integrity" "sha512-pUx3AcgXCbur0jpFA7U67Z2RJflAcIi698Y8VL+phdOqUchahxriV3Cs+M6UkPNQSS/zPEzWLfdJ8EgjB7HVxg=="
+  "resolved" "https://registry.npmjs.org/i18next-fs-backend/-/i18next-fs-backend-1.2.0.tgz"
+  "version" "1.2.0"
+
+"i18next@^21.9.1":
+  "integrity" "sha512-YeuIBmFsGjUfO3qBmMOc0rQaun4mIpGKET5WDwvu8lU7gvwpcariZLNtL0Fzj+zazcHUrlXHiptcFhBMFaxzfg=="
+  "resolved" "https://registry.npmjs.org/i18next/-/i18next-21.10.0.tgz"
+  "version" "21.10.0"
+  dependencies:
+    "@babel/runtime" "^7.17.2"
 
 "i18next@^22.0.4", "i18next@>= 19.0.0":
   "integrity" "sha512-TOp7BTMKDbUkOHMzDlVsCYWpyaFkKakrrO3HNXfSz4EeJaWwnBScRmgQSTaWHScXVHBUFXTvShrCW8uryBYFcg=="
@@ -2728,6 +2753,19 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
+"next-i18next@^12.1.0":
+  "integrity" "sha512-rhos/PVULmZPdC0jpec2MDBQMXdGZ3+Mbh/tZfrDtjgnVN3ucdq7k8BlwsJNww6FnqC8AC31n6dSYuqVzYsGsw=="
+  "resolved" "https://registry.npmjs.org/next-i18next/-/next-i18next-12.1.0.tgz"
+  "version" "12.1.0"
+  dependencies:
+    "@babel/runtime" "^7.18.9"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "core-js" "^3"
+    "hoist-non-react-statics" "^3.3.2"
+    "i18next" "^21.9.1"
+    "i18next-fs-backend" "^1.1.5"
+    "react-i18next" "^11.18.4"
+
 "next-seo@^5.8.0":
   "integrity" "sha512-V5W/JwqdoX6/0zG4S7m5g8zNajYffytWigkPo2hrbHhLD18yGFBU9607OPhvbI9zX3QjWQFMBSmlUY456xt9cA=="
   "resolved" "https://registry.npmjs.org/next-seo/-/next-seo-5.8.0.tgz"
@@ -2741,7 +2779,7 @@
     "@corex/deepmerge" "^4.0.29"
     "minimist" "^1.2.6"
 
-"next@*", "next@^8.1.1-canary.54 || >=9.0.0", "next@12.3.1":
+"next@*", "next@^8.1.1-canary.54 || >=9.0.0", "next@>= 10.0.0", "next@12.3.1":
   "integrity" "sha512-l7bvmSeIwX5lp07WtIiP9u2ytZMv7jIeB8iacR28PuUEFG5j0HGAPnMqyG5kbZNBG2H7tRsrQ4HCjuMOPnANZw=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.3.1.tgz"
   "version" "12.3.1"
@@ -3015,6 +3053,14 @@
   "integrity" "sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw=="
   "resolved" "https://registry.npmjs.org/react-gtm-module/-/react-gtm-module-2.0.11.tgz"
   "version" "2.0.11"
+
+"react-i18next@^11.18.4":
+  "integrity" "sha512-yHb2F9BiT0lqoQDt8loZ5gWP331GwctHz9tYQ8A2EIEUu+CcEdjBLQWli1USG3RdWQt3W+jqQLg/d4rrQR96LA=="
+  "resolved" "https://registry.npmjs.org/react-i18next/-/react-i18next-11.18.6.tgz"
+  "version" "11.18.6"
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "html-parse-stringify" "^3.0.1"
 
 "react-i18next@^12.0.0":
   "integrity" "sha512-/O7N6aIEAl1FaWZBNvhdIo9itvF/MO/nRKr9pYqRc9LhuC1u21SlfwpiYQqvaeNSEW3g3qUXLREOWMt+gxrWbg=="

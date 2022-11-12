@@ -2,12 +2,11 @@ import React, { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
 import TagManager from 'react-gtm-module';
+import { appWithTranslation } from 'next-i18next';
 
 import { theme } from '../styles/theme';
 
 import { AppProvider } from '../contexts/App';
-
-import '../i18n';
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -23,4 +22,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default App;
+export default appWithTranslation(App);

@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
-import type { NextPage, GetServerSideProps } from 'next';
+import React from 'react';
+import { useTranslation } from 'next-i18next';
+import type { GetServerSideProps, InferGetStaticPropsType } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import {
   Flex,
   Avatar,
@@ -34,21 +33,15 @@ import { Education } from '../components/Education';
 
 import { useApp } from '../contexts/App';
 
-const Home: NextPage = () => {
+const Home = (_props: InferGetStaticPropsType<typeof getServerSideProps>) => {
   const { content } = useApp();
   const { meta, about } = content;
 
-  const { locale } = useRouter();
-  const { t } = useTranslation();
-
-  useEffect(() => {
-    i18next.changeLanguage(locale);
-  }, [locale]);
+  const { t } = useTranslation('common');
 
   return (
     <Page title={meta.title} description={meta.desc}>
       <Hero />
-      <Text color="white">{t('learn')}</Text>
       <Content px={4}>
         <Flex
           id="about"
@@ -61,10 +54,16 @@ const Home: NextPage = () => {
           <Avatar name="Guilherme Guain" src="/images/guilherme-guain.jpg" size="2xl" />
           <Flex direction="column" gap={4} w="100%" textAlign={['center', 'left']}>
             <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-              {about.name}
+              {t(about.name)}
             </Heading>
             <Heading fontSize="lg" fontWeight="medium" color="gray.300">
-              {about.role}
+              {t(about.role)}
+            </Heading>
+            <Heading fontSize="lg" fontWeight="medium" color="gray.300">
+              {t('learn')}
+            </Heading>
+            <Heading fontSize="lg" fontWeight="medium" color="gray.300">
+              {t('role')}
             </Heading>
             <HStack fontSize="2xl" gap={2} mt={2} justifyContent={['center', 'flex-start']}>
               {about.contacts.map(({ icon, url, alt }, index) => (
@@ -142,9 +141,17 @@ const Home: NextPage = () => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
-    props: {},
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en-US', [
+        'common',
+        'meta',
+        'menu',
+        'hero',
+        'about',
+      ])),
+    },
   };
 };
 
