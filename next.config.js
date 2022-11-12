@@ -8,12 +8,12 @@ const nextConfig = {
     localeDetection: false,
     domains: [
       {
-        domain: 'www.guilhermeguain.com',
+        domain: process.env.NEXT_PUBLIC_EN_URL,
         defaultLocale: 'en-US',
         locales: ['en-US']
       },
       {
-        domain: 'www.guilhermeguain.com.br',
+        domain: process.env.NEXT_PUBLIC_PT_URL,
         defaultLocale: 'pt-BR',
         locales: ['pt-BR']
       }
