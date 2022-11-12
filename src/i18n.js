@@ -2,14 +2,14 @@ import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 i18next.use(initReactI18next).init({
-  fallbackLng: 'en',
+  fallbackLng: 'en-US',
   resources: {
-    en: {
+    'en-US': {
       translation: {
         learn: 'Xpto'
       }
     },
-    pt: {
+    'pt-BR': {
       translation: {
         learn: 'Abcd',
       }

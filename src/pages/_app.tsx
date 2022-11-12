@@ -7,6 +7,8 @@ import { theme } from '../styles/theme';
 
 import { AppProvider } from '../contexts/App';
 
+import '../i18n';
+
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-MFKHPQ4' });

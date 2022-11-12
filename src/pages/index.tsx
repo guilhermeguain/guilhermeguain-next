@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 import type { NextPage, GetServerSideProps } from 'next';
 import {
   Flex,
@@ -37,10 +38,12 @@ const Home: NextPage = () => {
   const { meta, about } = content;
 
   const { locale } = useRouter();
+  const { t } = useTranslation();
 
   return (
     <Page title={meta.title} description={meta.desc}>
       <Hero />
+      <Text color="white">{t('learn')}</Text>
       <Content px={4}>
         <Flex
           id="about"
