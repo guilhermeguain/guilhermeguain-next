@@ -2,22 +2,21 @@ import React from 'react';
 import { Box, Flex, Heading, Text, List, ListItem, ListIcon, Image } from '@chakra-ui/react';
 import { FaChevronRight } from 'react-icons/fa';
 
-import { useApp } from '../../contexts/App';
+import { useDataDrivenSeo } from './hooks/useDataDrivenSeo';
 
 export const DataDrivenSeo = () => {
-  const { content } = useApp();
-  const { dataDrivenSeo } = content;
+  const { t, dataDrivenSeo } = useDataDrivenSeo();
 
   return (
-    <Flex direction="column" gap={8}>
+    <Flex direction="column" gap={8} pt={16}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-        {dataDrivenSeo.title}
+        {t('data-driven-seo:title')}
       </Heading>
       <Flex direction={['column', 'column', 'column', 'row']} gap={8}>
-        {dataDrivenSeo.items.map(({ id, title, icon, items }) => (
+        {dataDrivenSeo.map(({ id, icon, list }) => (
           <Box key={id} flex={1}>
             <Flex gap={4} alignItems="center" mb={4}>
-              <Image as={icon} title={title} alt={title} />
+              <Image as={icon} title={id} alt={id} />
               <Heading
                 as="h3"
                 fontSize="sm"
@@ -25,14 +24,16 @@ export const DataDrivenSeo = () => {
                 fontWeight="bold"
                 color="gray.400"
               >
-                {title}
+                {t(`data-driven-seo:${id}.title`)}
               </Heading>
             </Flex>
             <List spacing={4}>
-              {items.map((item, index) => (
-                <ListItem key={index} display="flex" alignItems="baseline">
+              {list.map((listItem) => (
+                <ListItem key={listItem} display="flex" alignItems="baseline">
                   <ListIcon as={FaChevronRight} color="secondary.400" fontSize="xs" />
-                  <Text fontSize={['sm', 'sm', 'md']}>{item}</Text>
+                  <Text fontSize={['sm', 'sm', 'md']}>
+                    {t(`data-driven-seo:${id}.${listItem}`)}
+                  </Text>
                 </ListItem>
               ))}
             </List>

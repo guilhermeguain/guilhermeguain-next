@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import {
   Link,
   IconButton,
@@ -13,13 +14,12 @@ import {
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { useApp } from '../../../../contexts/App';
+import { MenuProps } from '../../types';
 
-export const MobileMenu = () => {
+export const MobileMenu = ({ items }: MenuProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const { content } = useApp();
-  const { menu } = content;
+  const { t } = useTranslation('menu');
 
   return (
     <>
@@ -46,15 +46,15 @@ export const MobileMenu = () => {
           <DrawerHeader />
           <DrawerBody>
             <Stack spacing={4}>
-              {menu.items.map(({ href, label }) => (
+              {items.map(({ id, href }) => (
                 <Link
-                  key={href}
+                  key={id}
                   href={href}
                   color="gray.600"
                   _hover={{ color: 'secondary.400' }}
                   onClick={onClose}
                 >
-                  {label}
+                  {t(id)}
                 </Link>
               ))}
             </Stack>

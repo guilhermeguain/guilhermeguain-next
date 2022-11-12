@@ -1,11 +1,10 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Progress } from '@chakra-ui/react';
 
-import { useApp } from '../../contexts/App';
+import { useSoftSkills } from './hooks/useSoftSkills';
 
 export const SoftSkills = () => {
-  const { content } = useApp();
-  const { about } = content;
+  const { t, softSkills } = useSoftSkills();
 
   return (
     <Flex direction="column" flex={1} w={72}>
@@ -20,13 +19,13 @@ export const SoftSkills = () => {
         color="gray.800"
         textTransform="uppercase"
       >
-        Soft Skills
+        {t('about:soft-skills')}
       </Heading>
       <Flex direction="column" gap={4} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
-        {about.softSkills.map(({ slug, label, value }) => (
-          <Box key={slug}>
+        {softSkills.map(({ id, value }) => (
+          <Box key={id}>
             <Text textTransform="uppercase" fontSize="xs" fontWeight="bold" color="gray.500">
-              {label}
+              {t(`soft-skills:${id}`)}
             </Text>
             <Progress
               hasStripe

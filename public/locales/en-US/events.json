@@ -1,0 +1,45 @@
+{
+  "title": "Events",
+  "next-js-conf": {
+    "title": "Next.js Conf",
+    "host": "Vercel",
+    "date": "10/2022",
+    "location": "Online"
+  },
+  "seo-summit": {
+    "title": "SEO Summit",
+    "host": "Conversion",
+    "date": "09/2022",
+    "location": "Online"
+  },
+  "dowhile-2020": {
+    "title": "DoWhile 2020",
+    "host": "Rocketseat",
+    "date": "12/2020",
+    "location": "Online"
+  },
+  "semrush-live": {
+    "title": "Semrush Live",
+    "host": "Semrush",
+    "date": "10/2019",
+    "location": "São Paulo, SP"
+  },
+  "google-cloud-summit": {
+    "title": "Google Cloud Summit",
+    "host": "Google",
+    "date": "12/2018",
+    "location": "São Paulo, SP"
+  },
+  "wordcamp-sao-paulo-2018": {
+    "title": "WordCamp São Paulo 2018",
+    "host": "Community",
+    "date": "10/2018",
+    "location": "São Paulo, SP"
+  },
+  "google-amp-roadshow-brazil": {
+    "title": "Google AMP Roadshow Brazil",
+    "host": "Google",
+    "date": "08/2018",
+    "location": "São Paulo, SP"
+  }
+}

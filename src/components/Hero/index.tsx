@@ -1,14 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import { Box, Flex, Image, Heading, Text, HStack } from '@chakra-ui/react';
 import { SiReact, SiTypescript, SiEslint } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
-import { useApp } from '../../contexts/App';
-
 export const Hero = () => {
-  const { content } = useApp();
-  const { hero } = content;
-  const { name, role, desc } = hero;
+  const { t } = useTranslation(['common', 'hero']);
 
   return (
     <Box as="main" bg="url('/images/bg-hero.jpg')" position="relative" zIndex="10">
@@ -25,13 +22,13 @@ export const Hero = () => {
         gap={2}
       >
         <Heading as="h2" size={['sm', 'lg']} color="gray.500">
-          {name}
+          {t('common:name')}
         </Heading>
         <Heading as="h1" size={['lg', '2xl']} color="gray.300">
-          {role}
+          {t('common:role')}
         </Heading>
         <Text as="h3" color="gray.400" fontSize={['md', 'xl']} my={2}>
-          {desc}
+          {t('hero:desc')}
         </Text>
         <HStack
           bg="primary.400"

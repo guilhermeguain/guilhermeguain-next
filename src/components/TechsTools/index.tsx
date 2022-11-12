@@ -1,13 +1,10 @@
 import React from 'react';
 import { Box, Flex, Heading, Image, HStack } from '@chakra-ui/react';
 
-import { techs } from './techs';
-import { useApp } from '../../contexts/App';
+import { useTechsTools } from './hooks/useTechsTools';
 
 export const TechsTools = () => {
-  const { content } = useApp();
-  const { about } = content;
-  const { techsTools } = about;
+  const { t, techs } = useTechsTools();
 
   return (
     <Flex direction="column" flex={1} w={72}>
@@ -22,7 +19,7 @@ export const TechsTools = () => {
         color="gray.200"
         textTransform="uppercase"
       >
-        {techsTools.title}
+        {t('about:techs-tools.title')}
       </Heading>
       <Flex direction="column" gap={8} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
         <Box>
@@ -34,7 +31,7 @@ export const TechsTools = () => {
             color="gray.500"
             mb={2}
           >
-            {techsTools.primary}
+            {t('about:techs-tools.primary')}
           </Heading>
           <HStack fontSize="3xl" gap={2}>
             {techs.primary.map(({ id, title, icon, color }) => (
@@ -51,7 +48,7 @@ export const TechsTools = () => {
             color="gray.500"
             mb={2}
           >
-            {techsTools.secondary}
+            {t('about:techs-tools.secondary')}
           </Heading>
           <HStack fontSize="3xl" gap={2}>
             {techs.secondary.map(({ id, title, icon, color }) => (
@@ -68,7 +65,7 @@ export const TechsTools = () => {
             color="gray.500"
             mb={2}
           >
-            {techsTools.design}
+            {t('about:techs-tools.design')}
           </Heading>
           <HStack fontSize="3xl" gap={2}>
             {techs.design.map(({ id, title, icon }) => (

@@ -1,0 +1,27 @@
+{
+  "title": "Experience",
+  "health-protection": {
+    "company": "Health Protection",
+    "role": "Front-end Developer",
+    "period": "09/2020 - 10/2022",
+    "summary": "Project developed in Next.js with TypeScript. Among the main tools used in the project are Context API, Axios, Tailwind CSS, Chakra UI, ESLint and React Query. For content management we used Sanity CMS. My activities involved front-end development, integration with APIs, creation of components and pages, maintenance and bug fixing and continuous deployment with Netlify and Vercel."
+  },
+  "toxicologia-pardini": {
+    "company": "Toxicologia Pardini",
+    "role": "Full-stack Developer",
+    "period": "08/2018 - present",
+    "summary": "Toxicological examination company where I work as a full-stack developer, responsible for developing and maintaining the company's website, in addition to developing integrations with internal systems, CRM and ERP. Among the main activities are SEO optimization, development of new features, bug fixing and website maintenance."
+  },
+  "inter-american": {
+    "company": "Inter-American Coalition",
+    "role": "WordPress Developer",
+    "period": "08/2021 - 09/2021",
+    "summary": "Project developed with WordPress Multisite to unify the organization's websites, facilitating the maintenance and management of content. I am currently responsible for monitoring and maintaining the server, updating WordPress plugins and themes, and managing website content."
+  },
+  "360-comunicacao": {
+    "company": "360 Comunicação Digital",
+    "role": "WordPress Developer",
+    "period": "05/2013 - 08/2018",
+    "summary": "Communication agency where I developed several projects in WordPress, participating in the entire development process, from the creation of the layout to the publication of the website. My activities involved creating and customizing WordPress themes and plugins, optimizing performance and SEO, creating landing pages and integrating with APIs."
+  }
+}

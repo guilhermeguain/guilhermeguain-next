@@ -1,19 +1,18 @@
 import React from 'react';
 import { Flex, Heading, SimpleGrid, Image, Link } from '@chakra-ui/react';
 
-import { useApp } from '../../contexts/App';
+import { useProjects } from './hooks/useProjects';
 
 export const Projects = () => {
-  const { content } = useApp();
-  const { projects } = content;
+  const { t, projects } = useProjects();
 
   return (
     <Flex direction="column" gap={8}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-        {projects.title}
+        {t('projects:title')}
       </Heading>
       <SimpleGrid columns={[1, 2, 3, 4]} gap={8}>
-        {projects.items.map(({ id, title, link }) => (
+        {projects.map(({ id, link }) => (
           <Flex
             key={id}
             direction="column"
@@ -25,7 +24,12 @@ export const Projects = () => {
             height={36}
           >
             <Link href={link} target="_blank" rel="external nofollow noreferrer noopener" maxW={48}>
-              <Image src={`/images/projects/${id}.png`} alt={title} title={title} maxH={24} />
+              <Image
+                src={`/images/projects/${id}.png`}
+                alt={t(`projects:${id}`)}
+                title={t(`projects:${id}`)}
+                maxH={24}
+              />
             </Link>
           </Flex>
         ))}

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Progress } from '@chakra-ui/react';
 
-import { useApp } from '../../contexts/App';
+import { useHardSkills } from './hooks/useHardSkills';
 
 export const HardSkills = () => {
-  const { content } = useApp();
-  const { about } = content;
+  const { t, hardSkills } = useHardSkills();
 
   return (
     <Flex direction="column" flex={1} w={72}>
@@ -20,13 +19,13 @@ export const HardSkills = () => {
         color="gray.800"
         textTransform="uppercase"
       >
-        Hard Skills
+        {t('about:hard-skills')}
       </Heading>
       <Flex direction="column" gap={4} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
-        {about.hardSkills.map(({ slug, label, value }) => (
-          <Box key={slug}>
+        {hardSkills.map(({ id, value }) => (
+          <Box key={id}>
             <Text textTransform="uppercase" fontSize="xs" fontWeight="bold" color="gray.500">
-              {label}
+              {t(`hard-skills:${id}`)}
             </Text>
             <Progress
               hasStripe

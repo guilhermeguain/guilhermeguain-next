@@ -1,0 +1,39 @@
+{
+  "title": "Education",
+  "ignite": {
+    "title": "React.js - Ignite",
+    "institution": "Rocketseat",
+    "period": "07/2022 - 07/2022",
+    "location": "Online"
+  },
+  "gostack": {
+    "title": "GoStack - Node.js, React.js and React Native",
+    "institution": "Rocketseat",
+    "period": "10/2020 - 03/2021",
+    "location": "Online"
+  },
+  "nanodegree-udacity": {
+    "title": "Nanodegree Front-end Web Developer",
+    "institution": "Udacity",
+    "period": "11/2017 - 04/2018",
+    "location": "Online"
+  },
+  "stack-alura": {
+    "title": "HTML5, CSS3, JavaScript and Bootstrap",
+    "institution": "Alura",
+    "period": "11/2017 - 02/2018",
+    "location": "Online"
+  },
+  "php-impacta": {
+    "title": "Programming logic and PHP",
+    "institution": "Impacta",
+    "period": "10/2012 - 06/2014",
+    "location": "São Paulo, SP"
+  },
+  "graphic-design": {
+    "title": "Graphic Design Technician",
+    "institution": "Alpha Channel",
+    "period": "05/2012 - 05/2013",
+    "location": "São Paulo, SP"
+  }
+}

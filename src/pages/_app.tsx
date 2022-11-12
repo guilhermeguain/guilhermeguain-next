@@ -6,19 +6,15 @@ import { appWithTranslation } from 'next-i18next';
 
 import { theme } from '../styles/theme';
 
-import { AppProvider } from '../contexts/App';
-
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-MFKHPQ4' });
   }, []);
 
   return (
-    <AppProvider>
-      <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </AppProvider>
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
   );
 }
 

@@ -1,0 +1,24 @@
+{
+  "title": "Data-driven SEO",
+  "semrush": {
+    "title": "Semrush",
+    "semrush-1": "Keyword and competitor research and analysis",
+    "semrush-2": "Monitoring and correction of errors identified by the audit",
+    "semrush-3": "Performance and positioning monitoring"
+  },
+  "google-tag-manager": {
+    "title": "Google Tag Managger",
+    "google-tag-manager-1": "Setup of tags, triggers and variables",
+    "google-tag-manager-2": "Creation of triggers based on custom events",
+    "google-tag-manager-3": "Configuration for communication between iframes",
+    "google-tag-manager-4": "Capture of information through data layer"
+  },
+  "google-analytics": {
+    "title": "Google Analytics",
+    "google-analytics-1": "Tag installation using Google Tag Manager",
+    "google-analytics-2": "Setup of custom dimensions and metrics",
+    "google-analytics-3": "GA4 Setup",
+    "google-analytics-4": "Setup of filters and conversion goals",
+    "google-analytics-5": "Use of data layer to get data"
+  }
+}

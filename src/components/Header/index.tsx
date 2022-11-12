@@ -9,13 +9,10 @@ import { DesktopMenu } from './components/DesktopMenu';
 
 import { useHeader } from './hooks/useHeader';
 
-type Props = {
-  title: string;
-  logo?: string;
-};
+import { HeaderProps } from './types';
 
-export const Header = ({ title, logo = '/images/logo.svg' }: Props) => {
-  const { isMobile } = useHeader();
+export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
+  const { menuItems, isMobile } = useHeader();
 
   return (
     <>
@@ -48,10 +45,10 @@ export const Header = ({ title, logo = '/images/logo.svg' }: Props) => {
             </NextLink>
           </Box>
           <When value={isMobile}>
-            <MobileMenu />
+            <MobileMenu items={menuItems} />
           </When>
           <When value={!isMobile}>
-            <DesktopMenu />
+            <DesktopMenu items={menuItems} />
           </When>
         </Flex>
       </Box>

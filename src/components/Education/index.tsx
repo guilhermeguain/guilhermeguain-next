@@ -1,21 +1,20 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, VStack, StackDivider } from '@chakra-ui/react';
 
-import { useApp } from '../../contexts/App';
+import { useEducation } from './hooks/useEducation';
 
 export const Education = () => {
-  const { content } = useApp();
-  const { education } = content;
+  const { t, educations } = useEducation();
 
   return (
     <Flex direction="column" gap={8} flex={1}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-        {education.title}
+        {t('education:title')}
       </Heading>
       <VStack divider={<StackDivider borderColor="gray.700" />} alignItems="flex-start" spacing={4}>
-        {education.items.map(({ title, institution, period, location }, index) => (
+        {educations.map((education) => (
           <Flex
-            key={index}
+            key={education}
             gap={[4, 8]}
             justifyContent="space-between"
             alignItems="center"
@@ -23,7 +22,7 @@ export const Education = () => {
           >
             <Box flex={1}>
               <Heading as="h3" fontSize={['sm', 'md']} fontWeight="medium" color="gray.50">
-                {title}
+                {t(`education:${education}.title`)}
               </Heading>
               <Text
                 color="gray.500"
@@ -31,15 +30,15 @@ export const Education = () => {
                 textTransform="uppercase"
                 fontWeight="semibold"
               >
-                {institution}
+                {t(`education:${education}.institution`)}
               </Text>
             </Box>
             <Box textAlign="right">
               <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.500">
-                {period}
+                {t(`education:${education}.period`)}
               </Text>
               <Text fontSize="xs" fontWeight="medium" color="gray.500">
-                {location}
+                {t(`education:${education}.location`)}
               </Text>
             </Box>
           </Flex>

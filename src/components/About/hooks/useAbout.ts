@@ -1,0 +1,58 @@
+import { useMemo } from 'react';
+import { useTranslation } from 'next-i18next';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
+import { IoDocumentTextOutline } from 'react-icons/io5';
+
+export const useAbout = () => {
+  const { t } = useTranslation(['common', 'about']);
+
+  const contacts = useMemo(
+    () => [
+      {
+        id: 'linkedin',
+        icon: BsLinkedin,
+        url: 'https://www.linkedin.com/in/guilhermeguain/',
+      },
+      {
+        id: 'github',
+        icon: BsGithub,
+        url: 'https://github.com/guilhermeguain/',
+      },
+      {
+        id: 'email',
+        icon: GoMail,
+        url: 'mailto:guilherme.guain@gmail.com',
+      },
+      {
+        id: 'curriculum',
+        icon: IoDocumentTextOutline,
+        url: '/documents/curriculum-guilherme-guain-en.pdf',
+      },
+    ],
+    [],
+  );
+
+  const paragraphs = useMemo(
+    () => [
+      {
+        id: 'paragraph-1',
+        highlights: ['2012', 'wordpress', 'react-js', 'clean-code', 'solid', 'problem-solving'],
+      },
+      {
+        id: 'paragraph-2',
+        highlights: [],
+      },
+    ],
+    [],
+  );
+
+  const knowledges = useMemo(() => ['design', 'seo', 'devops', 'infrastructure'], []);
+
+  return {
+    t,
+    contacts,
+    paragraphs,
+    knowledges,
+  };
+};
