@@ -52,7 +52,6 @@ const Home: NextPage = () => {
         >
           <Avatar name="Guilherme Guain" src="/images/guilherme-guain.jpg" size="2xl" />
           <Flex direction="column" gap={4} w="100%" textAlign={['center', 'left']}>
-            <Text color="primary.500">{locale}</Text>
             <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
               {about.name}
             </Heading>
