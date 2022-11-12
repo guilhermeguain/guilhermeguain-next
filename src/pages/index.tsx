@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import type { NextPage, GetServerSideProps } from 'next';
 import {
@@ -39,6 +40,10 @@ const Home: NextPage = () => {
 
   const { locale } = useRouter();
   const { t } = useTranslation();
+
+  useEffect(() => {
+    i18next.changeLanguage(locale);
+  }, [locale]);
 
   return (
     <Page title={meta.title} description={meta.desc}>
