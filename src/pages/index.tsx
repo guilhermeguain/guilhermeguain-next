@@ -33,7 +33,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getServerSideProps>) => {
           <Projects />
         </Flex>
 
-        <Flex py={[16, 20]} direction={['column', 'column', 'row']} gap={8}>
+        <Flex id="education" py={[16, 20]} direction={['column', 'column', 'row']} gap={8}>
           <Education />
           <Events />
         </Flex>

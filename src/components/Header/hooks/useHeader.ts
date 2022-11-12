@@ -21,6 +21,10 @@ export const useHeader = () => {
         id: 'projects',
         href: '#projects',
       },
+      {
+        id: 'education',
+        href: '#education',
+      },
     ],
     [],
   );

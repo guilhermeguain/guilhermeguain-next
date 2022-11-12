@@ -3,11 +3,13 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import { Box, Flex, Text, Link, Stack, StackDivider } from '@chakra-ui/react';
 
+import { LangSelector } from '../LangSelector';
+
 export const Footer = () => {
   return (
     <Box as="footer" bg="gray.900" py={4}>
       <Flex
-        direction={['column', 'row']}
+        direction={['column', 'column', 'row']}
         w="100%"
         maxWidth={'7xl'}
         mx="auto"
@@ -27,11 +29,12 @@ export const Footer = () => {
           </Link>
         </NextLink>
         <Stack
-          direction={['column', 'row']}
+          direction={['column', 'column', 'row']}
           divider={<StackDivider borderColor="gray.600" />}
           gap={2}
           lineHeight={1}
           textAlign="center"
+          flex={1}
         >
           <Stack
             direction={['row', 'row']}
@@ -44,6 +47,11 @@ export const Footer = () => {
           </Stack>
           <Text>{`2011 - ${new Date().getFullYear()}`}</Text>
         </Stack>
+        <Flex justifyContent={['center', 'center', 'flex-end']}>
+          <Box>
+            <LangSelector />
+          </Box>
+        </Flex>
       </Flex>
     </Box>
   );
