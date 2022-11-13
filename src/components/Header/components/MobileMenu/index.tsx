@@ -1,4 +1,6 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
 import {
   Link,
@@ -20,6 +22,8 @@ export const MobileMenu = ({ items }: MenuProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const { t } = useTranslation('menu');
+
+  const { asPath } = useRouter();
 
   return (
     <>
@@ -47,15 +51,15 @@ export const MobileMenu = ({ items }: MenuProps) => {
           <DrawerBody>
             <Stack spacing={4}>
               {items.map(({ id, href }) => (
-                <Link
-                  key={id}
-                  href={href}
-                  color="gray.600"
-                  _hover={{ color: 'secondary.400' }}
-                  onClick={onClose}
-                >
-                  {t(id)}
-                </Link>
+                <NextLink key={id} href={href} passHref scroll={false}>
+                  <Link
+                    color={asPath.includes(id) ? 'secondary.400' : 'gray.600'}
+                    _hover={{ color: 'secondary.400' }}
+                    onClick={onClose}
+                  >
+                    {t(id)}
+                  </Link>
+                </NextLink>
               ))}
             </Stack>
           </DrawerBody>

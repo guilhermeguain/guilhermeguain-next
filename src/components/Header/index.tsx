@@ -19,7 +19,7 @@ export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
       <Box
         bg="rgba(26,32,44,0.7)"
         position="fixed"
-        h={[12, 16]}
+        h={16}
         top="0"
         left="0"
         right="0"
