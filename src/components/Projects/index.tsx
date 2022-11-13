@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flex, Heading, SimpleGrid, Image, Link } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Flex, Heading, SimpleGrid, Link } from '@chakra-ui/react';
 
 import { useProjects } from './hooks/useProjects';
 
@@ -23,12 +24,15 @@ export const Projects = () => {
             justifyContent="center"
             height={36}
           >
-            <Link href={link} target="_blank" rel="external nofollow noreferrer noopener" maxW={48}>
+            <Link href={link} target="_blank" rel="external nofollow noreferrer noopener">
               <Image
                 src={`/images/projects/${id}.png`}
                 alt={t(`projects:${id}`)}
                 title={t(`projects:${id}`)}
-                maxH={24}
+                placeholder="blur"
+                blurDataURL={`/images/projects/${id}.png`}
+                width="200px"
+                height="60px"
               />
             </Link>
           </Flex>

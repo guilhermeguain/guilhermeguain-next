@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, Progress } from '@chakra-ui/react';
+import { Box, Flex, Heading, Progress } from '@chakra-ui/react';
 
 import { useSoftSkills } from './hooks/useSoftSkills';
 
@@ -24,9 +24,16 @@ export const SoftSkills = () => {
       <Flex direction="column" gap={4} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
         {softSkills.map(({ id, value }) => (
           <Box key={id}>
-            <Text textTransform="uppercase" fontSize="xs" fontWeight="bold" color="gray.500">
+            <Heading
+              as="h4"
+              textTransform="uppercase"
+              fontSize="xs"
+              fontWeight="bold"
+              lineHeight="tall"
+              color="gray.500"
+            >
               {t(`soft-skills:${id}`)}
-            </Text>
+            </Heading>
             <Progress
               hasStripe
               isAnimated

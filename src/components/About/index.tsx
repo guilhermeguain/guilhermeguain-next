@@ -36,9 +36,16 @@ export const About = () => {
       >
         <Avatar name="Guilherme Guain" src="/images/guilherme-guain.jpg" size="2xl" />
         <Flex direction="column" gap={4} w="100%" textAlign={['center', 'left']}>
-          <Heading as="h3" fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
+          <Text
+            as="span"
+            color="secondary.400"
+            fontSize="2xl"
+            borderBottom="1px"
+            pb={2}
+            borderColor="gray.200"
+          >
             {t('common:name')}
-          </Heading>
+          </Text>
           <Heading fontSize="lg" fontWeight="medium" color="gray.300">
             {t('common:role')}
           </Heading>

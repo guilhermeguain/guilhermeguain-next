@@ -1,5 +1,5 @@
 import React from 'react';
-import type { GetServerSideProps, InferGetStaticPropsType } from 'next';
+import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Flex } from '@chakra-ui/react';
@@ -15,7 +15,7 @@ import { Projects } from '../components/Projects';
 import { Events } from '../components/Events';
 import { Education } from '../components/Education';
 
-const Home = (_props: InferGetStaticPropsType<typeof getServerSideProps>) => {
+const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t } = useTranslation(['meta']);
 
   return (
@@ -42,7 +42,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getServerSideProps>) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en-US', [
@@ -60,6 +60,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         'events',
       ])),
     },
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 };
 
