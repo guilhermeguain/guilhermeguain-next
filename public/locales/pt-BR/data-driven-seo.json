@@ -1,24 +1,24 @@
 {
-  "title": "Data-driven SEO",
+  "title": "Orientado por dados SEO",
   "semrush": {
     "title": "Semrush",
-    "semrush-1": "Keyword and competitor research and analysis",
-    "semrush-2": "Monitoring and correction of errors identified by the audit",
-    "semrush-3": "Performance and positioning monitoring"
+    "semrush-1": "Pesquisa e análise de palavras-chave e da concorrência",
+    "semrush-2": "Monitoramento e correção dos erros identificados pela auditoria",
+    "semrush-3": "Monitoramento de desempenho e posicionamento"
   },
   "google-tag-manager": {
     "title": "Google Tag Managger",
-    "google-tag-manager-1": "Setup of tags, triggers and variables",
-    "google-tag-manager-2": "Creation of triggers based on custom events",
-    "google-tag-manager-3": "Configuration for communication between iframes",
-    "google-tag-manager-4": "Capture of information through data layer"
+    "google-tag-manager-1": "Configuração de tags, gatilhos e variáveis",
+    "google-tag-manager-2": "Criação de gatilhos baseados em eventos personalizados",
+    "google-tag-manager-3": "Configuração para comunicação entre iframes",
+    "google-tag-manager-4": "Captura de informações através da camada de dados"
   },
   "google-analytics": {
     "title": "Google Analytics",
-    "google-analytics-1": "Tag installation using Google Tag Manager",
-    "google-analytics-2": "Setup of custom dimensions and metrics",
-    "google-analytics-3": "GA4 Setup",
-    "google-analytics-4": "Setup of filters and conversion goals",
-    "google-analytics-5": "Use of data layer to get data"
+    "google-analytics-1": "Instalação de tags usando o Google Tag Manager",
+    "google-analytics-2": "Configuração de dimensões e métricas personalizadas",
+    "google-analytics-3": "Configuração do GA4",
+    "google-analytics-4": "Configuração de filtros e metas de conversão",
+    "google-analytics-5": "Uso da camada de dados para obter dados"
   }
 }

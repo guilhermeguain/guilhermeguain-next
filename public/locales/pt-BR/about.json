@@ -6,8 +6,8 @@
   "email": "E-mail",
   "curriculum": "Currículo",
   "paragraphs": {
-    "paragraph-1": "I've been working with web development since 2012, when I started developing WordPress websites at a communication agency. It took me approximately 8 years to delve into this technology, until in 2020 I decided to migrate and specialize in React.js. Since then I've been using technologies like React.js, Next.js, TypeScript, ESLint, Tailwind CSS, Axios, Chakra UI, Styled Components, React Query, Git, among others. I follow principles and practices such as Clean Code and SOLID and my specialty is problem solving.",
-    "paragraph-2": "Throughout my career I also took on tasks in related areas, where I acquired knowledge in:"
+    "paragraph-1": "Atuo com desenvolvimento web desde 2012, quando iniciei em uma agência de comunicação criando sites em Wordpress. Após 8 anos de experiência nessa tecnologia, iniciei uma especialização em React.js. Desde então tenho usado tecnologias como React.js, Next.js, TypeScript, ESLint, Tailwind CSS, Axios, Chakra UI, Styled Components, React Query, Git, entre outras. Além disso, sigo princípios de Clean Code e SOLID respeitando práticas de SEO técnico com o foco em resolução de problemas.",
+    "paragraph-2": "Ao longo de minha carreira também assumi tarefas em áreas relacionadas, nas quais adquiri conhecimentos em:"
   },
   "highlights": {
     "2012": "2012",
@@ -15,38 +15,38 @@
     "react-js": "React.js",
     "clean-code": "Clean Code",
     "solid": "SOLID",
-    "problem-solving": "problem solving"
+    "problem-solving": "resolução de problemas"
   },
   "knowledges": {
     "design": {
       "title": "Design",
-      "summary": "Layout creation, image manipulation, use of tools like Figma, Photoshop and Illustrator. Knowledge of UX/UI."
+      "summary": "Criação de layout, manipulação de imagem, uso de ferramentas como Figma, Photoshop e Illustrator. Conhecimento da UX/UI."
     },
     "seo": {
       "title": "SEO",
-      "summary": "Technical SEO, code optimization, headers and directives configuration, sitemap creation and use of tools like Semrush, Google Tag Manager, Google Analytics and Google Search Console."
+      "summary": "SEO técnico, otimização de código, configuração de cabeçalhos e diretrizes, criação de mapa do site e uso de ferramentas como Semrush, Google Tag Manager, Google Analytics e Google Search Console."
     },
     "devops": {
       "title": "DevOps",
-      "summary": "CI/CD, Git and Git Flow, standardization of settings, definition of environments, sense of urgency, adaptability and teamwork."
+      "summary": "CI/CD, Git e Git Flow, padronização de configurações, definição de ambientes, senso de urgência, adaptabilidade e trabalho em equipe."
     },
     "infrastructure": {
-      "title": "Infrastructure",
-      "summary": "Configuration of Linux servers (Debian/Ubuntu), configuration of web servers such as Apache and Nginx, creation of virtual machines and databases on Google Cloud, installation of various components, SSH connection configuration, firewall adjustment and opening of ports and configuration of SSL certificates."
+      "title": "Infraestrutura",
+      "summary": "Configuração de servidores Linux (Debian/Ubuntu), configuração de servidores web como Apache e Nginx, criação de máquinas virtuais e bancos de dados no Google Cloud, instalação de vários componentes, configuração de conexão SSH, ajuste de firewall e abertura de portas e configuração de certificados SSL."
     }
   },
   "hard-skills": "Hard skills",
   "soft-skills": "Soft skills",
   "techs-tools": {
     "title": "Techs & Tools",
-    "primary": "Primary",
-    "secondary": "Secondary",
+    "primary": "Primária",
+    "secondary": "Secundária",
     "design": "Design"
   },
   "languages": {
-    "title": "Languages",
-    "portuguese": "Portuguese",
-    "english": "English",
+    "title": "Idiomas",
+    "portuguese": "Português",
+    "english": "Inglês",
     "speaking": "Speaking",
     "listening": "Listening",
     "writing": "Writing"

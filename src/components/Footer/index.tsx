@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import NextLink from 'next/link';
 import Image from 'next/image';
 import { Box, Flex, Text, Link, Stack, StackDivider } from '@chakra-ui/react';
@@ -6,6 +7,8 @@ import { Box, Flex, Text, Link, Stack, StackDivider } from '@chakra-ui/react';
 import { LangSelector } from '../LangSelector';
 
 export const Footer = () => {
+  const { t } = useTranslation(['common']);
+
   return (
     <Box as="footer" bg="gray.900" py={4}>
       <Flex
@@ -42,8 +45,8 @@ export const Footer = () => {
             gap={2}
             lineHeight={1}
           >
-            <Text>Guilherme Guain</Text>
-            <Text>Front-end Developer</Text>
+            <Text>{t('common:name')}</Text>
+            <Text>{t('common:role')}</Text>
           </Stack>
           <Text>{`2011 - ${new Date().getFullYear()}`}</Text>
         </Stack>

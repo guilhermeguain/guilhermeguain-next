@@ -2,26 +2,26 @@
   "title": "Experience",
   "health-protection": {
     "company": "Health Protection",
-    "role": "Front-end Developer",
+    "role": "Desenvolvedor Front-end",
     "period": "09/2020 - 10/2022",
-    "summary": "Project developed in Next.js with TypeScript. Among the main tools used in the project are Context API, Axios, Tailwind CSS, Chakra UI, ESLint and React Query. For content management we used Sanity CMS. My activities involved front-end development, integration with APIs, creation of components and pages, maintenance and bug fixing and continuous deployment with Netlify and Vercel."
+    "summary": "Projeto desenvolvido em Next.js com TypeScript e ferramentas como Context API, Axios, Tailwind CSS, Chakra UI, ESLint e React Query. Para o gerenciamento de conteúdo utilizamos o Sanity CMS. Minhas atividades envolviam o desenvolvimento do front-end, integração com APIs, criação de componentes e páginas, manutenção e correção de bugs e implantação contínua com Netlify e Vercel."
   },
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
-    "role": "Full-stack Developer",
-    "period": "08/2018 - present",
-    "summary": "Toxicological examination company where I work as a full-stack developer, responsible for developing and maintaining the company's website, in addition to developing integrations with internal systems, CRM and ERP. Among the main activities are SEO optimization, development of new features, bug fixing and website maintenance."
+    "role": "Desenvolvedor Full-stack",
+    "period": "08/2018 - atual",
+    "summary": "Empresa referência em exame toxicológico onde atuo como desenvolvedor full-stack responsável pelo desenvolvimento e manutenção do site. Entre as principais atividades estão: otimização de SEO on-page, implementação de novas funcionalidades, correção de bugs e integrações com sistemas internos, CRM e ERP."
   },
   "inter-american": {
     "company": "Inter-American Coalition",
-    "role": "WordPress Developer",
+    "role": "Desenvolvedor WordPress",
     "period": "08/2021 - 09/2021",
-    "summary": "Project developed with WordPress Multisite to unify the organization's websites, facilitating the maintenance and management of content. I am currently responsible for monitoring and maintaining the server, updating WordPress plugins and themes, and managing website content."
+    "summary": "Projeto desenvolvido com WordPress Multisite para unificar os websites da organização, facilitando a manutenção e o gerenciamento do conteúdo. Atualmente sou responsável pelo monitoramento e manutenção do servidor, atualização dos plugins e temas do WordPress, e gerenciamento do conteúdo do site."
   },
   "360-comunicacao": {
     "company": "360 Comunicação Digital",
-    "role": "WordPress Developer",
+    "role": "Desenvolvedor WordPress",
     "period": "05/2013 - 08/2018",
-    "summary": "Communication agency where I developed several projects in WordPress, participating in the entire development process, from the creation of the layout to the publication of the website. My activities involved creating and customizing WordPress themes and plugins, optimizing performance and SEO, creating landing pages and integrating with APIs."
+    "summary": "Como uma agência de comunicação focada em posicionar empresas com o marketing digital, participava de todo o processo, desde a criação do layout até a publicação do site em Wordpress. Minhas atividades envolviam a estruturação e customização de temas e plugins para WordPress, otimização de performance e SEO, criação de landing pages e integração com APIs."
   }
 }
