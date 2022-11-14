@@ -1,10 +1,12 @@
 import { useMemo } from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 
 export const useAbout = () => {
+  const { locale } = useRouter();
   const { t } = useTranslation(['common', 'about']);
 
   const contacts = useMemo(
@@ -27,7 +29,7 @@ export const useAbout = () => {
       {
         id: 'curriculum',
         icon: IoDocumentTextOutline,
-        url: '/documents/curriculum-guilherme-guain-en.pdf',
+        url: `/documents/cv-guilherme-guain-${locale}.pdf`,
       },
     ],
     [],
