@@ -21,22 +21,24 @@ export const HardSkills = () => {
       >
         {t('about:hard-skills')}
       </Heading>
-      <Flex direction="column" gap={4} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
+      <Flex direction="column" gap={4} bg="gray.50" p={4} flex={1} borderBottomRadius="xl">
         {hardSkills.map(({ id, value }) => (
           <Box key={id}>
             <Heading
               as="h4"
+              id={`progressbar-${id}`}
               textTransform="uppercase"
               fontSize="xs"
               fontWeight="bold"
               lineHeight="tall"
-              color="gray.500"
+              color="gray.600"
             >
               {t(`hard-skills:${id}`)}
             </Heading>
             <Progress
               hasStripe
               isAnimated
+              aria-labelledby={`progressbar-${id}`}
               value={value}
               flex={1}
               colorScheme="tertiary"

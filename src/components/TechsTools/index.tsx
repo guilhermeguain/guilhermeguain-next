@@ -21,14 +21,14 @@ export const TechsTools = () => {
       >
         {t('about:techs-tools.title')}
       </Heading>
-      <Flex direction="column" gap={8} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
+      <Flex direction="column" gap={8} bg="gray.50" p={4} flex={1} borderBottomRadius="xl">
         <Box>
           <Heading
             as="h4"
             fontSize="xs"
             textTransform="uppercase"
             fontWeight="bold"
-            color="gray.500"
+            color="gray.600"
             mb={2}
           >
             {t('about:techs-tools.primary')}

@@ -21,7 +21,7 @@ export const Languages = () => {
       >
         {t('about:languages.title')}
       </Heading>
-      <Flex gap={8} bg="gray.100" p={4} flex={1} borderBottomRadius="xl">
+      <Flex gap={8} bg="gray.50" p={4} flex={1} borderBottomRadius="xl">
         {languages.map(({ id, proficiency }) => (
           <Flex key={id} direction="column" gap={4}>
             <Heading
@@ -29,7 +29,7 @@ export const Languages = () => {
               fontSize="xs"
               textTransform="uppercase"
               fontWeight="bold"
-              color="gray.500"
+              color="gray.600"
             >
               {t(`about:languages.${id}`)}
             </Heading>
@@ -37,7 +37,7 @@ export const Languages = () => {
               {proficiency.map(({ id, value }) => (
                 <Flex key={id} gap={2} alignItems="center">
                   <CircularProgress size={6} value={value} color="primary.500" thickness={16} />
-                  <Text fontSize="xs" fontWeight="medium" color="gray.500">
+                  <Text fontSize="xs" fontWeight="medium" color="gray.600">
                     {t(`about:languages.${id}`)}
                   </Text>
                 </Flex>
