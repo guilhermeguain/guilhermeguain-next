@@ -27,7 +27,7 @@ export const Experiences = () => {
                 <Heading as="h3" fontSize="lg" fontWeight="medium" color="gray.600" mb={1}>
                   {t(`experience:${id}.company`)}
                 </Heading>
-                <Flex gap={4} alignItems="center">
+                <Flex direction={['column', 'row']} gap={4} alignItems={['flex-start', 'center']}>
                   <Text
                     fontSize="sm"
                     fontWeight="medium"
