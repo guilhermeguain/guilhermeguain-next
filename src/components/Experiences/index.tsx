@@ -17,10 +17,9 @@ export const Experiences = () => {
             <Flex
               direction={['column', 'column', 'row']}
               justifyContent="space-between"
-              alignItems={['flex-start', 'flex-start', 'center']}
               gap={[4, 4, 8]}
               borderBottom="1px"
-              borderColor="gray.400"
+              borderColor="gray.300"
               pb={2}
             >
               <Box>
@@ -28,15 +27,7 @@ export const Experiences = () => {
                   {t(`experience:${id}.company`)}
                 </Heading>
                 <Flex direction={['column', 'row']} gap={4} alignItems={['flex-start', 'center']}>
-                  <Text
-                    fontSize="sm"
-                    fontWeight="medium"
-                    bgColor="secondary.400"
-                    color="white"
-                    py={0.5}
-                    px={2}
-                    borderRadius="md"
-                  >
+                  <Text fontSize="sm" fontWeight="medium" color="gray.600">
                     {t(`experience:${id}.role`)}
                   </Text>
                   <Text fontSize="sm" fontWeight="medium" color="gray.600">

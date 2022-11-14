@@ -44,7 +44,7 @@ export const About = () => {
             pb={2}
             borderColor="gray.200"
           >
-            {t('common:name')}
+            {t('about:name')}
           </Text>
           <Heading fontSize="lg" fontWeight="medium" color="gray.300">
             {t('common:role')}

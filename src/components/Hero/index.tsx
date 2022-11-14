@@ -21,13 +21,13 @@ export const Hero = () => {
         textAlign="center"
         gap={2}
       >
-        <Text as="span" fontSize={['md', '3xl']} color="gray.500">
-          {t('common:name')}
-        </Text>
-        <Heading as="h1" size={['lg', '2xl']} color="gray.300">
+        <Heading as="h1" size={['lg', '2xl']} color="gray.300" order={2}>
           {t('common:role')}
         </Heading>
-        <Text as="span" color="gray.400" fontSize={['md', 'xl']} my={2}>
+        <Heading as="h2" fontSize={['md', '3xl']} color="gray.500" order={1}>
+          {t('common:name')}
+        </Heading>
+        <Text as="span" color="gray.400" fontSize={['md', 'xl']} my={2} order={3}>
           {t('hero:desc')}
         </Text>
         <HStack
@@ -39,6 +39,7 @@ export const Hero = () => {
           borderRadius="3xl"
           fontSize="x-large"
           color="white"
+          order={4}
         >
           <Image as={SiReact} title="React.js" alt="React.js" />
           <Image as={SiTypescript} title="TypeScript" alt="TypeScript" />
