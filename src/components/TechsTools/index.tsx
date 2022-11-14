@@ -45,7 +45,7 @@ export const TechsTools = () => {
             fontSize="xs"
             textTransform="uppercase"
             fontWeight="bold"
-            color="gray.500"
+            color="gray.600"
             mb={2}
           >
             {t('about:techs-tools.secondary')}
@@ -62,7 +62,7 @@ export const TechsTools = () => {
             fontSize="xs"
             textTransform="uppercase"
             fontWeight="bold"
-            color="gray.500"
+            color="gray.600"
             mb={2}
           >
             {t('about:techs-tools.design')}

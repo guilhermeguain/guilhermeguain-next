@@ -13,7 +13,7 @@ export const Experiences = () => {
       </Heading>
       <Flex direction="column" gap={8}>
         {experiences.map(({ id, badges }) => (
-          <Box key={id} bg="gray.200" p={4} borderRadius="xl">
+          <Box key={id} bg="gray.50" p={4} borderRadius="xl">
             <Flex
               direction={['column', 'column', 'row']}
               justifyContent="space-between"
@@ -42,7 +42,7 @@ export const Experiences = () => {
                 ))}
               </Flex>
             </Flex>
-            <Text color="gray.500" fontWeight="medium" textAlign="justify" mt={4}>
+            <Text color="gray.600" fontWeight="medium" textAlign="justify" mt={4}>
               {t(`experience:${id}.summary`)}
             </Text>
           </Box>

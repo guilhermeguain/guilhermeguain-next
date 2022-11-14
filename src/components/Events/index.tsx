@@ -19,7 +19,7 @@ export const Events = () => {
                 {t(`events:${event}.title`)}
               </Heading>
               <Text
-                color="gray.500"
+                color="gray.400"
                 fontSize={['2xs', 'xs']}
                 textTransform="uppercase"
                 fontWeight="semibold"
@@ -28,10 +28,10 @@ export const Events = () => {
               </Text>
             </Box>
             <Box textAlign="right">
-              <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.500">
+              <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.400">
                 {t(`events:${event}.date`)}
               </Text>
-              <Text fontSize="xs" fontWeight="medium" color="gray.500">
+              <Text fontSize="xs" fontWeight="medium" color="gray.400">
                 {t(`events:${event}.location`)}
               </Text>
             </Box>

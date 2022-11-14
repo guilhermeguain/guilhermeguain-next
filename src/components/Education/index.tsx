@@ -25,7 +25,7 @@ export const Education = () => {
                 {t(`education:${education}.title`)}
               </Heading>
               <Text
-                color="gray.500"
+                color="gray.400"
                 fontSize={['2xs', 'xs']}
                 textTransform="uppercase"
                 fontWeight="semibold"
@@ -34,10 +34,10 @@ export const Education = () => {
               </Text>
             </Box>
             <Box textAlign="right">
-              <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.500">
+              <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.400">
                 {t(`education:${education}.period`)}
               </Text>
-              <Text fontSize="xs" fontWeight="medium" color="gray.500">
+              <Text fontSize="xs" fontWeight="medium" color="gray.400">
                 {t(`education:${education}.location`)}
               </Text>
             </Box>
