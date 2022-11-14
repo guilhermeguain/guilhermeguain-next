@@ -34,11 +34,22 @@ export const Languages = () => {
               {t(`about:languages.${id}`)}
             </Heading>
             <Flex direction="column" gap={4}>
-              {proficiency.map(({ id, value }) => (
-                <Flex key={id} gap={2} alignItems="center">
-                  <CircularProgress size={6} value={value} color="primary.500" thickness={16} />
-                  <Text fontSize="xs" fontWeight="medium" color="gray.600">
-                    {t(`about:languages.${id}`)}
+              {proficiency.map(({ id: proficiencyId, value }) => (
+                <Flex key={proficiencyId} gap={2} alignItems="center">
+                  <CircularProgress
+                    aria-labelledby={`progressbar-${id}-${proficiencyId}`}
+                    size={6}
+                    value={value}
+                    color="primary.500"
+                    thickness={16}
+                  />
+                  <Text
+                    id={`progressbar-${id}-${proficiencyId}`}
+                    fontSize="xs"
+                    fontWeight="medium"
+                    color="gray.600"
+                  >
+                    {t(`about:languages.${proficiencyId}`)}
                   </Text>
                 </Flex>
               ))}

@@ -28,7 +28,7 @@ export const Experiences = () => {
                   {t(`experience:${id}.company`)}
                 </Heading>
                 <Flex gap={4}>
-                  <Text fontSize="sm" fontWeight="medium" color="secondary.400">
+                  <Text fontSize="sm" fontWeight="medium" color="secondary.500">
                     {t(`experience:${id}.role`)}
                   </Text>
                   <Text fontSize="sm" fontWeight="medium" color="gray.600">
