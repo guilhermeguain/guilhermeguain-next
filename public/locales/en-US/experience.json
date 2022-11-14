@@ -4,13 +4,13 @@
     "company": "Health Protection",
     "role": "Front-end Developer",
     "period": "09/2020 - 10/2022",
-    "summary": "Project developed in Next.js with TypeScript. Among the main tools used in the project are Context API, Axios, Tailwind CSS, Chakra UI, ESLint and React Query. For content management we used Sanity CMS. My activities involved front-end development, integration with APIs, creation of components and pages, maintenance and bug fixing and continuous deployment with Netlify and Vercel."
+    "summary": "The project was developed using Next.js with TypeScript and tools such as the Context API, Axios, Tailwind CSS, Chakra UI, ESLint, and React Query. For content management, we used Sanity CMS. My activities involved front-end development, API integration, component and page creation, maintenance and bug fixing, and also continuous deployment with Netlify and Vercel."
   },
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
     "role": "Full-stack Developer",
     "period": "08/2018 - present",
-    "summary": "Toxicological examination company where I work as a full-stack developer, responsible for developing and maintaining the company's website, in addition to developing integrations with internal systems, CRM and ERP. Among the main activities are SEO optimization, development of new features, bug fixing and website maintenance."
+    "summary": "Reference company in toxicology testing where I act as a full-stack developer responsible for the development and maintenance of the site. Among the main activities are: on-page SEO optimization, implementation of new features, bug fixes and integrations with internal systems, CRM and ERP."
   },
   "inter-american": {
     "company": "Inter-American Coalition",
@@ -22,6 +22,6 @@
     "company": "360 Comunicação Digital",
     "role": "WordPress Developer",
     "period": "05/2013 - 08/2018",
-    "summary": "Communication agency where I developed several projects in WordPress, participating in the entire development process, from the creation of the layout to the publication of the website. My activities involved creating and customizing WordPress themes and plugins, optimizing performance and SEO, creating landing pages and integrating with APIs."
+    "summary": "As a communication agency focused on positioning companies with digital marketing, I participated in the whole process, from the layout creation to the publication of the site in Wordpress. My activities involved structuring and customizing WordPress themes and plugins, performance optimization and SEO, landing page creation and API integration."
   }
 }
