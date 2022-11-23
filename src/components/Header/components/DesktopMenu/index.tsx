@@ -4,6 +4,8 @@ import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { HStack, Link, Flex } from '@chakra-ui/react';
 
+import { LangSelector } from '../../../LangSelector';
+
 import { MenuProps } from '../../types';
 
 export const DesktopMenu = ({ items }: MenuProps) => {
@@ -25,6 +27,7 @@ export const DesktopMenu = ({ items }: MenuProps) => {
           </NextLink>
         ))}
       </HStack>
+      <LangSelector />
     </Flex>
   );
 };

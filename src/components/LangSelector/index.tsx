@@ -3,7 +3,7 @@ import { Select } from '@chakra-ui/react';
 
 import { useLangSelector } from './hooks/useLangSelector';
 
-export const LangSelector = () => {
+export const LangSelector = ({ ...rest }) => {
   const { locale, handleLangChange } = useLangSelector();
 
   return (
@@ -17,6 +17,7 @@ export const LangSelector = () => {
       onChange={(event) => {
         handleLangChange(event.currentTarget.value);
       }}
+      {...rest}
     >
       <option value="en-US">English</option>
       <option value="pt-BR">Portuguese</option>

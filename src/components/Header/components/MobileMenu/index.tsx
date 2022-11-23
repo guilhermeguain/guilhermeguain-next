@@ -16,6 +16,8 @@ import {
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
+import { LangSelector } from '../../../LangSelector';
+
 import { MenuProps } from '../../types';
 
 export const MobileMenu = ({ items }: MenuProps) => {
@@ -48,7 +50,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
         <DrawerContent bg="gray.300">
           <DrawerCloseButton />
           <DrawerHeader />
-          <DrawerBody>
+          <DrawerBody display="flex" flexDir="column" justifyContent="space-between" pb={8}>
             <Stack spacing={4}>
               {items.map(({ id, href }) => (
                 <NextLink key={id} href={href} passHref scroll={false}>
@@ -62,6 +64,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
                 </NextLink>
               ))}
             </Stack>
+            <LangSelector color="gray.600" fontSize="md" />
           </DrawerBody>
         </DrawerContent>
       </Drawer>
