@@ -17,6 +17,7 @@ export const LangSelector = ({ ...rest }) => {
       onChange={(event) => {
         handleLangChange(event.currentTarget.value);
       }}
+      sx={{ option: { color: 'gray.800' } }}
       {...rest}
     >
       <option value="en-US">English</option>
