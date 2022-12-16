@@ -6,6 +6,7 @@ export const useEducation = () => {
 
   const educations = useMemo(
     () => [
+      'ignite-lab-node-js',
       'ignite',
       'gostack',
       'nanodegree-udacity',

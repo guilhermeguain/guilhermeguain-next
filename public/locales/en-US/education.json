@@ -6,6 +6,12 @@
     "period": "07/2022 - 07/2022",
     "location": "Online"
   },
+  "ignite-lab-node-js": {
+    "title": "Ignite Lab - Node.js, NestJS, Prisma, TypeScript, Jest",
+    "institution": "Rocketseat",
+    "period": "12/2022 - 12/2022",
+    "location": "Online"
+  },
   "gostack": {
     "title": "GoStack - Node.js, React.js and React Native",
     "institution": "Rocketseat",
