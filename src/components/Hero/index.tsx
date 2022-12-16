@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 import { Box, Flex, Image, Heading, Text, HStack } from '@chakra-ui/react';
-import { SiReact, SiTypescript } from 'react-icons/si';
+import { SiReact, SiTypescript, SiEslint } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 export const Hero = () => {
@@ -44,6 +44,7 @@ export const Hero = () => {
           <Image as={SiReact} title="React.js" alt="React.js" />
           <Image as={SiTypescript} title="TypeScript" alt="TypeScript" />
           <Image as={TbBrandNextjs} title="Next.js" alt="Next.js" />
+          <Image as={SiEslint} title="ESLint" alt="ESLint" />
         </HStack>
       </Flex>
     </Box>
