@@ -8,7 +8,7 @@ export const Hero = () => {
   const { t } = useTranslation(['common', 'hero']);
 
   return (
-    <Box as="main" bg="url('/images/bg-hero.jpg')" position="relative" zIndex="10">
+    <Box id="hero" bg="url('/images/bg-hero.jpg')" position="relative" zIndex="10">
       <Flex
         w="100%"
         maxWidth={'7xl'}

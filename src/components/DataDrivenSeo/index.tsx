@@ -8,7 +8,7 @@ export const DataDrivenSeo = () => {
   const { t, dataDrivenSeo } = useDataDrivenSeo();
 
   return (
-    <Flex direction="column" gap={8} pt={16}>
+    <Flex id="data-driven-seo" direction="column" gap={8} pt={16}>
       <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
         {t('data-driven-seo:title')}
       </Heading>

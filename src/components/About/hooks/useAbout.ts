@@ -1,9 +1,10 @@
-import { useMemo } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { IoDocumentTextOutline } from 'react-icons/io5';
+import TagManager from 'react-gtm-module';
 
 export const useAbout = () => {
   const { locale } = useRouter();
@@ -51,10 +52,24 @@ export const useAbout = () => {
 
   const knowledges = useMemo(() => ['design', 'seo', 'devops', 'infrastructure'], []);
 
+  const handleLinkClick = useCallback((event: React.MouseEvent) => {
+    const id = event.currentTarget.getAttribute('data-id');
+    const url = event.currentTarget.getAttribute('href');
+
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'contactClick',
+        contactId: id,
+        contactUrl: url,
+      },
+    });
+  }, []);
+
   return {
     t,
     contacts,
     paragraphs,
     knowledges,
+    handleLinkClick,
   };
 };

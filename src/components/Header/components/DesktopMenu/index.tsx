@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { HStack, Link, Flex } from '@chakra-ui/react';
+import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '../../../LangSelector';
 
@@ -13,6 +14,19 @@ export const DesktopMenu = ({ items }: MenuProps) => {
 
   const { asPath } = useRouter();
 
+  const handleMenuClick = useCallback((event: React.MouseEvent) => {
+    const id = event.currentTarget.getAttribute('data-id');
+    const url = event.currentTarget.getAttribute('href');
+
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'menuClick',
+        contactId: id,
+        contactUrl: url,
+      },
+    });
+  }, []);
+
   return (
     <Flex alignItems="center" justifyContent="space-between" gap={16}>
       <HStack fontSize={['sm', 'md', 'lg']} gap={[2, 4]}>
@@ -21,6 +35,8 @@ export const DesktopMenu = ({ items }: MenuProps) => {
             <Link
               color={asPath.includes(id) ? 'secondary.400' : 'gray.300'}
               _hover={{ color: 'secondary.400' }}
+              data-id={id}
+              onClick={handleMenuClick}
             >
               {t(id)}
             </Link>

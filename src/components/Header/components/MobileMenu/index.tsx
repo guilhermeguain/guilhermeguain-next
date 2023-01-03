@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -15,6 +15,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '../../../LangSelector';
 
@@ -26,6 +27,21 @@ export const MobileMenu = ({ items }: MenuProps) => {
   const { t } = useTranslation('menu');
 
   const { asPath } = useRouter();
+
+  const handleMenuClick = useCallback((event: React.MouseEvent) => {
+    const id = event.currentTarget.getAttribute('data-id');
+    const url = event.currentTarget.getAttribute('href');
+
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'menuClick',
+        contactId: id,
+        contactUrl: url,
+      },
+    });
+
+    onClose();
+  }, []);
 
   return (
     <>
@@ -57,7 +73,8 @@ export const MobileMenu = ({ items }: MenuProps) => {
                   <Link
                     color={asPath.includes(id) ? 'secondary.400' : 'gray.600'}
                     _hover={{ color: 'secondary.400' }}
-                    onClick={onClose}
+                    data-id={id}
+                    onClick={handleMenuClick}
                   >
                     {t(id)}
                   </Link>

@@ -5,7 +5,7 @@ import { Flex, Heading, SimpleGrid, Link } from '@chakra-ui/react';
 import { useProjects } from './hooks/useProjects';
 
 export const Projects = () => {
-  const { t, projects } = useProjects();
+  const { t, projects, handleProjectClick } = useProjects();
 
   return (
     <Flex direction="column" gap={8}>
@@ -24,7 +24,13 @@ export const Projects = () => {
             justifyContent="center"
             height={36}
           >
-            <Link href={link} target="_blank" rel="external nofollow noreferrer noopener">
+            <Link
+              href={link}
+              target="_blank"
+              rel="external nofollow noreferrer noopener"
+              data-id={id}
+              onClick={handleProjectClick}
+            >
               <Image
                 src={`/images/projects/${id}.png`}
                 alt={t(`projects:${id}`)}

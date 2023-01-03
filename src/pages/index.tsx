@@ -2,7 +2,7 @@ import React from 'react';
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 
 import { Page } from '../components/Page';
 
@@ -20,24 +20,26 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   return (
     <Page title={t('meta:title')} description={t('meta:desc')}>
-      <Hero />
-      <Content>
-        <About />
-        <DataDrivenSeo />
+      <Box as="main">
+        <Hero />
+        <Content>
+          <About />
+          <DataDrivenSeo />
 
-        <Flex id="experience" pt={[16, 20]} direction="column">
-          <Experiences />
-        </Flex>
+          <Flex id="experience" pt={[16, 20]} direction="column">
+            <Experiences />
+          </Flex>
 
-        <Flex id="projects" pt={[16, 20]} direction="column">
-          <Projects />
-        </Flex>
+          <Flex id="projects" pt={[16, 20]} direction="column">
+            <Projects />
+          </Flex>
 
-        <Flex id="education" py={[16, 20]} direction={['column', 'column', 'row']} gap={8}>
-          <Education />
-          <Events />
-        </Flex>
-      </Content>
+          <Flex id="education" py={[16, 20]} direction={['column', 'column', 'row']} gap={8}>
+            <Education />
+            <Events />
+          </Flex>
+        </Content>
+      </Box>
     </Page>
   );
 };

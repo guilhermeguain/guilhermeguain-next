@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Box,
   Flex,
   Avatar,
   Heading,
@@ -22,18 +23,11 @@ import { Languages } from '../Languages';
 import { useAbout } from './hooks/useAbout';
 
 export const About = () => {
-  const { t, contacts, paragraphs, knowledges } = useAbout();
+  const { t, contacts, paragraphs, knowledges, handleLinkClick } = useAbout();
 
   return (
-    <>
-      <Flex
-        id="about"
-        pt={[16, 20]}
-        pb={12}
-        direction={['column', 'row']}
-        gap={8}
-        alignItems="center"
-      >
+    <Box id="about">
+      <Flex pt={[16, 20]} pb={12} direction={['column', 'row']} gap={8} alignItems="center">
         <Avatar name="Guilherme Guain" src="/images/guilherme-guain.jpg" size="2xl" />
         <Flex direction="column" gap={4} w="100%" textAlign={['center', 'left']}>
           <Text
@@ -50,8 +44,8 @@ export const About = () => {
             {t('common:role')}
           </Heading>
           <HStack fontSize="2xl" gap={2} mt={2} justifyContent={['center', 'flex-start']}>
-            {contacts.map(({ id, icon, url }, index) => (
-              <Link key={index} href={url} target="_blank">
+            {contacts.map(({ id, icon, url }) => (
+              <Link key={id} href={url} target="_blank" data-id={id} onClick={handleLinkClick}>
                 <Image as={icon} alt={t(`about:${id}`)} title={t(`about:${id}`)} color="gray.200" />
               </Link>
             ))}
@@ -107,6 +101,6 @@ export const About = () => {
           </Flex>
         </Flex>
       </Flex>
-    </>
+    </Box>
   );
 };

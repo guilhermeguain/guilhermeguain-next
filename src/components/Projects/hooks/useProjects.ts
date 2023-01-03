@@ -1,5 +1,6 @@
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { useTranslation } from 'next-i18next';
+import TagManager from 'react-gtm-module';
 
 export const useProjects = () => {
   const { t } = useTranslation(['projects']);
@@ -74,8 +75,22 @@ export const useProjects = () => {
     [],
   );
 
+  const handleProjectClick = useCallback((event: React.MouseEvent) => {
+    const id = event.currentTarget.getAttribute('data-id');
+    const url = event.currentTarget.getAttribute('href');
+
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'projectClick',
+        contactId: id,
+        contactUrl: url,
+      },
+    });
+  }, []);
+
   return {
     t,
     projects,
+    handleProjectClick,
   };
 };
