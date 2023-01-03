@@ -21,8 +21,8 @@ export const DesktopMenu = ({ items }: MenuProps) => {
     TagManager.dataLayer({
       dataLayer: {
         event: 'menuClick',
-        contactId: id,
-        contactUrl: url,
+        menuId: id,
+        menuUrl: url,
       },
     });
   }, []);

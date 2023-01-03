@@ -82,8 +82,8 @@ export const useProjects = () => {
     TagManager.dataLayer({
       dataLayer: {
         event: 'projectClick',
-        contactId: id,
-        contactUrl: url,
+        projectId: id,
+        projectUrl: url,
       },
     });
   }, []);
