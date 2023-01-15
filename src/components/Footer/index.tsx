@@ -20,17 +20,15 @@ export const Footer = () => {
         gap={8}
         fontSize="sm"
       >
-        <NextLink href="/" passHref>
-          <Link display="flex">
-            <Image
-              src={'/images/logo.svg'}
-              width="48px"
-              height="48px"
-              alt="Front-end Developer - Guilherme Guain"
-              title="Front-end Developer - Guilherme Guain"
-            />
-          </Link>
-        </NextLink>
+        <Link as={NextLink} href="/" passHref display="flex">
+          <Image
+            src={'/images/logo.svg'}
+            width={48}
+            height={48}
+            alt="Front-end Developer - Guilherme Guain"
+            title="Front-end Developer - Guilherme Guain"
+          />
+        </Link>
         <Stack
           direction={['column', 'column', 'row']}
           divider={<StackDivider borderColor="gray.600" />}

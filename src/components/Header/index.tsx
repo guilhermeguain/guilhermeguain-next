@@ -41,11 +41,9 @@ export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
         zIndex="50"
       >
         <Box>
-          <NextLink href="/" passHref>
-            <Link display="flex">
-              <Image src={logo} width={48} height={48} alt={title} title={title} />
-            </Link>
-          </NextLink>
+          <Link as={NextLink} href="/" passHref display="flex">
+            <Image src={logo} width={48} height={48} alt={title} title={title} />
+          </Link>
         </Box>
         <When value={isMobile}>
           <MobileMenu items={menuItems} />

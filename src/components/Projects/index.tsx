@@ -37,8 +37,8 @@ export const Projects = () => {
                 title={t(`projects:${id}`)}
                 placeholder="blur"
                 blurDataURL={`/images/projects/${id}.png`}
-                width="200px"
-                height="60px"
+                width={200}
+                height={60}
               />
             </Link>
           </Flex>

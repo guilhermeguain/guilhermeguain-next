@@ -31,16 +31,19 @@ export const DesktopMenu = ({ items }: MenuProps) => {
     <Flex alignItems="center" justifyContent="space-between" gap={16}>
       <HStack fontSize={['sm', 'md', 'lg']} gap={[2, 4]}>
         {items.map(({ id, href }) => (
-          <NextLink key={id} href={href} passHref scroll={false}>
-            <Link
-              color={asPath.includes(id) ? 'secondary.400' : 'gray.300'}
-              _hover={{ color: 'secondary.400' }}
-              data-id={id}
-              onClick={handleMenuClick}
-            >
-              {t(id)}
-            </Link>
-          </NextLink>
+          <Link
+            as={NextLink}
+            key={id}
+            href={href}
+            passHref
+            scroll={false}
+            color={asPath.includes(id) ? 'secondary.400' : 'gray.300'}
+            _hover={{ color: 'secondary.400' }}
+            data-id={id}
+            onClick={handleMenuClick}
+          >
+            {t(id)}
+          </Link>
         ))}
       </HStack>
       <LangSelector />
