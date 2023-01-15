@@ -1,3 +1,4 @@
+import { Montserrat } from '@next/font/google';
 import { extendTheme, ThemeOverride } from '@chakra-ui/react';
 import { lighten, darken } from 'polished';
 
@@ -5,12 +6,18 @@ const colorPrimary = '#C40A32';
 const colorSecondary = '#078C64';
 const colorTertiary = '#9FCA0A';
 
+const fontFamily = Montserrat({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 export const config: ThemeOverride = {
   initialColorMode: 'light',
   useSystemColorMode: false,
   fonts: {
-    heading: 'Montserrat',
-    body: 'Montserrat',
+    heading: fontFamily.style.fontFamily,
+    body: fontFamily.style.fontFamily,
   },
   styles: {
     global: {
