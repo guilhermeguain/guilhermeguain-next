@@ -13,9 +13,9 @@ import {
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaGitAlt, FaNodeJs } from 'react-icons/fa';
 
-import { Figma } from '../../assets/Figma';
-import { Photoshop } from '../../assets/Photoshop';
-import { Illustrator } from '../../assets/Illustrator';
+import { Figma } from '@assets/Figma';
+import { Photoshop } from '@assets/Photoshop';
+import { Illustrator } from '@assets/Illustrator';
 
 export const techs = {
   primary: [

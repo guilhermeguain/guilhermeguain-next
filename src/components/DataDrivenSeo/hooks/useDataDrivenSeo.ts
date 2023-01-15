@@ -1,8 +1,8 @@
 import { useTranslation } from 'next-i18next';
 
-import { Semrush } from '../../../assets/Semrush';
-import { GoogleAnalytics } from '../../../assets/GoogleAnalytics';
-import { GoogleTagManager } from '../../../assets/GoogleTagManager';
+import { Semrush } from '@assets/Semrush';
+import { GoogleAnalytics } from '@assets/GoogleAnalytics';
+import { GoogleTagManager } from '@assets/GoogleTagManager';
 
 export const useDataDrivenSeo = () => {
   const { t } = useTranslation(['data-driven-seo']);

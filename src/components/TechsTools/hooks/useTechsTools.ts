@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 
-import { techs } from '../techs';
+import { techs } from './techs';
 
 export const useTechsTools = () => {
   const { t } = useTranslation(['about']);

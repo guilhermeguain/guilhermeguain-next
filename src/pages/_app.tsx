@@ -4,7 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import TagManager from 'react-gtm-module';
 import { appWithTranslation } from 'next-i18next';
 
-import { theme } from '../styles/theme';
+import { theme } from '@styles/theme';
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {

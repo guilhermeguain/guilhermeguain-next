@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 
-import { MOBILE_BREAKPOINT } from '../../../lib/constants';
+import { MOBILE_BREAKPOINT } from '@lib/constants';
 
-import { useWindowSize } from '../../../hooks/useWindowSize';
+import { useWindowSize } from '@hooks/useWindowSize';
 
 export const useHeader = () => {
   const { width } = useWindowSize();

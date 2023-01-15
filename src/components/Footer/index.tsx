@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import { Box, Flex, Text, Link, Stack, StackDivider } from '@chakra-ui/react';
 
-import { LangSelector } from '../LangSelector';
+import { LangSelector } from '@components/LangSelector';
 
 export const Footer = () => {
   const { t } = useTranslation(['common']);

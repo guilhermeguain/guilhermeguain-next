@@ -3,7 +3,7 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { Box, Flex, Link } from '@chakra-ui/react';
 
-import { When } from '../shared/When';
+import { When } from '@components/shared/When';
 import { MobileMenu } from './components/MobileMenu';
 import { DesktopMenu } from './components/DesktopMenu';
 

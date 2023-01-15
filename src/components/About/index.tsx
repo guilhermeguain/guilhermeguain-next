@@ -15,10 +15,10 @@ import {
 } from '@chakra-ui/react';
 import { FaChevronRight } from 'react-icons/fa';
 
-import { HardSkills } from '../HardSkills';
-import { SoftSkills } from '../SoftSkills';
-import { TechsTools } from '../TechsTools';
-import { Languages } from '../Languages';
+import { HardSkills } from '@components/HardSkills';
+import { SoftSkills } from '@components/SoftSkills';
+import { TechsTools } from '@components/TechsTools';
+import { Languages } from '@components/Languages';
 
 import { useAbout } from './hooks/useAbout';
 
