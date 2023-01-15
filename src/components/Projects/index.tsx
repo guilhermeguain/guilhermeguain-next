@@ -34,7 +34,7 @@ export const Projects = () => {
               <Image
                 src={`/images/projects/${id}.png`}
                 alt={t(`projects:${id}`)}
-                title={t(`projects:${id}`)}
+                title={t(`projects:${id}`) || id}
                 placeholder="blur"
                 blurDataURL={`/images/projects/${id}.png`}
                 width={200}

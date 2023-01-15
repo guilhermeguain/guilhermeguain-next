@@ -46,7 +46,12 @@ export const About = () => {
           <HStack fontSize="2xl" gap={2} mt={2} justifyContent={['center', 'flex-start']}>
             {contacts.map(({ id, icon, url }) => (
               <Link key={id} href={url} target="_blank" data-id={id} onClick={handleLinkClick}>
-                <Image as={icon} alt={t(`about:${id}`)} title={t(`about:${id}`)} color="gray.200" />
+                <Image
+                  as={icon}
+                  alt={t(`about:${id}`) || id}
+                  title={t(`about:${id}`) || id}
+                  color="gray.200"
+                />
               </Link>
             ))}
           </HStack>
@@ -61,7 +66,7 @@ export const About = () => {
                   query={highlights.map((highlight) => t(`about:highlights.${highlight}`))}
                   styles={{ fontWeight: 'semibold', color: 'gray.300' }}
                 >
-                  {t(`about:paragraphs.${id}`)}
+                  {t(`about:paragraphs.${id}`) || id}
                 </Highlight>
               </Text>
             ))}
