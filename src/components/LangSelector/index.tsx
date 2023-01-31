@@ -14,9 +14,7 @@ export const LangSelector = ({ ...rest }) => {
         variant="unstyled"
         color="gray.300"
         defaultValue={locale}
-        onChange={(event) => {
-          handleLangChange(event.currentTarget.value);
-        }}
+        onChange={handleLangChange}
         sx={{ cursor: 'pointer', option: { color: 'gray.800' } }}
         {...rest}
       >
