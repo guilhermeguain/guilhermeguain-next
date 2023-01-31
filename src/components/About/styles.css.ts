@@ -42,7 +42,7 @@ export const IntroContent = style({
 export const Name = style({
   borderBottom: `1px solid ${vars.color.border}`,
   paddingBottom: '0.5rem',
-  color: vars.color.secondary,
+  color: vars.color.secondary[500],
   fontSize: '1.5rem',
 });
 
@@ -119,6 +119,7 @@ export const BoxesGroup = style({
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
+  width: '100%',
 
   '@media': {
     'screen and (min-width: 48rem)': {

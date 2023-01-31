@@ -1,43 +1,39 @@
 import React from 'react';
-import { Flex, Box, Heading, Text, VStack, StackDivider } from '@chakra-ui/react';
+
+import { Title } from '@styles/typography.css';
 
 import { useEvents } from './hooks/useEvents';
+import {
+  Container,
+  List,
+  ListItem,
+  ListItemColumn,
+  ListItemTitle,
+  ListItemInstitution,
+  ListItemPeriod,
+  ListItemLocation,
+} from './styles.css';
 
 export const Events = () => {
   const { t, events } = useEvents();
 
   return (
-    <Flex direction="column" gap={8} flex={1}>
-      <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-        {t('events:title')}
-      </Heading>
-      <VStack divider={<StackDivider borderColor="gray.700" />} alignItems="flex-start" spacing={4}>
+    <div id="events" className={Container}>
+      <h2 className={Title}>{t('events:title')}</h2>
+      <ul className={List}>
         {events.map((event) => (
-          <Flex key={event} gap={8} justifyContent="space-between" alignItems="center" width="100%">
-            <Box flex={1}>
-              <Heading as="h3" fontSize={['sm', 'md']} fontWeight="medium" color="gray.50">
-                {t(`events:${event}.title`)}
-              </Heading>
-              <Text
-                color="gray.400"
-                fontSize={['2xs', 'xs']}
-                textTransform="uppercase"
-                fontWeight="semibold"
-              >
-                {t(`events:${event}.host`)}
-              </Text>
-            </Box>
-            <Box textAlign="right">
-              <Text fontSize={['xs', 'sm']} fontWeight="medium" color="gray.400">
-                {t(`events:${event}.date`)}
-              </Text>
-              <Text fontSize="xs" fontWeight="medium" color="gray.400">
-                {t(`events:${event}.location`)}
-              </Text>
-            </Box>
-          </Flex>
+          <li key={event} className={ListItem}>
+            <div className={ListItemColumn}>
+              <h3 className={ListItemTitle}>{t(`events:${event}.title`)}</h3>
+              <p className={ListItemInstitution}>{t(`events:${event}.host`)}</p>
+            </div>
+            <div className={ListItemColumn}>
+              <span className={ListItemPeriod}>{t(`events:${event}.date`)}</span>
+              <span className={ListItemLocation}>{t(`events:${event}.location`)}</span>
+            </div>
+          </li>
         ))}
-      </VStack>
-    </Flex>
+      </ul>
+    </div>
   );
 };

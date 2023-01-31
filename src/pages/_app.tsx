@@ -4,6 +4,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 import TagManager from 'react-gtm-module';
 import { appWithTranslation } from 'next-i18next';
 
+import { AppContext } from '@contexts/App';
+
 import { theme } from '@styles/theme';
 import '@styles/global.css';
 import '@styles/theme.css';
@@ -15,7 +17,9 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
+      <AppContext>
+        <Component {...pageProps} />
+      </AppContext>
     </ChakraProvider>
   );
 }

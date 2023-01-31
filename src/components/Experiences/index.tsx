@@ -1,52 +1,50 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
+
+import { Content } from '@styles/layout.css';
+import { Title } from '@styles/typography.css';
 
 import { useExperiences } from './hooks/useExperiences';
+import {
+  List,
+  ListItem,
+  ListItemHeader,
+  ListItemHeaderInfo,
+  ListItemHeaderInfoGroup,
+  ListItemHeaderBadges,
+  ListItemTitle,
+  ListItemRole,
+  ListItemPeriod,
+  ListItemSummary,
+} from './styles.css';
 
 export const Experiences = () => {
   const { t, experiences } = useExperiences();
 
   return (
-    <Flex direction="column" gap={8}>
-      <Heading fontSize="2xl" borderBottom="1px" pb={2} borderColor="gray.200">
-        Experience
-      </Heading>
-      <Flex direction="column" gap={8}>
+    <section id="experience" className={Content}>
+      <h2 className={Title}>{t('experience:title')}</h2>
+      <ul className={List}>
         {experiences.map(({ id, badges }) => (
-          <Box key={id} bg="gray.50" p={4} borderRadius="xl">
-            <Flex
-              direction={['column', 'column', 'row']}
-              justifyContent="space-between"
-              gap={[4, 4, 8]}
-              borderBottom="1px"
-              borderColor="gray.300"
-              pb={2}
-            >
-              <Box>
-                <Heading as="h3" fontSize="lg" fontWeight="medium" color="gray.600" mb={1}>
-                  {t(`experience:${id}.company`)}
-                </Heading>
-                <Flex direction={['column', 'row']} gap={4} alignItems={['flex-start', 'center']}>
-                  <Text fontSize="sm" fontWeight="medium" color="gray.600">
-                    {t(`experience:${id}.role`)}
-                  </Text>
-                  <Text fontSize="sm" fontWeight="medium" color="gray.600">
-                    {t(`experience:${id}.period`)}
-                  </Text>
-                </Flex>
-              </Box>
-              <Flex fontSize="2xl" gap={4}>
+          <li key={id} className={ListItem}>
+            <div className={ListItemHeader}>
+              <div className={ListItemHeaderInfo}>
+                <div className={ListItemHeaderInfoGroup}>
+                  <h3 className={ListItemRole}>{t(`experience:${id}.role`)}</h3>
+                  <span className={ListItemPeriod}>{t(`experience:${id}.period`)}</span>
+                </div>
+                <h4 className={ListItemTitle}>{t(`experience:${id}.company`)}</h4>
+              </div>
+              <div className={ListItemHeaderBadges}>
                 {badges.map(({ id, title, color, icon }) => (
                   <Image key={id} as={icon} color={color} alt={title} title={title} />
                 ))}
-              </Flex>
-            </Flex>
-            <Text color="gray.600" fontWeight="medium" textAlign="justify" mt={4}>
-              {t(`experience:${id}.summary`)}
-            </Text>
-          </Box>
+              </div>
+            </div>
+            <p className={ListItemSummary}>{t(`experience:${id}.summary`)}</p>
+          </li>
         ))}
-      </Flex>
-    </Flex>
+      </ul>
+    </section>
   );
 };

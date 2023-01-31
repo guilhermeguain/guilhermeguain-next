@@ -23,13 +23,10 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
       <Box as="main">
         <Hero />
         <About />
+        <DataDrivenSeo />
+        <Experiences />
+
         <Content>
-          <DataDrivenSeo />
-
-          <Flex id="experience" pt={[16, 20]} direction="column">
-            <Experiences />
-          </Flex>
-
           <Flex id="projects" pt={[16, 20]} direction="column">
             <Projects />
           </Flex>

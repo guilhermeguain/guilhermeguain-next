@@ -26,7 +26,7 @@ export const ListItem = style({
 
 export const ListItemIcon = style({
   marginRight: '.5rem',
-  fill: vars.color.secondary,
+  fill: vars.color.secondary[500],
   display: 'none',
 
   '@media': {
@@ -37,7 +37,7 @@ export const ListItemIcon = style({
 });
 
 export const ListItemPrefix = style({
-  color: vars.color.secondary,
+  color: vars.color.secondary[500],
   fontWeight: 500,
 });
 

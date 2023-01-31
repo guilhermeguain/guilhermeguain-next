@@ -5,6 +5,6 @@ import { vars } from '@styles/theme.css';
 export const Title = style({
   borderBottom: `1px solid ${vars.color.border}`,
   paddingBottom: '0.5rem',
-  color: vars.color.secondary,
+  color: vars.color.secondary[500],
   fontSize: '1.5rem',
 });
