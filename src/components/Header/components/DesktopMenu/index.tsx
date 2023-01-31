@@ -7,8 +7,6 @@ import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '@components/LangSelector';
 
-import { MenuProps } from '@components/Header/types';
-
 export const DesktopMenu = ({ items }: MenuProps) => {
   const { t } = useTranslation('menu');
 

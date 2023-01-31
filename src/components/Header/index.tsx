@@ -9,8 +9,6 @@ import { DesktopMenu } from './components/DesktopMenu';
 
 import { useHeader } from './hooks/useHeader';
 
-import { HeaderProps } from './types';
-
 export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
   const { menuItems, isMobile } = useHeader();
 

@@ -19,8 +19,6 @@ import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '@components/LangSelector';
 
-import { MenuProps } from '@components/Header/types';
-
 export const MobileMenu = ({ items }: MenuProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
