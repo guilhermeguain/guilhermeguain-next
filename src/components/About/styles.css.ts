@@ -1,6 +1,7 @@
 import { style } from '@vanilla-extract/css';
 
 import { vars } from '@styles/theme.css';
+import { List } from '@styles/layout.css';
 
 export const Intro = style({
   paddingTop: '4rem',
@@ -46,7 +47,7 @@ export const Name = style({
 });
 
 export const Role = style({
-  color: vars.color.text,
+  color: vars.color.text.primary,
   fontSize: '1.125rem',
   fontWeight: 500,
 });
@@ -66,8 +67,8 @@ export const Contacts = style({
 export const ContactsItem = style({});
 
 export const ContactsItemSvg = style({
-  fill: vars.color.text,
-  color: vars.color.text,
+  fill: vars.color.text.primary,
+  color: vars.color.text.primary,
 });
 
 export const Main = style({
@@ -97,39 +98,13 @@ export const Text = style({
   },
 });
 
-export const List = style({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
-});
-
-export const ListItem = style({
-  display: 'flex',
-  alignItems: 'baseline',
-  fontSize: '0.875rem',
-  lineHeight: '1.625',
-});
-
-export const ListItemIcon = style({
-  marginRight: '.5rem',
-  fill: vars.color.secondary,
-  display: 'none',
-
-  '@media': {
-    'screen and (min-width: 30rem)': {
-      display: 'initial',
-    },
+export const CustomList = style([
+  List,
+  {
+    fontSize: '0.875rem',
+    lineHeight: '1.625',
   },
-});
-
-export const ListItemText = style({
-  flex: 1,
-});
-
-export const ListItemPrefix = style({
-  color: vars.color.secondary,
-  fontWeight: 500,
-});
+]);
 
 export const Boxes = style([
   Column,

@@ -4,7 +4,7 @@ import { FaChevronRight } from 'react-icons/fa';
 
 import { Highlight } from '@utils/highlight';
 
-import { Content } from '@styles/layout.css';
+import { Content, ListItem, ListItemIcon, ListItemPrefix, ListItemText } from '@styles/layout.css';
 
 import { HardSkills } from '@components/HardSkills';
 import { SoftSkills } from '@components/SoftSkills';
@@ -24,11 +24,7 @@ import {
   Main,
   Column,
   Text,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  ListItemPrefix,
+  CustomList,
   Boxes,
   BoxesGroup,
 } from './styles.css';
@@ -80,7 +76,7 @@ export const About = () => {
                 </Highlight>
               </p>
             ))}
-            <ul className={List}>
+            <ul className={CustomList}>
               {knowledges.map((knowledge) => (
                 <li key={knowledge} className={ListItem}>
                   <FaChevronRight size={12} className={ListItemIcon} />

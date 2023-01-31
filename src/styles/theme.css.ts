@@ -6,6 +6,10 @@ export const vars = createGlobalTheme(':root', {
     secondary: '#078C64',
     tertiary: '#9FCA0A',
     border: '#E2E8F0',
-    text: '#CBD5E0',
+    divider: '#2D3748',
+    text: {
+      primary: '#CBD5E0',
+      secondary: '#A0AEC0',
+    },
   },
 });
