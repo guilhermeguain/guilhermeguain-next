@@ -22,8 +22,8 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
     <Page title={t('meta:title')} description={t('meta:desc')}>
       <Box as="main">
         <Hero />
+        <About />
         <Content>
-          <About />
           <DataDrivenSeo />
 
           <Flex id="experience" pt={[16, 20]} direction="column">
