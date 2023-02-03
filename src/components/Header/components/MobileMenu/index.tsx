@@ -17,6 +17,8 @@ import {
 import { GiHamburgerMenu } from 'react-icons/gi';
 import TagManager from 'react-gtm-module';
 
+import { vars } from '@styles/theme.css';
+
 import { LangSelector } from '@components/LangSelector';
 
 export const MobileMenu = ({ items }: MenuProps) => {
@@ -79,7 +81,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
                 </NextLink>
               ))}
             </Stack>
-            <LangSelector color="gray.600" fontSize="md" />
+            <LangSelector style={{ color: vars.color.gray[600], fontSize: '1rem' }} />
           </DrawerBody>
         </DrawerContent>
       </Drawer>

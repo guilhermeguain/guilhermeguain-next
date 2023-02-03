@@ -1,62 +1,70 @@
 import React from 'react';
-import { Flex, Heading, Text, CircularProgress } from '@chakra-ui/react';
 
 import { useLanguages } from './hooks/useLanguages';
+import {
+  Container,
+  Header,
+  HeaderTitle,
+  List,
+  ListItem,
+  ListItemTitle,
+  ListItemGroup,
+  ListItemLabel,
+  ListItemChartSvg,
+  ListItemChartCircle,
+  ListItemChartCircleInner,
+} from './styles.css';
 
 export const Languages = () => {
   const { t, languages } = useLanguages();
 
   return (
-    <Flex direction="column" flex={1} w={72}>
-      <Heading
-        as="h3"
-        fontSize="sm"
-        fontWeight="semibold"
-        px={4}
-        py={2}
-        borderTopRadius="xl"
-        bg="primary.500"
-        color="gray.200"
-        textTransform="uppercase"
-      >
-        {t('about:languages.title')}
-      </Heading>
-      <Flex gap={8} bg="gray.50" p={4} flex={1} borderBottomRadius="xl">
-        {languages.map(({ id, proficiency }) => (
-          <Flex key={id} direction="column" gap={4}>
-            <Heading
-              as="h4"
-              fontSize="xs"
-              textTransform="uppercase"
-              fontWeight="bold"
-              color="gray.600"
-            >
-              {t(`about:languages.${id}`)}
-            </Heading>
-            <Flex direction="column" gap={4}>
+    <>
+      <div className={Container}>
+        <div className={Header}>
+          <h3 className={HeaderTitle}>{t('about:languages.title')}</h3>
+        </div>
+        <div className={List}>
+          {languages.map(({ id, proficiency }) => (
+            <div key={id} className={ListItem}>
+              <h4 className={ListItemTitle}>{t(`about:languages.${id}`)}</h4>
               {proficiency.map(({ id: proficiencyId, value }) => (
-                <Flex key={proficiencyId} gap={2} alignItems="center">
-                  <CircularProgress
+                <div key={proficiencyId} className={ListItemGroup}>
+                  <div
+                    role="progressbar"
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-valuenow={value}
                     aria-labelledby={`progressbar-${id}-${proficiencyId}`}
-                    size={6}
-                    value={value}
-                    color="primary.500"
-                    thickness={16}
-                  />
-                  <Text
-                    id={`progressbar-${id}-${proficiencyId}`}
-                    fontSize="xs"
-                    fontWeight="medium"
-                    color="gray.600"
                   >
+                    <svg viewBox="0 0 100 100" className={ListItemChartSvg}>
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="42"
+                        strokeWidth="16"
+                        className={ListItemChartCircle}
+                      />
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="42"
+                        strokeWidth="16"
+                        strokeDashoffset="66"
+                        strokeDasharray={`${value * 2.64} ${264 - value * 2.64}`}
+                        className={ListItemChartCircleInner}
+                      />
+                    </svg>
+                  </div>
+                  <span id={`progressbar-${id}-${proficiencyId}`} className={ListItemLabel}>
                     {t(`about:languages.${proficiencyId}`)}
-                  </Text>
-                </Flex>
+                  </span>
+                </div>
               ))}
-            </Flex>
-          </Flex>
-        ))}
-      </Flex>
-    </Flex>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };

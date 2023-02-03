@@ -3,7 +3,7 @@ type UseHighlightProps = HighlightOptions;
 type HighlightProps = {
   query: string | string[];
   children: string | ((props: Chunk[]) => React.ReactNode);
-  styles?: CSSProperties;
+  styles?: import('react').CSSProperties;
 };
 
 type Chunk = {
