@@ -105,16 +105,19 @@ export const techs = {
       id: 'figma',
       title: 'Figma',
       icon: Figma,
+      color: '#000',
     },
     {
       id: 'photoshop',
       title: 'Photoshop',
       icon: Photoshop,
+      color: '#000',
     },
     {
       id: 'illustrator',
       title: 'Illustrator',
       icon: Illustrator,
+      color: '#000',
     },
   ],
 };
