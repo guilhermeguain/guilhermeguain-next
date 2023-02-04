@@ -1,18 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { Content } from '@styles/layout.css';
 import { Title } from '@styles/typography.css';
 
 import { useProjects } from './hooks/useProjects';
 
-import { List, ListItem } from './styles.css';
+import { Container, List, ListItem } from './styles.css';
 
 export const Projects = () => {
   const { t, projects, handleProjectClick } = useProjects();
 
   return (
-    <section id="projects" className={Content}>
+    <section id="projects" className={Container}>
       <h2 className={Title}>{t('projects:title')}</h2>
       <ul className={List}>
         {projects.map(({ id, link }) => (

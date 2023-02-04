@@ -1,6 +1,14 @@
 import { style } from '@vanilla-extract/css';
 
 import { vars } from '@styles/theme.css';
+import { Content, ListItemIcon } from '@styles/layout.css';
+
+export const Container = style([
+  Content,
+  {
+    paddingTop: '6rem',
+  },
+]);
 
 export const Columns = style({
   marginTop: '2rem',
@@ -34,3 +42,10 @@ export const ColumnTitle = style({
   fontSize: '0.875rem',
   fontWeight: 700,
 });
+
+export const CustomListItemIcon = style([
+  ListItemIcon,
+  {
+    display: 'initial',
+  },
+]);

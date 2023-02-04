@@ -1,11 +1,11 @@
 import React from 'react';
 import { Image } from '@chakra-ui/react';
 
-import { Content } from '@styles/layout.css';
 import { Title } from '@styles/typography.css';
 
 import { useExperiences } from './hooks/useExperiences';
 import {
+  Container,
   List,
   ListItem,
   ListItemHeader,
@@ -22,7 +22,7 @@ export const Experiences = () => {
   const { t, experiences } = useExperiences();
 
   return (
-    <section id="experience" className={Content}>
+    <section id="experience" className={Container}>
       <h2 className={Title}>{t('experience:title')}</h2>
       <ul className={List}>
         {experiences.map(({ id, badges }) => (

@@ -1,11 +1,17 @@
 import { style } from '@vanilla-extract/css';
 
 import { vars } from '@styles/theme.css';
-import { List } from '@styles/layout.css';
+import { Content } from '@styles/layout.css';
+
+export const Container = style([
+  Content,
+  {
+    paddingTop: '6rem',
+  },
+]);
 
 export const Intro = style({
-  paddingTop: '4rem',
-  paddingBottom: '3rem',
+  paddingBottom: '2rem',
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
@@ -13,7 +19,7 @@ export const Intro = style({
 
   '@media': {
     'screen and (min-width: 30rem)': {
-      paddingTop: '5rem',
+      paddingBottom: '4rem',
       flexDirection: 'row',
       alignItems: 'flex-start',
     },
@@ -97,14 +103,6 @@ export const Text = style({
     },
   },
 });
-
-export const CustomList = style([
-  List,
-  {
-    fontSize: '0.875rem',
-    lineHeight: '1.625',
-  },
-]);
 
 export const Boxes = style([
   Column,

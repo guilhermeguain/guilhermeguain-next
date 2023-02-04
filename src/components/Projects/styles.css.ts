@@ -1,6 +1,14 @@
 import { style } from '@vanilla-extract/css';
 
 import { vars } from '@styles/theme.css';
+import { Content } from '@styles/layout.css';
+
+export const Container = style([
+  Content,
+  {
+    paddingTop: '6rem',
+  },
+]);
 
 export const List = style({
   marginTop: '2rem',
