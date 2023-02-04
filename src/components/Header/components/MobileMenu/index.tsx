@@ -1,32 +1,35 @@
+'use client';
+
 import React, { useCallback } from 'react';
-import { useRouter } from 'next/router';
-import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
-import {
-  Link,
-  IconButton,
-  Stack,
-  Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  DrawerHeader,
-  DrawerBody,
-  useDisclosure,
-} from '@chakra-ui/react';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { usePathname } from 'next/navigation';
+import NextLink from 'next/link';
 import TagManager from 'react-gtm-module';
+import { IoClose } from 'react-icons/io5';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 import { vars } from '@styles/theme.css';
 
 import { LangSelector } from '@components/LangSelector';
 
+import { useMobileMenu } from './context';
+
+import { Button, Menu, Overlay, Drawer, DrawerHeader, DrawerContent, Link } from './styles.css';
+
 export const MobileMenu = ({ items }: MenuProps) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const {
+    drawerPosition,
+    drawerRef,
+    hideComponent,
+    hideOverlay,
+    showDrawer,
+    openDrawer,
+    closeDrawer,
+  } = useMobileMenu();
 
   const { t } = useTranslation('menu');
 
-  const { asPath } = useRouter();
+  const path = usePathname();
 
   const handleMenuClick = useCallback((event: React.MouseEvent) => {
     const id = event.currentTarget.getAttribute('data-id');
@@ -40,51 +43,44 @@ export const MobileMenu = ({ items }: MenuProps) => {
       },
     });
 
-    onClose();
+    closeDrawer();
   }, []);
 
   return (
     <>
-      <IconButton
-        aria-label="Main menu"
-        variant="outline"
-        borderWidth={2}
-        icon={<GiHamburgerMenu />}
-        color="gray.300"
-        borderColor="gray.300"
-        onClick={onOpen}
-        position="relative"
-      />
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={onClose}
-        returnFocusOnClose={false}
-        size="xs"
-      >
-        <DrawerOverlay />
-        <DrawerContent bg="gray.300">
-          <DrawerCloseButton />
-          <DrawerHeader />
-          <DrawerBody display="flex" flexDir="column" justifyContent="space-between" pb={8}>
-            <Stack spacing={4}>
-              {items.map(({ id, href }) => (
-                <NextLink key={id} href={href} passHref scroll={false}>
-                  <Link
-                    color={asPath.includes(id) ? 'secondary.400' : 'gray.600'}
-                    _hover={{ color: 'secondary.400' }}
-                    data-id={id}
-                    onClick={handleMenuClick}
-                  >
-                    {t(id)}
-                  </Link>
-                </NextLink>
-              ))}
-            </Stack>
-            <LangSelector style={{ color: vars.color.gray[600], fontSize: '1rem' }} />
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
+      <button aria-label="Main menu" onClick={openDrawer} className={Button}>
+        <RxHamburgerMenu size={24} />
+      </button>
+      <div className={Menu} aria-hidden={hideComponent}>
+        <div className={Overlay} onClick={closeDrawer} aria-hidden={hideOverlay} />
+
+        <div
+          ref={drawerRef}
+          className={Drawer}
+          aria-expanded={showDrawer}
+          style={{ right: drawerPosition }}
+        >
+          <div className={DrawerHeader}>
+            <IoClose size={24} onClick={closeDrawer} />
+          </div>
+          <ul role="navigation" aria-label="Mobile menu" className={DrawerContent}>
+            {items?.map(({ id, href }) => (
+              <NextLink
+                key={id}
+                href={href}
+                passHref
+                scroll={false}
+                aria-current={path?.includes(id)}
+                onClick={handleMenuClick}
+                className={Link}
+              >
+                {t(id)}
+              </NextLink>
+            ))}
+          </ul>
+          <LangSelector style={{ color: vars.color.gray[800] }} />
+        </div>
+      </div>
     </>
   );
 };
