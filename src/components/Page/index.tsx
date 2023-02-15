@@ -4,6 +4,8 @@ import { NextSeo } from 'next-seo';
 import { Header } from '@components/Header';
 import { Footer } from '@components/Footer';
 
+import { Container } from './styles.css';
+
 type Props = {
   title: string;
   description: string;
@@ -15,7 +17,9 @@ export const Page = ({ title, description, children }: Props) => {
     <>
       <NextSeo title={title} description={description} />
       <Header title={title} />
-      {children}
+      <main className={Container}>
+        <>{children}</>
+      </main>
       <Footer />
     </>
   );

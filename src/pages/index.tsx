@@ -3,6 +3,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+import { Row } from '@components/shared/Row';
 import { Page } from '@components/Page';
 
 import { Hero } from '@components/Hero';
@@ -13,24 +14,20 @@ import { Projects } from '@components/Projects';
 import { Events } from '@components/Events';
 import { Education } from '@components/Education';
 
-import { Container, CustomContent } from './styles.css';
-
 const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t } = useTranslation(['meta']);
 
   return (
     <Page title={t('meta:title')} description={t('meta:desc')}>
-      <main className={Container}>
-        <Hero />
-        <About />
-        <DataDrivenSeo />
-        <Experiences />
-        <Projects />
-        <section className={CustomContent}>
-          <Education />
-          <Events />
-        </section>
-      </main>
+      <Hero />
+      <About />
+      <DataDrivenSeo />
+      <Experiences />
+      <Projects />
+      <Row>
+        <Education />
+        <Events />
+      </Row>
     </Page>
   );
 };
