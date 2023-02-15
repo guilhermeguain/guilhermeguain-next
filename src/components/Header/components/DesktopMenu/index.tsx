@@ -32,7 +32,7 @@ export const DesktopMenu = ({ items }: MenuProps) => {
         {items.map(({ id, href }) => (
           <li key={id}>
             <NextLink
-              aria-selected={asPath.includes(id)}
+              aria-current={asPath.includes(id)}
               href={href}
               passHref
               scroll={false}

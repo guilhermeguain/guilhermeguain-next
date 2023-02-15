@@ -35,7 +35,7 @@ export const MenuItem = style({
   },
 
   selectors: {
-    '&[aria-selected=true]': {
+    '&[aria-current=true]': {
       color: vars.color.secondary[400],
     },
   },
