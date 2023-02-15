@@ -27,7 +27,7 @@ export const DesktopMenu = ({ items }: MenuProps) => {
   }, []);
 
   return (
-    <div className={Container}>
+    <nav className={Container}>
       <ul className={Menu}>
         {items.map(({ id, href }) => (
           <li key={id}>
@@ -46,6 +46,6 @@ export const DesktopMenu = ({ items }: MenuProps) => {
         ))}
       </ul>
       <LangSelector id="lang_selector_header" />
-    </div>
+    </nav>
   );
 };
