@@ -20,7 +20,6 @@ import {
   Name,
   Role,
   Contacts,
-  ContactsItem,
   ContactsItemSvg,
   Main,
   Column,
@@ -48,17 +47,17 @@ export const About = () => {
           <h2 className={Role}>{t('common:role')}</h2>
           <ul className={Contacts}>
             {contacts.map(({ id, icon: Icon, url }) => (
-              <a
-                key={id}
-                href={url}
-                target="_blank"
-                data-id={id}
-                onClick={handleLinkClick}
-                rel="noreferrer"
-                className={ContactsItem}
-              >
-                <Icon title={t(`about:${id}`) || id} size={24} className={ContactsItemSvg} />
-              </a>
+              <li key={id}>
+                <a
+                  href={url}
+                  target="_blank"
+                  data-id={id}
+                  onClick={handleLinkClick}
+                  rel="noreferrer"
+                >
+                  <Icon title={t(`about:${id}`) || id} size={24} className={ContactsItemSvg} />
+                </a>
+              </li>
             ))}
           </ul>
         </div>

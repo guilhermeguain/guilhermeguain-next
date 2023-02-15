@@ -5,10 +5,11 @@ import { useLangSelector } from './hooks/useLangSelector';
 import { Container, Input, Option } from './styles.css';
 
 type LangSelectorProps = {
+  id: string;
   style?: React.CSSProperties;
 };
 
-export const LangSelector = ({ style }: LangSelectorProps) => {
+export const LangSelector = ({ id, style }: LangSelectorProps) => {
   const { locale, handleLangChange } = useLangSelector();
 
   return (
@@ -16,7 +17,7 @@ export const LangSelector = ({ style }: LangSelectorProps) => {
       <div className={Container}>
         <select
           name="lang_selector"
-          id="lang_selector"
+          id={id}
           className={Input}
           defaultValue={locale}
           onChange={handleLangChange}

@@ -28,23 +28,24 @@ export const DesktopMenu = ({ items }: MenuProps) => {
 
   return (
     <div className={Container}>
-      <div className={Menu}>
+      <ul className={Menu}>
         {items.map(({ id, href }) => (
-          <NextLink
-            aria-selected={asPath.includes(id)}
-            key={id}
-            href={href}
-            passHref
-            scroll={false}
-            data-id={id}
-            onClick={handleMenuClick}
-            className={MenuItem}
-          >
-            {t(id)}
-          </NextLink>
+          <li key={id}>
+            <NextLink
+              aria-selected={asPath.includes(id)}
+              href={href}
+              passHref
+              scroll={false}
+              data-id={id}
+              onClick={handleMenuClick}
+              className={MenuItem}
+            >
+              {t(id)}
+            </NextLink>
+          </li>
         ))}
-      </div>
-      <LangSelector />
+      </ul>
+      <LangSelector id="lang_selector_header" />
     </div>
   );
 };

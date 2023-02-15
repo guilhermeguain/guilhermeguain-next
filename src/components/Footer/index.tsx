@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
           <span>{`2011 - ${new Date().getFullYear()}`}</span>
         </div>
-        <LangSelector />
+        <LangSelector id="lang_selector_footer" />
       </div>
     </footer>
   );

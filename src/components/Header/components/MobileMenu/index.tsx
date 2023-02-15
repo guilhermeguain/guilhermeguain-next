@@ -78,7 +78,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
               </NextLink>
             ))}
           </ul>
-          <LangSelector style={{ color: vars.color.gray[800] }} />
+          <LangSelector id="lang_selector_mobile" style={{ color: vars.color.gray[800] }} />
         </div>
       </div>
     </>

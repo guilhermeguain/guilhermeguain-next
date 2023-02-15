@@ -13,6 +13,7 @@ export const Menu = style({
   display: 'flex',
   gap: '.5rem',
   fontSize: '0.875rem',
+  listStyle: 'none',
 
   '@media': {
     'screen and (min-width: 30rem)': {

@@ -48,7 +48,7 @@ export const IntroContent = style({
 export const Name = style({
   borderBottom: `1px solid ${vars.color.border}`,
   paddingBottom: '0.5rem',
-  color: vars.color.secondary[500],
+  color: vars.color.secondary[400],
   fontSize: '1.5rem',
 });
 
@@ -62,6 +62,7 @@ export const Contacts = style({
   display: 'flex',
   gap: '1rem',
   justifyContent: 'center',
+  listStyle: 'none',
 
   '@media': {
     'screen and (min-width: 30rem)': {
@@ -69,8 +70,6 @@ export const Contacts = style({
     },
   },
 });
-
-export const ContactsItem = style({});
 
 export const ContactsItemSvg = style({
   fill: vars.color.text.primary,
