@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from '@chakra-ui/react';
 
 import { Title } from '@styles/typography.css';
 
@@ -36,8 +35,8 @@ export const Experiences = () => {
                 <h4 className={ListItemTitle}>{t(`experience:${id}.company`)}</h4>
               </div>
               <div className={ListItemHeaderBadges}>
-                {badges.map(({ id, title, color, icon }) => (
-                  <Image key={id} as={icon} color={color} alt={title} title={title} />
+                {badges.map(({ id, title, color, icon: Icon }) => (
+                  <Icon key={id} color={color} title={title} />
                 ))}
               </div>
             </div>

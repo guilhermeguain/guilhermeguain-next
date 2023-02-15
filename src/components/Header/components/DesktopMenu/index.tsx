@@ -2,10 +2,11 @@ import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
-import { HStack, Link, Flex } from '@chakra-ui/react';
 import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '@components/LangSelector';
+
+import { Container, Menu, MenuItem } from './styles.css';
 
 export const DesktopMenu = ({ items }: MenuProps) => {
   const { t } = useTranslation('menu');
@@ -26,25 +27,24 @@ export const DesktopMenu = ({ items }: MenuProps) => {
   }, []);
 
   return (
-    <Flex alignItems="center" justifyContent="space-between" gap={16}>
-      <HStack fontSize={['sm', 'md', 'lg']} gap={[2, 4]}>
+    <div className={Container}>
+      <div className={Menu}>
         {items.map(({ id, href }) => (
-          <Link
-            as={NextLink}
+          <NextLink
+            aria-selected={asPath.includes(id)}
             key={id}
             href={href}
             passHref
             scroll={false}
-            color={asPath.includes(id) ? 'secondary.400' : 'gray.300'}
-            _hover={{ color: 'secondary.400' }}
             data-id={id}
             onClick={handleMenuClick}
+            className={MenuItem}
           >
             {t(id)}
-          </Link>
+          </NextLink>
         ))}
-      </HStack>
+      </div>
       <LangSelector />
-    </Flex>
+    </div>
   );
 };

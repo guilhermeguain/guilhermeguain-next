@@ -24,6 +24,7 @@ export const ListItem = style({
 });
 
 export const ListItemHeader = style({
+  marginBottom: '1rem',
   borderBottom: `1px solid ${vars.color.border}`,
   paddingBottom: '.5rem',
   display: 'flex',
@@ -75,6 +76,8 @@ export const ListItemTitle = style({
 
 export const ListItemRole = style({
   color: vars.color.text.alternative,
+  fontSize: '.85rem',
+  fontWeight: 500,
 });
 
 export const ListItemPeriod = style({
@@ -83,4 +86,5 @@ export const ListItemPeriod = style({
 
 export const ListItemSummary = style({
   color: vars.color.text.alternative,
+  fontWeight: 500,
 });

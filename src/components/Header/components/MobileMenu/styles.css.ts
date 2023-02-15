@@ -44,14 +44,14 @@ export const Overlay = style({
 });
 
 export const Drawer = style({
-  padding: '1rem',
+  padding: '1rem 1rem 1rem 2rem',
   position: 'absolute',
   top: 0,
   bottom: 0,
   display: 'flex',
   flexDirection: 'column',
   transition: 'right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895)',
-  backgroundColor: vars.color.gray[300],
+  backgroundColor: vars.color.gray[200],
   boxShadow: '10px 10px 20px 10px rgba(0,0,0,0.4)',
 
   selectors: {
@@ -77,6 +77,8 @@ export const DrawerContent = style({
 });
 
 export const Link = style({
+  color: vars.color.gray[700],
+
   selectors: {
     '&:hover, &[aria-current=true]': {
       color: vars.color.secondary[500],

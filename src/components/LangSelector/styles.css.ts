@@ -12,6 +12,7 @@ export const Input = style({
   color: vars.color.text.primary,
   backgroundColor: 'transparent',
   fontSize: '.75rem',
+  fontFamily: 'inherit',
   cursor: 'pointer',
   width: '100%',
 

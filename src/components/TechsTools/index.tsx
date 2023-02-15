@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from '@chakra-ui/react';
 
 import { useTechsTools } from './hooks/useTechsTools';
 import {
@@ -25,8 +24,8 @@ export const TechsTools = () => {
           <div key={id} className={ListItem}>
             <h4 className={ListItemTitle}>{title}</h4>
             <div className={ListItemBadges}>
-              {items.map(({ id, title, icon, color }) => (
-                <Image key={id} as={icon} title={title} alt={title} color={color} />
+              {items.map(({ id, title, icon: Icon, color }) => (
+                <Icon key={id} title={title} color={color} />
               ))}
             </div>
           </div>

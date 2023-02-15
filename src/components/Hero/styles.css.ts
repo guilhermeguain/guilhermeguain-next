@@ -23,7 +23,7 @@ export const CustomContent = style([
 
 export const Role = style({
   order: 2,
-  fontSize: '1.125rem',
+  fontSize: '1.5rem',
   lineHeight: 1,
   color: vars.color.text.primary,
 
@@ -37,6 +37,7 @@ export const Role = style({
 export const Name = style({
   order: 1,
   color: vars.color.gray[500],
+  fontSize: '1.25rem',
 
   '@media': {
     'screen and (min-width: 30rem)': {
@@ -49,6 +50,7 @@ export const Desc = style({
   margin: '.5rem 0',
   order: 3,
   color: vars.color.text.secondary,
+  lineHeight: 1.5,
 
   '@media': {
     'screen and (min-width: 30rem)': {
