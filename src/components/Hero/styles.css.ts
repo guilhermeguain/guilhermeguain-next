@@ -5,7 +5,7 @@ import { vars } from '@styles/theme.css';
 import { Content } from '@styles/layout.css';
 
 export const Container = style({
-  backgroundImage: "url('/images/bg-hero.jpg')",
+  backgroundImage: "url('/images/bg-hero.webp')",
   position: 'relative',
   zIndex: 10,
 });
