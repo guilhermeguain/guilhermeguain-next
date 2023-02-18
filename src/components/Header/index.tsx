@@ -31,10 +31,10 @@ export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
               />
             </NextLink>
           </div>
-          <When value={isMobile}>
+          <When value={isMobile || !width}>
             <MobileMenu items={menuItems} />
           </When>
-          <When value={!isMobile || !width}>
+          <When value={!isMobile}>
             <DesktopMenu items={menuItems} />
           </When>
         </div>
