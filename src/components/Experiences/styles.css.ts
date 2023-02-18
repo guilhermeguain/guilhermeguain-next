@@ -15,6 +15,7 @@ export const List = style({
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
+  listStyle: 'none',
 });
 
 export const ListItem = style({
