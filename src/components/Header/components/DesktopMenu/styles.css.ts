@@ -3,10 +3,16 @@ import { style } from '@vanilla-extract/css';
 import { vars } from '@styles/theme.css';
 
 export const Container = style({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  gap: '4rem',
+  display: 'none',
+
+  '@media': {
+    'screen and (min-width: 48rem)': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: '4rem',
+    },
+  },
 });
 
 export const Menu = style({

@@ -8,6 +8,12 @@ export const Button = style({
   padding: '.5rem',
   backgroundColor: 'transparent',
   color: vars.color.border,
+
+  '@media': {
+    'screen and (min-width: 48rem)': {
+      display: 'none',
+    },
+  },
 });
 
 export const Menu = style({
