@@ -4,7 +4,6 @@ import React, { useCallback } from 'react';
 import { useTranslation } from 'next-i18next';
 import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
-import TagManager from 'react-gtm-module';
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
@@ -34,14 +33,6 @@ export const MobileMenu = ({ items }: MenuProps) => {
   const handleMenuClick = useCallback((event: React.MouseEvent) => {
     const id = event.currentTarget.getAttribute('data-id');
     const url = event.currentTarget.getAttribute('href');
-
-    TagManager.dataLayer({
-      dataLayer: {
-        event: 'menuClick',
-        menuId: id,
-        menuUrl: url,
-      },
-    });
 
     closeDrawer();
   }, []);

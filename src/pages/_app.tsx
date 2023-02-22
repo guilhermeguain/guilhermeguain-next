@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import type { AppProps } from 'next/app';
-import TagManager from 'react-gtm-module';
 import { appWithTranslation } from 'next-i18next';
 import { Montserrat } from '@next/font/google';
 
@@ -16,10 +15,6 @@ const fontFamily = Montserrat({
 });
 
 function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-MFKHPQ4' });
-  }, []);
-
   return (
     <AppContext>
       <div className={fontFamily.className}>

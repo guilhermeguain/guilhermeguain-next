@@ -2,7 +2,6 @@ import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
-import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '@components/LangSelector';
 
@@ -16,14 +15,6 @@ export const DesktopMenu = ({ items }: MenuProps) => {
   const handleMenuClick = useCallback((event: React.MouseEvent) => {
     const id = event.currentTarget.getAttribute('data-id');
     const url = event.currentTarget.getAttribute('href');
-
-    TagManager.dataLayer({
-      dataLayer: {
-        event: 'menuClick',
-        menuId: id,
-        menuUrl: url,
-      },
-    });
   }, []);
 
   return (
