@@ -3,6 +3,8 @@ import { useTranslation } from 'next-i18next';
 import { SiReact, SiTypescript, SiEslint } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
+import { Button } from '@components/Button';
+
 import { Container, CustomContent, Role, Name, Desc, Badges } from './styles.css';
 
 export const Hero = () => {
@@ -11,6 +13,7 @@ export const Hero = () => {
   return (
     <section id="hero" className={Container}>
       <div className={CustomContent}>
+        <Button />
         <h1 className={Role}>{t('common:role')}</h1>
         <h2 className={Name}>{t('common:name')}</h2>
         <span className={Desc}>{t('hero:desc')}</span>
