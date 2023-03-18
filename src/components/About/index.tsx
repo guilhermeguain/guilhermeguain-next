@@ -35,7 +35,7 @@ export const About = () => {
     <section id="about" className={Container}>
       <div className={Intro}>
         <NextImage
-          src="/images/guilherme-guain.jpg"
+          src="/images/guilherme-guain.webp"
           alt="Guilherme Guain"
           title="Guilherme Guain"
           width={128}
