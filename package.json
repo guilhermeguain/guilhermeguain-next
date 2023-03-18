@@ -10,38 +10,37 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.1.6",
-    "@vanilla-extract/css": "^1.9.5",
-    "i18next": "^22.4.10",
-    "next": "13.1.6",
-    "next-i18next": "^13.1.5",
+    "@vanilla-extract/css": "^1.10.0",
+    "i18next": "^22.4.12",
+    "next": "13.2.4",
+    "next-i18next": "^13.2.2",
     "next-seo": "^5.15.0",
-    "next-sitemap": "^3.1.52",
+    "next-sitemap": "^4.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-gtm-module": "^2.0.11",
-    "react-i18next": "^12.1.5",
-    "react-icons": "^4.7.1"
+    "react-i18next": "^12.2.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
-    "@types/node": "18.14.0",
+    "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@types/react-gtm-module": "^2.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "@typescript-eslint/parser": "^5.53.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
     "@vanilla-extract/next-plugin": "^2.1.1",
-    "eslint": "^8.34.0",
+    "eslint": "^8.36.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "13.1.6",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "typescript": "4.9.5"
+    "typescript": "5.0.2"
   }
 }

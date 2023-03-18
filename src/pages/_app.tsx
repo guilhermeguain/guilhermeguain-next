@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import TagManager from 'react-gtm-module';
 import { appWithTranslation } from 'next-i18next';
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from 'next/font/google';
 
 import { AppContext } from '@contexts/App';
 
