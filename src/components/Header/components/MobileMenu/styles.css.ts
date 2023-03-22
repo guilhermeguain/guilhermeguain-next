@@ -28,6 +28,7 @@ export const Menu = style({
   selectors: {
     '&[aria-hidden=true]': {
       zIndex: -1,
+      height: '0vh',
     },
   },
 });
