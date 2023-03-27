@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import TagManager from 'react-gtm-module';
@@ -21,6 +21,11 @@ export const useAbout = () => {
         id: 'github',
         icon: BsGithub,
         url: 'https://github.com/guilhermeguain/',
+      },
+      {
+        id: 'instagram',
+        icon: BsInstagram,
+        url: 'https://www.instagram.com/guilhermeguain/',
       },
       {
         id: 'email',
