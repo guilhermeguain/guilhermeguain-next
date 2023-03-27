@@ -1,5 +1,11 @@
 {
   "title": "Events",
+  "nassemble-rocketseat": {
+    "title": "Assemble",
+    "host": "Rocketseat",
+    "date": "03/2023",
+    "location": "São Paulo, SP"
+  },
   "next-js-conf": {
     "title": "Next.js Conf",
     "host": "Vercel",
