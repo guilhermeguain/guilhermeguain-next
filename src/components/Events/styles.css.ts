@@ -12,6 +12,24 @@ export const List = style({
   display: 'flex',
   flexDirection: 'column',
   gap: '.5rem',
+  maxHeight: '18rem',
+  overflowY: 'scroll',
+  paddingRight: '1rem',
+  selectors: {
+    '&::-webkit-scrollbar': {
+      width: '.5rem',
+    },
+    '&::-webkit-scrollbar-track': {
+      borderRadius: '.5rem',
+
+      width: '.5rem',
+      background: vars.color.gray[700],
+    },
+    '&::-webkit-scrollbar-thumb': {
+      borderRadius: '.5rem',
+      background: vars.color.gray[500],
+    },
+  },
 });
 
 export const ListItem = style({
