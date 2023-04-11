@@ -1,5 +1,11 @@
 {
   "title": "Events",
+  "ia-experience-wtc-sp": {
+    "title": "IA Experience",
+    "host": "Upper & StartSe",
+    "date": "04/2023",
+    "location": "São Paulo, SP"
+  },
   "assemble-rocketseat": {
     "title": "Assemble",
     "host": "Rocketseat",

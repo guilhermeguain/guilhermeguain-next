@@ -6,6 +6,7 @@ export const useEvents = () => {
 
   const events = useMemo(
     () => [
+      'ia-experience-wtc-sp',
       'assemble-rocketseat',
       'next-js-conf',
       'seo-summit',
