@@ -10,30 +10,30 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vanilla-extract/css": "^1.10.0",
-    "i18next": "^22.4.13",
-    "next": "13.2.4",
+    "@vanilla-extract/css": "^1.11.0",
+    "i18next": "^22.4.15",
+    "next": "13.3.1",
     "next-i18next": "^13.2.2",
-    "next-seo": "^5.15.0",
-    "next-sitemap": "^4.0.6",
+    "next-seo": "^6.0.0",
+    "next-sitemap": "^4.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-gtm-module": "^2.0.11",
-    "react-i18next": "^12.2.0",
+    "react-i18next": "^12.2.2",
     "react-icons": "^4.8.0"
   },
   "devDependencies": {
-    "@types/node": "18.15.10",
-    "@types/react": "18.0.29",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "18.16.2",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
     "@types/react-gtm-module": "^2.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "@vanilla-extract/next-plugin": "^2.1.1",
-    "eslint": "^8.36.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "@vanilla-extract/next-plugin": "^2.1.2",
+    "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "13.2.4",
+    "eslint-config-next": "13.3.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -41,6 +41,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "typescript": "5.0.2"
+    "typescript": "5.0.4"
   }
 }
