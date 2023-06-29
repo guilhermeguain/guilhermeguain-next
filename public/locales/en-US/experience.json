@@ -6,12 +6,6 @@
     "period": "01/2023 - present",
     "summary": "With the purpose of promoting unforgettable experiences, I work in the planning and development of web and mobile solutions using the most modern technologies."
   },
-  "health-protection": {
-    "company": "Health Protection",
-    "role": "Front-end Developer",
-    "period": "09/2020 - 10/2022",
-    "summary": "The project was developed using Next.js with TypeScript and tools such as the Context API, Axios, Tailwind CSS, Chakra UI, ESLint, and React Query. For content management, we used Sanity CMS. My activities involved front-end development, API integration, component and page creation, maintenance and bug fixing, and also continuous deployment with Netlify and Vercel."
-  },
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
     "role": "Full-stack Developer",
@@ -21,8 +15,26 @@
   "inter-american": {
     "company": "Inter-American Coalition",
     "role": "Full-stack Developer",
-    "period": "08/2021 - 09/2021",
+    "period": "08/2021 - present",
     "summary": "Project developed with WordPress Multisite to unify the organization's websites, facilitating the maintenance and management of content. I am currently responsible for monitoring and maintaining the server, updating WordPress plugins and themes, and managing website content."
+  },
+  "global-empregos": {
+    "company": "Global Empregos",
+    "role": "Full-stack Developer",
+    "period": "08/2018 - 04/2023",
+    "summary": "I worked as a full-stack developer, playing a cross-functional role that included developing technology solutions, SEO optimization, and web server management. In this challenging position, I was responsible for creating an enhanced online experience for candidates and companies."
+  },
+  "global-treina": {
+    "company": "Global Treina",
+    "role": "Full-stack Developer",
+    "period": "11/2019 - 04/2023",
+    "summary": "At Global Treina, I had the opportunity to play a crucial role in the development of a online learning platform, focused on vocational courses. As a full-stack developer, I was responsible for creating a high-quality, interactive learning experience for students, incorporating modern technologies and innovative solutions."
+  },
+  "health-protection": {
+    "company": "Health Protection",
+    "role": "Front-end Developer",
+    "period": "09/2020 - 10/2022",
+    "summary": "The project was developed using Next.js with TypeScript and tools such as the Context API, Axios, Tailwind CSS, Chakra UI, ESLint, and React Query. For content management, we used Sanity CMS. My activities involved front-end development, API integration, component and page creation, maintenance and bug fixing, and also continuous deployment with Netlify and Vercel."
   },
   "360-comunicacao": {
     "company": "360 Comunicação Digital",

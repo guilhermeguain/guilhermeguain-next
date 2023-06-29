@@ -27,7 +27,7 @@ export const ListItem = style({
 export const ListItemHeader = style({
   marginBottom: '1rem',
   borderBottom: `1px solid ${vars.color.border}`,
-  paddingBottom: '.5rem',
+  paddingBottom: '.75rem',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
@@ -77,12 +77,20 @@ export const ListItemTitle = style({
 
 export const ListItemRole = style({
   color: vars.color.text.alternative,
-  fontSize: '.85rem',
-  fontWeight: 500,
+  fontSize: '.75rem',
+  fontWeight: 600,
+  textTransform: 'uppercase',
 });
 
 export const ListItemPeriod = style({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '.25rem',
   color: vars.color.text.alternative,
+});
+
+export const ListItemPeriodIcon = style({
+  fill: vars.color.secondary[400],
 });
 
 export const ListItemSummary = style({

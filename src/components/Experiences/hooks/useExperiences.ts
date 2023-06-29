@@ -49,7 +49,7 @@ export const useExperiences = () => {
         ],
       },
       {
-        id: 'health-protection',
+        id: 'toxicologia-pardini',
         badges: [
           {
             id: 'reactjs',
@@ -76,17 +76,6 @@ export const useExperiences = () => {
             icon: SiEslint,
           },
           {
-            id: 'tailwindcss',
-            title: 'Tailwind CSS',
-            color: '#38bdf8',
-            icon: SiTailwindcss,
-          },
-        ],
-      },
-      {
-        id: 'toxicologia-pardini',
-        badges: [
-          {
             id: 'wordpress',
             title: 'WordPress',
             color: '#000',
@@ -109,18 +98,6 @@ export const useExperiences = () => {
             title: 'AMP',
             color: '#0379c4',
             icon: SiAmp,
-          },
-          {
-            id: 'sass',
-            title: 'Sass',
-            color: '#bf4080',
-            icon: FaSass,
-          },
-          {
-            id: 'gulp',
-            title: 'Gulp',
-            color: '#cf4647',
-            icon: SiGulp,
           },
         ],
       },
@@ -156,6 +133,111 @@ export const useExperiences = () => {
             title: 'Gulp',
             color: '#cf4647',
             icon: SiGulp,
+          },
+        ],
+      },
+      {
+        id: 'global-empregos',
+        badges: [
+          {
+            id: 'wordpress',
+            title: 'WordPress',
+            color: '#000',
+            icon: SiWordpress,
+          },
+          {
+            id: 'php',
+            title: 'PHP',
+            color: '#7a86b8',
+            icon: SiPhp,
+          },
+          {
+            id: 'mysql',
+            title: 'MySQL',
+            color: '#0074a3',
+            icon: SiMysql,
+          },
+          {
+            id: 'sass',
+            title: 'Sass',
+            color: '#bf4080',
+            icon: FaSass,
+          },
+          {
+            id: 'gulp',
+            title: 'Gulp',
+            color: '#cf4647',
+            icon: SiGulp,
+          },
+        ],
+      },
+      {
+        id: 'global-treina',
+        badges: [
+          {
+            id: 'wordpress',
+            title: 'WordPress',
+            color: '#000',
+            icon: SiWordpress,
+          },
+          {
+            id: 'php',
+            title: 'PHP',
+            color: '#7a86b8',
+            icon: SiPhp,
+          },
+          {
+            id: 'mysql',
+            title: 'MySQL',
+            color: '#0074a3',
+            icon: SiMysql,
+          },
+          {
+            id: 'sass',
+            title: 'Sass',
+            color: '#bf4080',
+            icon: FaSass,
+          },
+          {
+            id: 'gulp',
+            title: 'Gulp',
+            color: '#cf4647',
+            icon: SiGulp,
+          },
+        ],
+      },
+      {
+        id: 'health-protection',
+        badges: [
+          {
+            id: 'reactjs',
+            title: 'React.js',
+            color: '#61dafb',
+            icon: SiReact,
+          },
+          {
+            id: 'typescript',
+            title: 'TypeScript',
+            color: '#3178c6',
+            icon: SiTypescript,
+          },
+          {
+            id: 'nextjs',
+            title: 'Next.js',
+            color: '#000',
+            icon: TbBrandNextjs,
+          },
+          {
+            id: 'eslint',
+            title: 'ESLint',
+            color: '#4b32c3',
+            icon: SiEslint,
+          },
+          {
+            id: 'tailwindcss',
+            title: 'Tailwind CSS',
+            color: '#38bdf8',
+            icon: SiTailwindcss,
           },
         ],
       },

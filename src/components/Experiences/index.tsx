@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiCalendarAlt } from 'react-icons/bi';
 
 import { Title } from '@styles/typography.css';
 
@@ -14,6 +15,7 @@ import {
   ListItemTitle,
   ListItemRole,
   ListItemPeriod,
+  ListItemPeriodIcon,
   ListItemSummary,
 } from './styles.css';
 
@@ -30,7 +32,10 @@ export const Experiences = () => {
               <div className={ListItemHeaderInfo}>
                 <div className={ListItemHeaderInfoGroup}>
                   <h3 className={ListItemRole}>{t(`experience:${id}.role`)}</h3>
-                  <span className={ListItemPeriod}>{t(`experience:${id}.period`)}</span>
+                  <span className={ListItemPeriod}>
+                    <BiCalendarAlt size={16} className={ListItemPeriodIcon} />
+                    {t(`experience:${id}.period`)}
+                  </span>
                 </div>
                 <h4 className={ListItemTitle}>{t(`experience:${id}.company`)}</h4>
               </div>
