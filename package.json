@@ -29,7 +29,7 @@
     "@types/react-gtm-module": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
-    "@vanilla-extract/next-plugin": "^2.1.2",
+    "@vanilla-extract/next-plugin": "^2.2.2",
     "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-google": "^0.14.0",
