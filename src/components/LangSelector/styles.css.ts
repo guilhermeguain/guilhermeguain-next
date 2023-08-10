@@ -9,6 +9,7 @@ export const Container = style({
 });
 
 export const Input = style({
+  paddingBottom: '2px',
   color: vars.color.text.primary,
   backgroundColor: 'transparent',
   fontSize: '.75rem',
