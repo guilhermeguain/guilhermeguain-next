@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: www.guilhermeguain.com.br
-
 # Sitemaps
-Sitemap: www.guilhermeguain.com.br/sitemap.xml
+Sitemap: https://www.guilhermeguain.com.br/sitemap.xml
