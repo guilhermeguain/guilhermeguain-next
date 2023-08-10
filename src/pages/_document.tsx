@@ -1,9 +1,12 @@
 import React from 'react';
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript, DocumentProps } from 'next/document';
 
-function Document() {
+function Document({ locale }: DocumentProps) {
+  const canonical =
+    locale === 'pt-BR' ? 'https://www.guilhermeguain.com.br' : 'https://www.guilhermeguain.com';
+
   return (
-    <Html lang="en">
+    <Html lang={locale}>
       <Head>
         <meta name="theme-color" content="#1A202C" />
         <meta
@@ -11,7 +14,7 @@ function Document() {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <link rel="canonical" href="https://www.guilhermeguain.com.br"></link>
+        <link rel="canonical" href={canonical}></link>
       </Head>
       <body>
         <Main />
