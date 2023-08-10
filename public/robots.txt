@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.guilhermeguain.com.br
-
-# Sitemaps
-Sitemap: https://www.guilhermeguain.com.br/sitemap.xml
