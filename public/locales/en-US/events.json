@@ -1,5 +1,11 @@
 {
   "title": "Events",
+  "dev-leaders-conference-alura-2023": {
+    "title": "DevLeaders Conference",
+    "host": "Alura",
+    "date": "08/2023",
+    "location": "São Paulo, SP"
+  },
   "ia-experience-wtc-sp": {
     "title": "IA Experience",
     "host": "Upper & StartSe",
