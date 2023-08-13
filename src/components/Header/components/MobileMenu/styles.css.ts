@@ -60,6 +60,7 @@ export const Drawer = style({
   transition: 'right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895)',
   backgroundColor: vars.color.gray[200],
   boxShadow: '10px 10px 20px 10px rgba(0,0,0,0.4)',
+  maxHeight: '100%',
 
   selectors: {
     '&[aria-expanded=true]': {
