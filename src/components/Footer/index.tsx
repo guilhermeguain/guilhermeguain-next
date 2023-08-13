@@ -27,7 +27,7 @@ export const Footer = () => {
             <span className={TextsInnerItem}>{t('common:name')}</span>
             <span className={TextsInnerItem}>{t('common:role')}</span>
           </div>
-          <span>{`2011 - ${new Date().getFullYear()}`}</span>
+          <span>{`2012 - ${new Date().getFullYear()}`}</span>
         </div>
         <LangSelector id="lang_selector_footer" />
       </div>
