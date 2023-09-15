@@ -63,7 +63,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
           <div className={DrawerHeader}>
             <IoClose size={24} onClick={closeDrawer} />
           </div>
-          <ul role="navigation" aria-label="Mobile menu" className={DrawerContent}>
+          <ul className={DrawerContent}>
             {items?.map(({ id, href }) => (
               <NextLink
                 key={id}
