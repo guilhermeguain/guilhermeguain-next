@@ -63,17 +63,18 @@ export const MobileMenu = ({ items }: MenuProps) => {
           </div>
           <ul className={DrawerContent}>
             {items?.map(({ id, href }) => (
-              <NextLink
-                key={id}
-                href={href}
-                passHref
-                scroll={false}
-                aria-current={path?.includes(id)}
-                onClick={handleMenuClick}
-                className={Link}
-              >
-                {t(id)}
-              </NextLink>
+              <li key={id}>
+                <NextLink
+                  href={href}
+                  passHref
+                  scroll={false}
+                  aria-current={path?.includes(id)}
+                  onClick={handleMenuClick}
+                  className={Link}
+                >
+                  {t(id)}
+                </NextLink>
+              </li>
             ))}
           </ul>
           <LangSelector id="lang_selector_mobile" style={{ color: vars.color.gray[800] }} />
