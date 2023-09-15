@@ -92,6 +92,7 @@ export const DrawerContent = style({
   display: 'flex',
   flexDirection: 'column',
   gap: '1rem',
+  listStyle: 'none',
   minWidth: '12rem',
   flex: 1,
 });
