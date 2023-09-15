@@ -51,7 +51,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
       <button aria-label="Main menu" onClick={openDrawer} className={Button}>
         <RxHamburgerMenu size={24} />
       </button>
-      <div className={Menu} aria-hidden={hideComponent}>
+      <div className={hideComponent ? Menu.hidden : Menu.default}>
         <div className={Overlay} onClick={closeDrawer} aria-hidden={hideOverlay} />
 
         <div

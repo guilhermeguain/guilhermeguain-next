@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css';
+import { style, styleVariants } from '@vanilla-extract/css';
 
 import { vars } from '@styles/theme.css';
 
@@ -16,7 +16,7 @@ export const Button = style({
   },
 });
 
-export const Menu = style({
+export const MenuBase = style({
   position: 'absolute',
   top: 0,
   right: 0,
@@ -24,13 +24,17 @@ export const Menu = style({
   left: 0,
   overflow: 'hidden',
   height: '100vh',
+});
 
-  selectors: {
-    '&[aria-hidden=true]': {
+export const Menu = styleVariants({
+  default: [MenuBase],
+  hidden: [
+    MenuBase,
+    {
       zIndex: -1,
       height: '0vh',
     },
-  },
+  ],
 });
 
 export const Overlay = style({
