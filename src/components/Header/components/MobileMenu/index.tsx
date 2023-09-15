@@ -52,12 +52,10 @@ export const MobileMenu = ({ items }: MenuProps) => {
         <RxHamburgerMenu size={24} />
       </button>
       <div className={hideComponent ? Menu.hidden : Menu.default}>
-        <div className={Overlay} onClick={closeDrawer} aria-hidden={hideOverlay} />
-
+        <div className={hideOverlay ? Overlay.hidden : Overlay.default} onClick={closeDrawer} />
         <div
           ref={drawerRef}
-          className={Drawer}
-          aria-expanded={showDrawer}
+          className={showDrawer ? Drawer.visible : Drawer.default}
           style={{ right: drawerPosition }}
         >
           <div className={DrawerHeader}>

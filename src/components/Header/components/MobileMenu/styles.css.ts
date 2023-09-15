@@ -37,7 +37,7 @@ export const Menu = styleVariants({
   ],
 });
 
-export const Overlay = style({
+export const OverlayBase = style({
   backgroundColor: 'rgba(0,0,0,0.5)',
   position: 'absolute',
   top: 0,
@@ -46,15 +46,19 @@ export const Overlay = style({
   left: 0,
   opacity: 1,
   transition: 'opacity .5s cubic-bezier(0.820, 0.085, 0.395, 0.895)',
-
-  selectors: {
-    '&[aria-hidden=true]': {
-      opacity: 0,
-    },
-  },
 });
 
-export const Drawer = style({
+export const Overlay = styleVariants({
+  default: [OverlayBase],
+  hidden: [
+    OverlayBase,
+    {
+      opacity: 0,
+    },
+  ],
+});
+
+export const DrawerBase = style({
   padding: '1rem 1rem 1rem 2rem',
   position: 'absolute',
   top: 0,
@@ -65,12 +69,16 @@ export const Drawer = style({
   backgroundColor: vars.color.gray[200],
   boxShadow: '10px 10px 20px 10px rgba(0,0,0,0.4)',
   maxHeight: '100%',
+});
 
-  selectors: {
-    '&[aria-expanded=true]': {
+export const Drawer = styleVariants({
+  default: [DrawerBase],
+  visible: [
+    DrawerBase,
+    {
       right: 0,
     },
-  },
+  ],
 });
 
 export const DrawerHeader = style({
