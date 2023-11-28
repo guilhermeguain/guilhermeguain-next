@@ -12,7 +12,6 @@ import { Education } from '@/components/Education';
 export default function Home() {
   return (
     <Layout title={'Title'} description={'Description'}>
-      <span>Content</span>
       <Hero />
       <About />
       <DataDrivenSeo />
