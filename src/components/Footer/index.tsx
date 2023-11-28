@@ -1,15 +1,11 @@
-import React from 'react';
-import { useTranslation } from 'next-i18next';
 import NextLink from 'next/link';
 import NextImage from 'next/image';
 
-import { LangSelector } from '@components/LangSelector';
+import { LangSelector } from '@/components/LangSelector';
 
 import { Container, ContainerContent, Texts, TextsInner, TextsInnerItem } from './styles.css';
 
 export const Footer = () => {
-  const { t } = useTranslation(['common']);
-
   return (
     <footer className={Container}>
       <div className={ContainerContent}>
@@ -24,8 +20,8 @@ export const Footer = () => {
         </NextLink>
         <div className={Texts}>
           <div className={TextsInner}>
-            <span className={TextsInnerItem}>{t('common:name')}</span>
-            <span className={TextsInnerItem}>{t('common:role')}</span>
+            <span className={TextsInnerItem}>Guilherme Guain</span>
+            <span className={TextsInnerItem}>Desenvolvedor Front-end</span>
           </div>
           <span>{`2012 - ${new Date().getFullYear()}`}</span>
         </div>

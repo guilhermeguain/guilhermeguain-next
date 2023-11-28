@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 
-import { MOBILE_BREAKPOINT } from '@lib/constants';
+import { MOBILE_BREAKPOINT } from '@/lib/constants';
 
-import { useWindowSize } from '@hooks/useWindowSize';
+import { useWindowSize } from '@/hooks/useWindowSize';
 
 import { useHeaderContext } from '../context';
 
@@ -15,18 +15,22 @@ export const useHeader = () => {
     () => [
       {
         id: 'about',
+        label: 'Sobre',
         href: '#about',
       },
       {
         id: 'experience',
+        label: 'Experiência',
         href: '#experience',
       },
       {
         id: 'projects',
+        label: 'Projetos',
         href: '#projects',
       },
       {
         id: 'education',
+        label: 'Educação',
         href: '#education',
       },
     ],

@@ -9,5 +9,6 @@ type MenuProps = {
 
 type MenuItemProps = {
   id: string;
+  label: string;
   href: string;
 };

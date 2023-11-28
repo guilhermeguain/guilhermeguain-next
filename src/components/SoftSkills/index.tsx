@@ -1,6 +1,5 @@
-import React from 'react';
-
 import { useSoftSkills } from './hooks/useSoftSkills';
+
 import {
   Container,
   Header,
@@ -13,18 +12,18 @@ import {
 } from './styles.css';
 
 export const SoftSkills = () => {
-  const { t, softSkills } = useSoftSkills();
+  const { softSkills } = useSoftSkills();
 
   return (
     <div className={Container}>
       <div className={Header}>
-        <h3 className={HeaderTitle}>{t('about:soft-skills')}</h3>
+        <h3 className={HeaderTitle}>Soft skills</h3>
       </div>
       <div className={List}>
-        {softSkills.map(({ id, value }) => (
+        {softSkills.map(({ id, value, label }) => (
           <div key={id} className={ListItem}>
             <h4 id={`progressbar-${id}`} className={ListItemTitle}>
-              {t(`soft-skills:${id}`)}
+              {label}
             </h4>
             <div className={ListItemProgress}>
               <div

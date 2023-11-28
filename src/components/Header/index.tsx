@@ -2,7 +2,7 @@ import React from 'react';
 import NextImage from 'next/image';
 import NextLink from 'next/link';
 
-import { When } from '@components/shared/When';
+import { When } from '@/components/shared/When';
 import { MobileMenu } from './components/MobileMenu';
 import { DesktopMenu } from './components/DesktopMenu';
 

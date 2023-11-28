@@ -1,8 +1,8 @@
 import { style } from '@vanilla-extract/css';
 
-import { vars } from '@styles/theme.css';
+import { vars } from '@/styles/theme.css';
 
-import { Content } from '@styles/layout.css';
+import { Content } from '@/styles/layout.css';
 
 export const Container = style({
   backgroundImage: "url('/images/bg-hero.webp')",

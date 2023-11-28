@@ -1,6 +1,8 @@
+'use client';
+
 import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 
-import { useWindowSize } from '@hooks/useWindowSize';
+import { useWindowSize } from '@/hooks/useWindowSize';
 
 export const HeaderContext = createContext({} as HeaderContextProps);
 

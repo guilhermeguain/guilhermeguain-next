@@ -1,43 +1,45 @@
-import { useTranslation } from 'next-i18next';
-
-import { Semrush } from '@assets/Semrush';
-import { GoogleAnalytics } from '@assets/GoogleAnalytics';
-import { GoogleTagManager } from '@assets/GoogleTagManager';
+import { Semrush } from '@/assets/Semrush';
+import { GoogleAnalytics } from '@/assets/GoogleAnalytics';
+import { GoogleTagManager } from '@/assets/GoogleTagManager';
 
 export const useDataDrivenSeo = () => {
-  const { t } = useTranslation(['data-driven-seo']);
-
   const dataDrivenSeo = [
     {
       id: 'semrush',
+      label: 'Semrush',
       icon: Semrush,
-      list: ['semrush-1', 'semrush-2', 'semrush-3'],
+      list: [
+        'Pesquisa e análise de palavras-chave e da concorrência',
+        'Monitoramento e correção dos erros identificados pela auditoria',
+        'Monitoramento de desempenho e posicionamento',
+      ],
     },
     {
       id: 'google-tag-manager',
+      label: 'Google Tag Managger',
       icon: GoogleTagManager,
       list: [
-        'google-tag-manager-1',
-        'google-tag-manager-2',
-        'google-tag-manager-3',
-        'google-tag-manager-4',
+        'Configuração de tags, gatilhos e variáveis',
+        'Criação de gatilhos baseados em eventos personalizados',
+        'Configuração para comunicação entre iframes',
+        'Captura de informações através da camada de dados',
       ],
     },
     {
       id: 'google-analytics',
+      label: 'Google Analytics',
       icon: GoogleAnalytics,
       list: [
-        'google-analytics-1',
-        'google-analytics-2',
-        'google-analytics-3',
-        'google-analytics-4',
-        'google-analytics-5',
+        'Instalação de tags usando o Google Tag Manager',
+        'Configuração de dimensões e métricas personalizadas',
+        'Configuração do GA4',
+        'Configuração de filtros e metas de conversão',
+        'Uso da camada de dados para obter dados',
       ],
     },
   ];
 
   return {
-    t,
     dataDrivenSeo,
   };
 };

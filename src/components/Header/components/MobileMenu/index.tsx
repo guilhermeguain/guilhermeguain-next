@@ -1,16 +1,15 @@
 'use client';
 
 import React, { useCallback } from 'react';
-import { useTranslation } from 'next-i18next';
 import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
 import TagManager from 'react-gtm-module';
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
-import { vars } from '@styles/theme.css';
+import { vars } from '@/styles/theme.css';
 
-import { LangSelector } from '@components/LangSelector';
+import { LangSelector } from '@/components/LangSelector';
 
 import { useMobileMenu } from './context';
 
@@ -26,8 +25,6 @@ export const MobileMenu = ({ items }: MenuProps) => {
     openDrawer,
     closeDrawer,
   } = useMobileMenu();
-
-  const { t } = useTranslation('menu');
 
   const path = usePathname();
 
@@ -62,7 +59,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
             <IoClose size={24} onClick={closeDrawer} />
           </div>
           <ul className={DrawerContent}>
-            {items?.map(({ id, href }) => (
+            {items?.map(({ id, label, href }) => (
               <li key={id}>
                 <NextLink
                   href={href}
@@ -72,7 +69,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
                   onClick={handleMenuClick}
                   className={Link}
                 >
-                  {t(id)}
+                  {label}
                 </NextLink>
               </li>
             ))}

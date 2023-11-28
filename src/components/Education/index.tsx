@@ -1,8 +1,7 @@
-import React from 'react';
-
-import { Title } from '@styles/typography.css';
+import { Title } from '@/styles/typography.css';
 
 import { useEducation } from './hooks/useEducation';
+
 import {
   Container,
   List,
@@ -15,21 +14,21 @@ import {
 } from './styles.css';
 
 export const Education = () => {
-  const { t, educations } = useEducation();
+  const { educations } = useEducation();
 
   return (
     <div id="education" className={Container}>
-      <h2 className={Title}>{t('education:title')}</h2>
+      <h2 className={Title}>Educação</h2>
       <ul className={List}>
-        {educations.map((education) => (
-          <li key={education} className={ListItem}>
+        {educations.map(({ id, title, institution, period, location }) => (
+          <li key={id} className={ListItem}>
             <div className={ListItemColumn}>
-              <h3 className={ListItemTitle}>{t(`education:${education}.title`)}</h3>
-              <p className={ListItemInstitution}>{t(`education:${education}.institution`)}</p>
+              <h3 className={ListItemTitle}>{title}</h3>
+              <p className={ListItemInstitution}>{institution}</p>
             </div>
             <div className={ListItemColumn}>
-              <span className={ListItemPeriod}>{t(`education:${education}.period`)}</span>
-              <span className={ListItemLocation}>{t(`education:${education}.location`)}</span>
+              <span className={ListItemPeriod}>{period}</span>
+              <span className={ListItemLocation}>{location}</span>
             </div>
           </li>
         ))}

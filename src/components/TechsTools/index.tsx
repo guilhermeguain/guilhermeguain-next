@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useTechsTools } from './hooks/useTechsTools';
 import {
   Container,
@@ -12,12 +10,12 @@ import {
 } from './styles.css';
 
 export const TechsTools = () => {
-  const { t, groups } = useTechsTools();
+  const { groups } = useTechsTools();
 
   return (
     <div className={Container}>
       <div className={Header}>
-        <h3 className={HeaderTitle}>{t('about:techs-tools.title')}</h3>
+        <h3 className={HeaderTitle}>Techs & Tools</h3>
       </div>
       <div className={List}>
         {groups.map(({ id, title, items }) => (

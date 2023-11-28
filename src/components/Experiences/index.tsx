@@ -1,7 +1,6 @@
-import React from 'react';
 import { BiCalendarAlt } from 'react-icons/bi';
 
-import { Title } from '@styles/typography.css';
+import { Title } from '@/styles/typography.css';
 
 import { useExperiences } from './hooks/useExperiences';
 import {
@@ -20,24 +19,24 @@ import {
 } from './styles.css';
 
 export const Experiences = () => {
-  const { t, experiences } = useExperiences();
+  const { experiences } = useExperiences();
 
   return (
     <section id="experience" className={Container}>
-      <h2 className={Title}>{t('experience:title')}</h2>
+      <h2 className={Title}>Experience</h2>
       <ul className={List}>
-        {experiences.map(({ id, badges }) => (
+        {experiences.map(({ id, label, role, period, summary, badges }) => (
           <li key={id} className={ListItem}>
             <div className={ListItemHeader}>
               <div className={ListItemHeaderInfo}>
                 <div className={ListItemHeaderInfoGroup}>
-                  <h3 className={ListItemRole}>{t(`experience:${id}.role`)}</h3>
+                  <h3 className={ListItemRole}>{role}</h3>
                   <span className={ListItemPeriod}>
                     <BiCalendarAlt size={16} className={ListItemPeriodIcon} />
-                    {t(`experience:${id}.period`)}
+                    {period}
                   </span>
                 </div>
-                <h4 className={ListItemTitle}>{t(`experience:${id}.company`)}</h4>
+                <h4 className={ListItemTitle}>{label}</h4>
               </div>
               <div className={ListItemHeaderBadges}>
                 {badges.map(({ id, title, color, icon: Icon }) => (
@@ -45,7 +44,7 @@ export const Experiences = () => {
                 ))}
               </div>
             </div>
-            <p className={ListItemSummary}>{t(`experience:${id}.summary`)}</p>
+            <p className={ListItemSummary}>{summary}</p>
           </li>
         ))}
       </ul>

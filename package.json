@@ -11,15 +11,12 @@
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.14.0",
-    "i18next": "^23.7.6",
     "next": "^14.0.3",
-    "next-i18next": "^15.0.0",
     "next-seo": "^6.4.0",
     "next-sitemap": "^4.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-gtm-module": "^2.0.11",
-    "react-i18next": "^13.5.0",
     "react-icons": "^4.12.0"
   },
   "devDependencies": {

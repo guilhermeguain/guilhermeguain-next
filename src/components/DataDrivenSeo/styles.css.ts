@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
 
-import { vars } from '@styles/theme.css';
-import { Content, ListItemIcon, ListItemText } from '@styles/layout.css';
+import { vars } from '@/styles/theme.css';
+import { Content, ListItemIcon, ListItemText } from '@/styles/layout.css';
 
 export const Container = style([
   Content,

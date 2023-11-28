@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
-import { Content } from '@styles/layout.css';
+import { Content } from '@/styles/layout.css';
 
 export const Container = style({});
 

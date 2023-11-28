@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Figma = () => {
   return (
     <svg width="20" height="30" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">

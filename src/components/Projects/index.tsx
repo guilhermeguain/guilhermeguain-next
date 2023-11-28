@@ -1,20 +1,21 @@
-import React from 'react';
+'use client';
+
 import Image from 'next/image';
 
-import { Title } from '@styles/typography.css';
+import { Title } from '@/styles/typography.css';
 
 import { useProjects } from './hooks/useProjects';
 
 import { Container, List, ListItem } from './styles.css';
 
 export const Projects = () => {
-  const { t, projects, handleProjectClick } = useProjects();
+  const { projects, handleProjectClick } = useProjects();
 
   return (
     <section id="projects" className={Container}>
-      <h2 className={Title}>{t('projects:title')}</h2>
+      <h2 className={Title}>Projetos</h2>
       <ul className={List}>
-        {projects.map(({ id, link }) => (
+        {projects.map(({ id, label, link }) => (
           <li key={id} className={ListItem}>
             <a
               href={link}
@@ -25,8 +26,8 @@ export const Projects = () => {
             >
               <Image
                 src={`/images/projects/${id}.png`}
-                alt={t(`projects:${id}`)}
-                title={t(`projects:${id}`) || id}
+                alt={label}
+                title={label}
                 placeholder="blur"
                 blurDataURL={`/images/projects/${id}.png`}
                 width={200}

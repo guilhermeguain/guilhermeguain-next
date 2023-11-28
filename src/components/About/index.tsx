@@ -1,15 +1,16 @@
-import React from 'react';
+'use client';
+
 import NextImage from 'next/image';
 import { FaChevronRight } from 'react-icons/fa';
 
-import { Highlight } from '@utils/highlight';
+import { Highlight } from '@/utils/highlight';
 
-import { List, ListItem, ListItemIcon, ListItemPrefix, ListItemText } from '@styles/layout.css';
+import { List, ListItem, ListItemIcon, ListItemPrefix, ListItemText } from '@/styles/layout.css';
 
-import { HardSkills } from '@components/HardSkills';
-import { SoftSkills } from '@components/SoftSkills';
-import { TechsTools } from '@components/TechsTools';
-import { Languages } from '@components/Languages';
+import { HardSkills } from '@/components/HardSkills';
+import { SoftSkills } from '@/components/SoftSkills';
+import { TechsTools } from '@/components/TechsTools';
+import { Languages } from '@/components/Languages';
 
 import { useAbout } from './hooks/useAbout';
 import {
@@ -29,7 +30,7 @@ import {
 } from './styles.css';
 
 export const About = () => {
-  const { t, contacts, paragraphs, knowledges, handleLinkClick } = useAbout();
+  const { contacts, paragraphs, knowledges, handleLinkClick } = useAbout();
 
   return (
     <section id="about" className={Container}>
@@ -43,10 +44,10 @@ export const About = () => {
           className={Avatar}
         />
         <div className={IntroContent}>
-          <h3 className={Name}>{t('about:name')}</h3>
-          <h2 className={Role}>{t('common:role')}</h2>
+          <h3 className={Name}>Guilherme Emilio Guain Peixinho</h3>
+          <h2 className={Role}>Desenvolvedor Front-end</h2>
           <ul className={Contacts}>
-            {contacts.map(({ id, icon: Icon, url }) => (
+            {contacts.map(({ id, icon: Icon, label, url }) => (
               <li key={id}>
                 <a
                   href={url}
@@ -55,7 +56,7 @@ export const About = () => {
                   onClick={handleLinkClick}
                   rel="noreferrer"
                 >
-                  <Icon title={t(`about:${id}`) || id} size={24} className={ContactsItemSvg} />
+                  <Icon title={label} size={24} className={ContactsItemSvg} />
                 </a>
               </li>
             ))}
@@ -64,25 +65,19 @@ export const About = () => {
       </div>
       <div className={Main}>
         <div className={Column}>
-          {paragraphs.map(({ id, highlights }) => (
+          {paragraphs.map(({ id, highlights, text }) => (
             <p key={id} className={Text}>
-              <Highlight
-                query={highlights.map((highlight) => t(`about:highlights.${highlight}`))}
-                styles={{ fontWeight: 600 }}
-              >
-                {t(`about:paragraphs.${id}`) || id}
+              <Highlight query={highlights} styles={{ fontWeight: 600 }}>
+                {text}
               </Highlight>
             </p>
           ))}
           <ul className={List}>
-            {knowledges.map((knowledge) => (
-              <li key={knowledge} className={ListItem}>
+            {knowledges.map(({ title, summary }) => (
+              <li key={title} className={ListItem}>
                 <FaChevronRight size={12} className={ListItemIcon} />
                 <p className={ListItemText}>
-                  <span className={ListItemPrefix}>
-                    {t(`about:knowledges.${knowledge}.title`)}:
-                  </span>{' '}
-                  {t(`about:knowledges.${knowledge}.summary`)}
+                  <span className={ListItemPrefix}>{title}:</span> {summary}
                 </p>
               </li>
             ))}

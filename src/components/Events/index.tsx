@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { Title } from '@styles/typography.css';
+import { Title } from '@/styles/typography.css';
 
 import { useEvents } from './hooks/useEvents';
 import {
@@ -15,21 +13,21 @@ import {
 } from './styles.css';
 
 export const Events = () => {
-  const { t, events } = useEvents();
+  const { events } = useEvents();
 
   return (
     <div id="events" className={Container}>
-      <h2 className={Title}>{t('events:title')}</h2>
+      <h2 className={Title}>Eventos</h2>
       <ul className={List}>
-        {events.map((event) => (
-          <li key={event} className={ListItem}>
+        {events.map(({ id, title, host, date, location }) => (
+          <li key={id} className={ListItem}>
             <div className={ListItemColumn}>
-              <h3 className={ListItemTitle}>{t(`events:${event}.title`)}</h3>
-              <p className={ListItemInstitution}>{t(`events:${event}.host`)}</p>
+              <h3 className={ListItemTitle}>{title}</h3>
+              <p className={ListItemInstitution}>{host}</p>
             </div>
             <div className={ListItemColumn}>
-              <span className={ListItemPeriod}>{t(`events:${event}.date`)}</span>
-              <span className={ListItemLocation}>{t(`events:${event}.location`)}</span>
+              <span className={ListItemPeriod}>{date}</span>
+              <span className={ListItemLocation}>{location}</span>
             </div>
           </li>
         ))}

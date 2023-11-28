@@ -1,17 +1,16 @@
-import React, { useCallback } from 'react';
-import { useRouter } from 'next/router';
+'use client';
+
+import { useCallback } from 'react';
+import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
-import { useTranslation } from 'next-i18next';
 import TagManager from 'react-gtm-module';
 
-import { LangSelector } from '@components/LangSelector';
+import { LangSelector } from '@/components/LangSelector';
 
 import { Container, Menu, MenuItem } from './styles.css';
 
 export const DesktopMenu = ({ items }: MenuProps) => {
-  const { t } = useTranslation('menu');
-
-  const { asPath } = useRouter();
+  const pathname = usePathname();
 
   const handleMenuClick = useCallback((event: React.MouseEvent) => {
     const id = event.currentTarget.getAttribute('data-id');
@@ -29,10 +28,10 @@ export const DesktopMenu = ({ items }: MenuProps) => {
   return (
     <nav className={Container}>
       <ul className={Menu}>
-        {items.map(({ id, href }) => (
+        {items.map(({ id, label, href }) => (
           <li key={id}>
             <NextLink
-              aria-current={asPath.includes(id)}
+              aria-current={pathname.includes(id)}
               href={href}
               passHref
               scroll={false}
@@ -40,7 +39,7 @@ export const DesktopMenu = ({ items }: MenuProps) => {
               onClick={handleMenuClick}
               className={MenuItem}
             >
-              {t(id)}
+              {label}
             </NextLink>
           </li>
         ))}

@@ -91,6 +91,7 @@
     "react/jsx-uses-vars": "warn",
     "react/jsx-no-bind": "off",
     "react-hooks/rules-of-hooks": "error",
+    "react/react-in-jsx-scope": "off",
     "react/display-name": "warn",
     "react/no-string-refs": "off",
     "react/prefer-stateless-function": "warn",

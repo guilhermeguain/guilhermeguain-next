@@ -1,25 +1,24 @@
 import { useMemo } from 'react';
-import { useTranslation } from 'next-i18next';
 
 export const useLanguages = () => {
-  const { t } = useTranslation(['about']);
-
   const languages = useMemo(
     () => [
       {
         id: 'portuguese',
+        label: 'Português',
         proficiency: [
-          { id: 'speaking', value: 100 },
-          { id: 'listening', value: 100 },
-          { id: 'writing', value: 100 },
+          { id: 'speaking', label: 'Speaking', value: 100 },
+          { id: 'listening', label: 'Listening', value: 100 },
+          { id: 'writing', label: 'Writing', value: 100 },
         ],
       },
       {
         id: 'english',
+        label: 'Inglês',
         proficiency: [
-          { id: 'speaking', value: 40 },
-          { id: 'listening', value: 80 },
-          { id: 'writing', value: 90 },
+          { id: 'speaking', label: 'Speaking', value: 40 },
+          { id: 'listening', label: 'Listening', value: 80 },
+          { id: 'writing', label: 'Writing', value: 90 },
         ],
       },
     ],
@@ -27,7 +26,6 @@ export const useLanguages = () => {
   );
 
   return {
-    t,
     languages,
   };
 };

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useHardSkills } from './hooks/useHardSkills';
 import {
   Container,
@@ -13,18 +11,18 @@ import {
 } from './styles.css';
 
 export const HardSkills = () => {
-  const { t, hardSkills } = useHardSkills();
+  const { hardSkills } = useHardSkills();
 
   return (
     <div className={Container}>
       <div className={Header}>
-        <h3 className={HeaderTitle}>{t('about:hard-skills')}</h3>
+        <h3 className={HeaderTitle}>Hard skills</h3>
       </div>
       <div className={List}>
-        {hardSkills.map(({ id, value }) => (
+        {hardSkills.map(({ id, value, label }) => (
           <div key={id} className={ListItem}>
             <h4 id={`progressbar-${id}`} className={ListItemTitle}>
-              {t(`hard-skills:${id}`)}
+              {label}
             </h4>
             <div className={ListItemProgress}>
               <div
