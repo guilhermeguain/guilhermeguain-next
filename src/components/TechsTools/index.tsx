@@ -15,7 +15,7 @@ export const TechsTools = () => {
   return (
     <div className={Container}>
       <div className={Header}>
-        <h3 className={HeaderTitle}>Techs & Tools</h3>
+        <h3 className={HeaderTitle}>Tecnologias & Ferramentas</h3>
       </div>
       <div className={List}>
         {groups.map(({ id, title, items }) => (
