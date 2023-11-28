@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
 import TagManager from 'react-gtm-module';

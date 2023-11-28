@@ -1,6 +1,6 @@
 'use client';
 
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { NextSeo } from 'next-seo';
 
 import { Header } from '@/components/Header';

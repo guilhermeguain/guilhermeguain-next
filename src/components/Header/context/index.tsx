@@ -1,12 +1,12 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 
 import { useWindowSize } from '@/hooks/useWindowSize';
 
 export const HeaderContext = createContext({} as HeaderContextProps);
 
-export function HeaderProvider({ children }: HeaderProviderProps) {
+export function HeaderProvider({ children }: Readonly<HeaderProviderProps>) {
   const { width } = useWindowSize();
 
   const headerRef: React.LegacyRef<HTMLDivElement> = useRef(null);
@@ -14,7 +14,7 @@ export function HeaderProvider({ children }: HeaderProviderProps) {
   const [headerHeight, setHeaderHeight] = useState<number>(0);
 
   useEffect(() => {
-    setHeaderHeight(headerRef.current?.clientHeight || 0);
+    setHeaderHeight(headerRef.current?.clientHeight ?? 0);
   }, [headerRef, width]);
 
   const contextValue = useMemo(

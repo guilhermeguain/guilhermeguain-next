@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { IoDocumentTextOutline } from 'react-icons/io5';
