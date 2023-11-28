@@ -1,10 +1,10 @@
 'use client';
 
+import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
-import { useEffect } from 'react';
 
-const GTM_ID = 'GTM-MFKHPQ4';
+import { GTM_ID } from '@/lib/constants';
 
 const pageview = (url: string) => {
   // @ts-ignore
