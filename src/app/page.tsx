@@ -1,8 +1,3 @@
-'use client';
-
-import { useEffect } from 'react';
-import TagManager from 'react-gtm-module';
-
 import { Row } from '@/components/shared/Row';
 import { Layout } from '@/components/Layout';
 
@@ -15,10 +10,6 @@ import { Events } from '@/components/Events';
 import { Education } from '@/components/Education';
 
 export default function Home() {
-  useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-MFKHPQ4' });
-  }, []);
-
   return (
     <Layout title={'Title'} description={'Description'}>
       <span>Content</span>

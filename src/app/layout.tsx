@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+import { Analytics } from '@/components/Analytics';
 import { Montserrat } from 'next/font/google';
 
 import '@/styles/global.css';
@@ -14,7 +16,6 @@ export const metadata = {
   description:
     'Desenvolvedor Front-end desde 2012, especialista em React.js, Next.js, TypeScript e WordPress',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-  'theme-color': '#1A202C',
 };
 
 export type RootLayoutProps = { children: React.ReactNode };
@@ -22,7 +23,12 @@ export type RootLayoutProps = { children: React.ReactNode };
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="pt-BR">
-      <body className={fontFamily.className}>{children}</body>
+      <body className={fontFamily.className}>
+        <Suspense>
+          <Analytics />
+        </Suspense>
+        {children}
+      </body>
     </html>
   );
 }
