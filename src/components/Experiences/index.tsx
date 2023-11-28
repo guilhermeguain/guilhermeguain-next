@@ -23,7 +23,7 @@ export const Experiences = () => {
 
   return (
     <section id="experience" className={Container}>
-      <h2 className={Title}>Experience</h2>
+      <h2 className={Title}>Experiência</h2>
       <ul className={List}>
         {experiences.map(({ id, label, role, period, summary, badges }) => (
           <li key={id} className={ListItem}>
