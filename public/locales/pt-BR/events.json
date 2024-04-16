@@ -1,5 +1,11 @@
 {
   "title": "Eventos",
+  "gramado-summit-2024": {
+    "title": "Gramado Summit 2024",
+    "host": "Gramado Summit",
+    "date": "04/2024",
+    "location": "Gramado, RS"
+  },
   "dev-leaders-conference-alura-2023": {
     "title": "DevLeaders Conference",
     "host": "Alura",
