@@ -1,11 +1,5 @@
 {
   "title": "Experience",
-  "amo-promo": {
-    "company": "Amo Promo",
-    "role": "Desenvolvedor Front-end",
-    "period": "01/2023 - atual",
-    "summary": "Com o propósito de promover experiências inesquecíveis, atuo no planejamento e desenvolvimento de soluções web e mobile utilizando as tecnologias mais modernas."
-  },
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
     "role": "Desenvolvedor Full-stack",
@@ -17,6 +11,12 @@
     "role": "Desenvolvedor Full-stack",
     "period": "08/2021 - atual",
     "summary": "Projeto desenvolvido com WordPress Multisite para unificar os websites da organização, facilitando a manutenção e o gerenciamento do conteúdo. Atualmente sou responsável pelo monitoramento e manutenção do servidor, atualização dos plugins e temas do WordPress, e gerenciamento do conteúdo do site."
+  },
+  "amo-promo": {
+    "company": "Amo Promo",
+    "role": "Desenvolvedor Front-end",
+    "period": "01/2023 - 04/2024",
+    "summary": "Com o propósito de promover experiências inesquecíveis, atuo no planejamento e desenvolvimento de soluções web e mobile utilizando as tecnologias mais modernas."
   },
   "global-empregos": {
     "company": "Global Empregos",
