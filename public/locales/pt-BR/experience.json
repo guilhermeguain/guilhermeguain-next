@@ -6,17 +6,17 @@
     "period": "08/2018 - atual",
     "summary": "Empresa referência em exame toxicológico onde atuo como desenvolvedor full-stack responsável pelo desenvolvimento e manutenção do site. Entre as principais atividades estão: otimização de SEO on-page, implementação de novas funcionalidades, correção de bugs e integrações com sistemas internos, CRM e ERP."
   },
-  "inter-american": {
-    "company": "Inter-American Coalition",
-    "role": "Desenvolvedor Full-stack",
-    "period": "08/2021 - atual",
-    "summary": "Projeto desenvolvido com WordPress Multisite para unificar os websites da organização, facilitando a manutenção e o gerenciamento do conteúdo. Atualmente sou responsável pelo monitoramento e manutenção do servidor, atualização dos plugins e temas do WordPress, e gerenciamento do conteúdo do site."
-  },
   "amo-promo": {
     "company": "Amo Promo",
     "role": "Desenvolvedor Front-end",
     "period": "01/2023 - 04/2024",
     "summary": "Com o propósito de promover experiências inesquecíveis, atuo no planejamento e desenvolvimento de soluções web e mobile utilizando as tecnologias mais modernas."
+  },
+  "inter-american": {
+    "company": "Inter-American Coalition",
+    "role": "Desenvolvedor Full-stack",
+    "period": "08/2021 - 12/2023",
+    "summary": "Projeto desenvolvido com WordPress Multisite para unificar os websites da organização, facilitando a manutenção e o gerenciamento do conteúdo. Atualmente sou responsável pelo monitoramento e manutenção do servidor, atualização dos plugins e temas do WordPress, e gerenciamento do conteúdo do site."
   },
   "global-empregos": {
     "company": "Global Empregos",

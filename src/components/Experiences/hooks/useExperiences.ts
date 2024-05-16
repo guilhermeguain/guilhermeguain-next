@@ -10,6 +10,8 @@ import {
   SiWordpress,
   SiGulp,
   SiAmp,
+  SiReactquery,
+  SiJest,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaSass } from 'react-icons/fa';
@@ -70,6 +72,47 @@ export const useExperiences = () => {
             color: '#0379c4',
             icon: SiAmp,
           },
+          {
+            id: 'jest',
+            title: 'Jest',
+            color: '#99425b',
+            icon: SiJest,
+          },
+        ],
+      },
+      {
+        id: 'amo-promo',
+        badges: [
+          {
+            id: 'reactjs',
+            title: 'React.js',
+            color: '#61dafb',
+            icon: SiReact,
+          },
+          {
+            id: 'typescript',
+            title: 'TypeScript',
+            color: '#3178c6',
+            icon: SiTypescript,
+          },
+          {
+            id: 'nextjs',
+            title: 'Next.js',
+            color: '#000',
+            icon: TbBrandNextjs,
+          },
+          {
+            id: 'eslint',
+            title: 'ESLint',
+            color: '#4b32c3',
+            icon: SiEslint,
+          },
+          {
+            id: 'jest',
+            title: 'Jest',
+            color: '#99425b',
+            icon: SiJest,
+          },
         ],
       },
       {
@@ -104,35 +147,6 @@ export const useExperiences = () => {
             title: 'Gulp',
             color: '#cf4647',
             icon: SiGulp,
-          },
-        ],
-      },
-      {
-        id: 'amo-promo',
-        badges: [
-          {
-            id: 'reactjs',
-            title: 'React.js',
-            color: '#61dafb',
-            icon: SiReact,
-          },
-          {
-            id: 'typescript',
-            title: 'TypeScript',
-            color: '#3178c6',
-            icon: SiTypescript,
-          },
-          {
-            id: 'nextjs',
-            title: 'Next.js',
-            color: '#000',
-            icon: TbBrandNextjs,
-          },
-          {
-            id: 'eslint',
-            title: 'ESLint',
-            color: '#4b32c3',
-            icon: SiEslint,
           },
         ],
       },
@@ -238,6 +252,12 @@ export const useExperiences = () => {
             title: 'Tailwind CSS',
             color: '#38bdf8',
             icon: SiTailwindcss,
+          },
+          {
+            id: 'reactquery',
+            title: 'React Query',
+            color: '#fe4155',
+            icon: SiReactquery,
           },
         ],
       },
