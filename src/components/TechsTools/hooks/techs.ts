@@ -9,6 +9,7 @@ import {
   SiWordpress,
   SiGraphql,
   SiAmp,
+  SiJest,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaGitAlt, FaNodeJs } from 'react-icons/fa';
@@ -56,10 +57,10 @@ export const techs = {
       color: '#f14e32',
     },
     {
-      id: 'postman',
-      title: 'Postman',
-      icon: SiPostman,
-      color: '#ff6c37',
+      id: 'jest',
+      title: 'Jest',
+      icon: SiJest,
+      color: '#99425b',
     },
   ],
   secondary: [
@@ -98,6 +99,12 @@ export const techs = {
       title: 'AMP',
       icon: SiAmp,
       color: '#0379c4',
+    },
+    {
+      id: 'postman',
+      title: 'Postman',
+      icon: SiPostman,
+      color: '#ff6c37',
     },
   ],
   design: [
