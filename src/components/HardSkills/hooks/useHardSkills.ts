@@ -12,23 +12,23 @@ export const useHardSkills = () => {
       },
       {
         id: 'javascript-react',
-        value: 95,
+        value: 100,
       },
       {
         id: 'typescript',
-        value: 80,
-      },
-      {
-        id: 'technical-seo',
-        value: 90,
-      },
-      {
-        id: 'design-layout',
         value: 95,
       },
       {
+        id: 'technical-seo',
+        value: 100,
+      },
+      {
+        id: 'design-layout',
+        value: 90,
+      },
+      {
         id: 'git',
-        value: 80,
+        value: 90,
       },
     ],
     [],
