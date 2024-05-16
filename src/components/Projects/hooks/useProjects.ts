@@ -8,6 +8,14 @@ export const useProjects = () => {
   const projects = useMemo(
     () => [
       {
+        id: 'entes',
+        link: 'https://www.entes.com.br/',
+      },
+      {
+        id: 'vai-de-promo',
+        link: 'https://www.vaidepromo.com.br/',
+      },
+      {
         id: 'sleepie',
         link: 'https://www.sleepie.life/',
       },
