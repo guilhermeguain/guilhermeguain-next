@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
-import { FaNodeJs } from 'react-icons/fa';
 import { SiReact, SiTypescript, SiEslint, SiJest } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -19,7 +18,6 @@ export const Hero = () => {
           <SiReact title="React.js" />
           <SiTypescript title="TypeScript" />
           <TbBrandNextjs title="Next.js" />
-          <FaNodeJs title="Node.js" />
           <SiEslint title="ESLint" />
           <SiJest title="Jest" />
         </div>
