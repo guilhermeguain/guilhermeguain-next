@@ -2,44 +2,44 @@
   "title": "Experience",
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
-    "role": "Full-stack Developer",
+    "role": "Full Stack Developer",
     "period": "08/2018 - present",
-    "summary": "Reference company in toxicology testing where I act as a full-stack developer responsible for the development and maintenance of the site. Among the main activities are: on-page SEO optimization, implementation of new features, bug fixes and integrations with internal systems, CRM and ERP."
+    "summary": "I work on the development of various projects, I'm responsible for optimizing websites to improve their ranking in search engines, I solve technology and development problems and I constantly bring innovation."
   },
 
   "amo-promo": {
     "company": "Amo Promo",
-    "role": "Front-end Developer",
+    "role": "Full Stack Developer",
     "period": "01/2023 - 04/2024",
-    "summary": "During my time at Amo Promo, I worked as a Front-End Developer. My responsibilities included developing and enhancing web applications using React.js and Next.js. I contributed to the creation and maintenance of reusable component libraries, which helped to improve the efficiency and consistency of our development processes. In addition, I was involved in ensuring the reliability and quality of our code by writing unit tests with Jest."
+    "summary": "During my time at Amo Promo, I worked as a Full Stack Developer. My responsibilities included developing and enhancing web applications using React.js and Next.js. I contributed to the creation and maintenance of reusable component libraries, which helped to improve the efficiency and consistency of our development processes. In addition, I was involved in ensuring the reliability and quality of our code by writing unit tests with Jest."
   },
   "inter-american": {
     "company": "Inter-American Coalition",
-    "role": "Full-stack Developer",
+    "role": "Full Stack Developer",
     "period": "08/2021 - 12/2023",
     "summary": "Project developed with WordPress Multisite to unify the organization's websites, facilitating the maintenance and management of content. I was responsible for monitoring and maintaining the server, updating WordPress plugins and themes, and managing website content."
   },
   "global-empregos": {
     "company": "Global Empregos",
-    "role": "Full-stack Developer",
+    "role": "Full Stack Developer",
     "period": "08/2018 - 04/2023",
-    "summary": "I worked as a full-stack developer, playing a cross-functional role that included developing technology solutions, SEO optimization, and web server management. In this challenging position, I was responsible for creating an enhanced online experience for candidates and companies."
+    "summary": "I worked as a Full Stack developer, playing a cross-functional role that included developing technology solutions, SEO optimization, and web server management. In this challenging position, I was responsible for creating an enhanced online experience for candidates and companies."
   },
   "global-treina": {
     "company": "Global Treina",
-    "role": "Full-stack Developer",
+    "role": "Full Stack Developer",
     "period": "11/2019 - 04/2023",
-    "summary": "At Global Treina, I had the opportunity to play a crucial role in the development of a online learning platform, focused on vocational courses. As a full-stack developer, I was responsible for creating a high-quality, interactive learning experience for students, incorporating modern technologies and innovative solutions."
+    "summary": "At Global Treina, I had the opportunity to play a crucial role in the development of a online learning platform, focused on vocational courses. As a full Stack developer, I was responsible for creating a high-quality, interactive learning experience for students, incorporating modern technologies and innovative solutions."
   },
   "health-protection": {
     "company": "Health Protection",
-    "role": "Front-end Developer",
+    "role": "Full Stack Developer",
     "period": "09/2020 - 10/2022",
     "summary": "The project was developed using Next.js with TypeScript and tools such as the Context API, Axios, Tailwind CSS, Chakra UI, ESLint, and React Query. For content management, we used Sanity CMS. My activities involved front-end development, API integration, component and page creation, maintenance and bug fixing, and also continuous deployment with Netlify and Vercel."
   },
   "360-comunicacao": {
     "company": "360 Comunicação Digital",
-    "role": "Full-stack Developer",
+    "role": "Full Stack Developer",
     "period": "05/2013 - 08/2018",
     "summary": "As a communication agency focused on positioning companies with digital marketing, I participated in the whole process, from the layout creation to the publication of the site in Wordpress. My activities involved structuring and customizing WordPress themes and plugins, performance optimization and SEO, landing page creation and API integration."
   }

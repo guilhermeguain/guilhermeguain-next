@@ -2,43 +2,43 @@
   "title": "Experience",
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
-    "role": "Desenvolvedor Full-stack",
+    "role": "Desenvolvedor Full Stack",
     "period": "08/2018 - atual",
-    "summary": "Empresa referência em exame toxicológico onde atuo como desenvolvedor full-stack responsável pelo desenvolvimento e manutenção do site. Entre as principais atividades estão: otimização de SEO on-page, implementação de novas funcionalidades, correção de bugs e integrações com sistemas internos, CRM e ERP."
+    "summary": "Atuo no desenvolvimento de diversos projetos, sou responsável pela otimização dos sites para melhorar o ranking nos mecanismos de buscas, resolvo problemas de tecnologia e desenvolvimento e trago inovação constantemente."
   },
   "amo-promo": {
     "company": "Amo Promo",
-    "role": "Desenvolvedor Front-end",
+    "role": "Desenvolvedor Full Stack",
     "period": "01/2023 - 04/2024",
-    "summary": "Durante meu período na Amo Promo, trabalhei como Desenvolvedor Front-End. Minhas responsabilidades incluíam desenvolver e aprimorar aplicações web utilizando React.js e Next.js. Contribuí para a criação e manutenção de bibliotecas de componentes reutilizáveis, o que ajudou a melhorar a eficiência e a consistência dos nossos processos de desenvolvimento. Além disso, participei na garantia da confiabilidade e qualidade do nosso código escrevendo testes unitários com Jest."
+    "summary": "Durante meu período na Amo Promo, trabalhei como Desenvolvedor Full Stack. Minhas responsabilidades incluíam desenvolver e aprimorar aplicações web utilizando React.js e Next.js. Contribuí para a criação e manutenção de bibliotecas de componentes reutilizáveis, o que ajudou a melhorar a eficiência e a consistência dos nossos processos de desenvolvimento. Além disso, participei na garantia da confiabilidade e qualidade do nosso código escrevendo testes unitários com Jest."
   },
   "inter-american": {
     "company": "Inter-American Coalition",
-    "role": "Desenvolvedor Full-stack",
+    "role": "Desenvolvedor Full Stack",
     "period": "08/2021 - 12/2023",
     "summary": "Projeto desenvolvido com WordPress Multisite para unificar os websites da organização, facilitando a manutenção e o gerenciamento do conteúdo. Fui responsável pelo monitoramento e manutenção do servidor, atualização dos plugins e temas do WordPress, e gerenciamento do conteúdo do site."
   },
   "global-empregos": {
     "company": "Global Empregos",
-    "role": "Desenvolvedor Full-stack",
+    "role": "Desenvolvedor Full Stack",
     "period": "08/2018 - 04/2023",
     "summary": "Atuei como desenvolvedor full-stack, desempenhando um papel multifuncional que incluía o desenvolvimento de soluções tecnológicas, otimização de SEO e gerenciamento de servidores web. Nessa posição desafiadora, fui responsável por criar uma experiência online aprimorada para candidatos e empresas."
   },
   "global-treina": {
     "company": "Global Treina",
-    "role": "Desenvolvedor Full-stack",
+    "role": "Desenvolvedor Full Stack",
     "period": "11/2019 - 04/2023",
     "summary": "Na Global Treina, tive a oportunidade de desempenhar um papel crucial no desenvolvimento de uma plataforma de ensino a distância, voltada para cursos profissionalizantes. Como desenvolvedor full-stack, fui responsável por criar uma experiência de ensino interativa e de alta qualidade para os alunos, incorporando tecnologias modernas e soluções inovadoras."
   },
   "health-protection": {
     "company": "Health Protection",
-    "role": "Desenvolvedor Front-end",
+    "role": "Desenvolvedor Full Stack",
     "period": "09/2020 - 10/2022",
     "summary": "Projeto desenvolvido em Next.js com TypeScript e ferramentas como Context API, Axios, Tailwind CSS, Chakra UI, ESLint e React Query. Para o gerenciamento de conteúdo utilizamos o Sanity CMS. Minhas atividades envolviam o desenvolvimento do front-end, integração com APIs, criação de componentes e páginas, manutenção e correção de bugs e implantação contínua com Netlify e Vercel."
   },
   "360-comunicacao": {
     "company": "360 Comunicação Digital",
-    "role": "Desenvolvedor Full-stack",
+    "role": "Desenvolvedor Full Stack",
     "period": "05/2013 - 08/2018",
     "summary": "Como uma agência de comunicação focada em posicionar empresas com o marketing digital, participava de todo o processo, desde a criação do layout até a publicação do site em Wordpress. Minhas atividades envolviam a estruturação e customização de temas e plugins para WordPress, otimização de performance e SEO, criação de landing pages e integração com APIs."
   }

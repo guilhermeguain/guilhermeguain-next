@@ -1,22 +1,23 @@
 {
   "name": "Guilherme Emilio Guain Peixinho",
-  "role": "Front-end Developer",
+  "role": "Full Stack Developer",
   "linkedin": "LinkedIn",
   "github": "GitHub",
   "instagram": "Instagram",
   "email": "E-mail",
   "curriculum": "Curriculum",
   "paragraphs": {
-    "paragraph-1": "I have been working with web development since 2012, when I started in a communication agency creating websites in Wordpress. After 8 years of experience in this technology, I started a specialization in React.js. Since then I've been using technologies like React.js, Next.js, TypeScript, ESLint, Tailwind CSS, Axios, Chakra UI, Styled Components, React Query, Git, among others. In addition, I also follow Clean Code and SOLID principles, respecting technical SEO practices with a focus on problem solving. ",
+    "paragraph-1": "Full Stack Developer since 2012, with experience in React.js, Next.js, TypeScript, Node.js, Tailwind CSS, Styled Components, Git and Jest. I have experience working in agile environments, using Scrum, facilitating ceremonies and contributing to the organization and documentation of the project. I've worked in marketing for more than 10 years, where I acquired a great deal of knowledge in search engine optimization (SEO) and content management systems (CMS) such as WordPress and Strapi.",
     "paragraph-2": "Throughout my career I also took on tasks in related areas, where I acquired knowledge in:"
   },
   "highlights": {
     "2012": "2012",
-    "wordpress": "WordPress",
     "react-js": "React.js",
-    "clean-code": "Clean Code",
-    "solid": "SOLID",
-    "problem-solving": "problem solving"
+    "next-js": "Next.js",
+    "typescript": "TypeScript",
+    "node-js": "Node.js",
+    "seo": "SEO",
+    "strapi": "Strapi"
   },
   "knowledges": {
     "design": {

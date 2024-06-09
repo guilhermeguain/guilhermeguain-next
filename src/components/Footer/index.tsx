@@ -18,8 +18,8 @@ export const Footer = () => {
             src={'/images/logo.svg'}
             width={48}
             height={48}
-            alt="Front-end Developer - Guilherme Guain"
-            title="Front-end Developer - Guilherme Guain"
+            alt="Full Stack Developer - Guilherme Guain"
+            title="Full Stack Developer - Guilherme Guain"
           />
         </NextLink>
         <div className={Texts}>
