@@ -6,6 +6,7 @@ export const useEvents = () => {
 
   const events = useMemo(
     () => [
+      'hack-town-2024',
       'gramado-summit-2024',
       'dev-leaders-conference-alura-2023',
       'ia-experience-wtc-sp',
