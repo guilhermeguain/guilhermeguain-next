@@ -1,5 +1,11 @@
 {
   "title": "Events",
+  "codecon-summit-2024": {
+    "title": "Codecon Summit 2024",
+    "host": "Codecon",
+    "date": "09/2024",
+    "location": "Joinville, SC"
+  },
   "hack-town-2024": {
     "title": "Hack Town 2024",
     "host": "Hack Town",
