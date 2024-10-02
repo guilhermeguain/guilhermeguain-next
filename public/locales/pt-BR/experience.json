@@ -1,5 +1,11 @@
 {
   "title": "Experience",
+  "gobrax": {
+    "company": "Gobrax",
+    "role": "Desenvolvedor Front-End",
+    "period": "07/2024 - atual",
+    "summary": "Sou responsável por dar suporte e manter uma aplicação em React.js. Minha função envolve corrigir bugs, aprimorar funcionalidades e garantir que a aplicação funcione de forma eficiente para os usuários."
+  },
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
     "role": "Desenvolvedor Full Stack",

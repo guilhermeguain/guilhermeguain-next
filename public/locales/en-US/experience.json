@@ -1,5 +1,11 @@
 {
   "title": "Experience",
+  "gobrax": {
+    "company": "Gobrax",
+    "role": "Front-End Developer",
+    "period": "07/2024 - atual",
+    "summary": "I'm responsible for supporting and maintaining a React.js application. My role involves fixing bugs, improving functionality and ensuring that the application works efficiently for users."
+  },
   "toxicologia-pardini": {
     "company": "Toxicologia Pardini",
     "role": "Full Stack Developer",
