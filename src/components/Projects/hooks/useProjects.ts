@@ -1,12 +1,19 @@
-import { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useTranslation } from 'next-i18next';
-import TagManager from 'react-gtm-module';
 
 export const useProjects = () => {
   const { t } = useTranslation(['projects']);
 
   const projects = useMemo(
     () => [
+      {
+        id: 'gobrax',
+        link: 'https://gobrax.com.br/',
+      },
+      {
+        id: 'lab-to-lab-pardini',
+        link: 'https://www.labtolabpardini.com.br/',
+      },
       {
         id: 'entes',
         link: 'https://www.entes.com.br/',
@@ -83,22 +90,8 @@ export const useProjects = () => {
     [],
   );
 
-  const handleProjectClick = useCallback((event: React.MouseEvent) => {
-    const id = event.currentTarget.getAttribute('data-id');
-    const url = event.currentTarget.getAttribute('href');
-
-    TagManager.dataLayer({
-      dataLayer: {
-        event: 'projectClick',
-        projectId: id,
-        projectUrl: url,
-      },
-    });
-  }, []);
-
   return {
     t,
     projects,
-    handleProjectClick,
   };
 };

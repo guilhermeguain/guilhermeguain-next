@@ -8,7 +8,7 @@ import { useProjects } from './hooks/useProjects';
 import { Container, List, ListItem } from './styles.css';
 
 export const Projects = () => {
-  const { t, projects, handleProjectClick } = useProjects();
+  const { t, projects } = useProjects();
 
   return (
     <section id="projects" className={Container}>
@@ -16,23 +16,15 @@ export const Projects = () => {
       <ul className={List}>
         {projects.map(({ id, link }) => (
           <li key={id} className={ListItem}>
-            <a
-              href={link}
-              target="_blank"
-              rel="external nofollow noreferrer noopener"
-              data-id={id}
-              onClick={handleProjectClick}
-            >
-              <Image
-                src={`/images/projects/${id}.png`}
-                alt={t(`projects:${id}`)}
-                title={t(`projects:${id}`) || id}
-                placeholder="blur"
-                blurDataURL={`/images/projects/${id}.png`}
-                width={200}
-                height={60}
-              />
-            </a>
+            <Image
+              src={`/images/projects/${id}.png`}
+              alt={t(`projects:${id}`)}
+              title={t(`projects:${id}`) || id}
+              placeholder="blur"
+              blurDataURL={`/images/projects/${id}.png`}
+              width={200}
+              height={60}
+            />
           </li>
         ))}
       </ul>
