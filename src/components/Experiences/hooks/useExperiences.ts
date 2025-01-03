@@ -151,77 +151,7 @@ export const useExperiences = () => {
         ],
       },
       {
-        id: 'inter-american',
-        badges: [
-          {
-            id: 'wordpress',
-            title: 'WordPress',
-            color: '#000',
-            icon: SiWordpress,
-          },
-          {
-            id: 'php',
-            title: 'PHP',
-            color: '#7a86b8',
-            icon: SiPhp,
-          },
-          {
-            id: 'mysql',
-            title: 'MySQL',
-            color: '#0074a3',
-            icon: SiMysql,
-          },
-          {
-            id: 'sass',
-            title: 'Sass',
-            color: '#bf4080',
-            icon: FaSass,
-          },
-          {
-            id: 'gulp',
-            title: 'Gulp',
-            color: '#cf4647',
-            icon: SiGulp,
-          },
-        ],
-      },
-      {
         id: 'global-empregos',
-        badges: [
-          {
-            id: 'wordpress',
-            title: 'WordPress',
-            color: '#000',
-            icon: SiWordpress,
-          },
-          {
-            id: 'php',
-            title: 'PHP',
-            color: '#7a86b8',
-            icon: SiPhp,
-          },
-          {
-            id: 'mysql',
-            title: 'MySQL',
-            color: '#0074a3',
-            icon: SiMysql,
-          },
-          {
-            id: 'sass',
-            title: 'Sass',
-            color: '#bf4080',
-            icon: FaSass,
-          },
-          {
-            id: 'gulp',
-            title: 'Gulp',
-            color: '#cf4647',
-            icon: SiGulp,
-          },
-        ],
-      },
-      {
-        id: 'global-treina',
         badges: [
           {
             id: 'wordpress',
