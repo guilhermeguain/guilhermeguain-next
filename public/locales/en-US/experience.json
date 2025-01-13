@@ -1,5 +1,11 @@
 {
   "title": "Experience",
+  "ifood": {
+    "company": "iFood",
+    "role": "Software Engineer",
+    "period": "01/2025 - present",
+    "summary": "I contribute to the maintenance and evolution of an application developed in React.js. My work is focused on guaranteeing the quality, functionality and user experience of the system."
+  },
   "gobrax": {
     "company": "Gobrax",
     "role": "Front-End Developer",

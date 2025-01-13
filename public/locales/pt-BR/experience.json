@@ -1,5 +1,11 @@
 {
   "title": "Experience",
+  "ifood": {
+    "company": "iFood",
+    "role": "Engenheiro de software",
+    "period": "01/2025 - presente",
+    "summary": "Contribuo para a manutenção e evolução de uma aplicação desenvolvida em React.js. Meu trabalho é focado em garantir a qualidade, funcionalidade e experiência do usuário no sistema."
+  },
   "gobrax": {
     "company": "Gobrax",
     "role": "Desenvolvedor Front-End",

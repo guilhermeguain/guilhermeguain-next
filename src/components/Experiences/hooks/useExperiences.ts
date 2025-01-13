@@ -22,6 +22,41 @@ export const useExperiences = () => {
   const experiences = useMemo(
     () => [
       {
+        id: 'ifood',
+        badges: [
+          {
+            id: 'reactjs',
+            title: 'React.js',
+            color: '#61dafb',
+            icon: SiReact,
+          },
+          {
+            id: 'typescript',
+            title: 'TypeScript',
+            color: '#3178c6',
+            icon: SiTypescript,
+          },
+          {
+            id: 'nextjs',
+            title: 'Next.js',
+            color: '#000',
+            icon: TbBrandNextjs,
+          },
+          {
+            id: 'eslint',
+            title: 'ESLint',
+            color: '#4b32c3',
+            icon: SiEslint,
+          },
+          {
+            id: 'jest',
+            title: 'Jest',
+            color: '#99425b',
+            icon: SiJest,
+          },
+        ],
+      },
+      {
         id: 'gobrax',
         badges: [
           {
