@@ -1,4 +1,4 @@
-import React, { Fragment, useMemo } from 'react';
+import { Fragment, JSX, useMemo } from 'react';
 
 const escapeRegexp = (term: string): string =>
   term.replace(/[|\\{}()[\]^$+*?.-]/g, (char: string) => `\\${char}`);
