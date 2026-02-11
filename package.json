@@ -10,33 +10,33 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vanilla-extract/css": "^1.17.4",
-    "i18next": "^25.6.2",
-    "next": "^16.0.3",
-    "next-i18next": "^15.4.2",
+    "@vanilla-extract/css": "^1.18.0",
+    "i18next": "^25.8.5",
+    "next": "^16.1.6",
+    "next-i18next": "^15.4.3",
     "next-sitemap": "^4.2.3",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "react-gtm-module": "^2.0.11",
-    "react-i18next": "^16.3.3",
+    "react-i18next": "^16.5.4",
     "react-icons": "^5.5.0"
   },
   "engines": {
     "node": ">=24.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.10.9",
-    "@types/react": "19.2.5",
+    "@types/node": "^25.2.3",
+    "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@types/react-gtm-module": "^2.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.46.4",
-    "@typescript-eslint/parser": "^8.46.4",
-    "@vanilla-extract/next-plugin": "^2.4.14",
-    "baseline-browser-mapping": "^2.9.17",
+    "@typescript-eslint/eslint-plugin": "^8.46.0",
+    "@typescript-eslint/parser": "^8.46.0",
+    "@vanilla-extract/next-plugin": "^2.4.17",
+    "baseline-browser-mapping": "^2.9.19",
     "eslint": "^9.39.1",
-    "eslint-config-next": "16.0.3",
+    "eslint-config-next": "16.1.6",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-prettier": "^5.5.5",
     "typescript": "5.9.3"
   }
 }
