@@ -1,0 +1,18 @@
+---
+description: Core project identity, stack, and guardrails for this portfolio site
+alwaysApply: true
+---
+
+# Project overview
+
+Bilingual personal portfolio (Guilherme Guain). Next.js 16 **Pages Router** in `src/pages/`, React 19, TypeScript strict, Vanilla Extract, next-i18next (`en-US` default, `pt-BR`).
+
+- Single page: `src/pages/index.tsx` (ISR 24h). Shell: `Page` → Header, main, Footer.
+- Use path aliases (`@components/*`, `@styles/*`, …), not deep relative imports.
+- Copy lives in `public/locales/{en-US,pt-BR}/*.json`. Update **both** locales. Load new namespaces in `getStaticProps`.
+- Style only with Vanilla Extract (`*.css.ts`) and `vars` from `@styles/theme.css`.
+- Do not migrate to App Router, Tailwind, CSS Modules, or styled-components unless asked.
+- No API/auth/DB. No `console.log` (ESLint `no-console`).
+- GTM id `GTM-MFKHPQ4`. Existing dataLayer events: `contactClick`, `menuClick`.
+- Prettier: single quotes, semicolons, trailing commas, printWidth 100.
+- Match existing patterns (colocated hooks, named exports, locale keys) over inventing new ones.

@@ -1,0 +1,31 @@
+---
+description: Vanilla Extract styling, theme tokens, and layout primitives
+globs: "**/*.css.ts"
+alwaysApply: false
+---
+
+# Vanilla Extract
+
+All CSS is `*.css.ts`. Import `style` / `globalStyle` from `@vanilla-extract/css`.
+
+```ts
+import { style } from '@vanilla-extract/css';
+import { vars } from '@styles/theme.css';
+import { Content } from '@styles/layout.css';
+
+export const CustomContent = style([
+  Content,
+  {
+    gap: '.5rem',
+    '@media': {
+      'screen and (min-width: 30rem)': { fontSize: '1.25rem' },
+    },
+  },
+]);
+```
+
+- Colors, borders, text: `vars` from `@styles/theme.css` (not raw hex unless matching an existing exception like badge brand colors).
+- Reuse `@styles/layout.css` (`Content`, `List`, `ListItem`, …) and `@styles/typography.css` (`Title`).
+- Compose with `style([base, { … }])`. Export PascalCase class names (`Container`, `ListItem`).
+- Mobile-first media in rem (`30rem`, `48rem`). JS breakpoint is `MOBILE_BREAKPOINT` (768) — keep CSS and JS in sync when changing it.
+- Apply classes via `className={Container}`, never string CSS or inline styles except dynamic values (progress width, header height).

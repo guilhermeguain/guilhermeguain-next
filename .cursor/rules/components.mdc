@@ -1,0 +1,31 @@
+---
+description: Feature component structure, hooks, and rendering conventions
+globs: src/components/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Components
+
+Colocate each feature as `index.tsx` + `styles.css.ts` + `hooks/useX.ts`. Optional: `types.d.ts` / `types.ts`, `context/`, nested `components/`.
+
+```tsx
+// ✅ presentational component + hook for data
+export const Experiences = () => {
+  const { t, experiences } = useExperiences();
+  return (
+    <section id="experience" className={Container}>
+      <h2 className={Title}>{t('experience:title')}</h2>
+      {experiences.map(({ id }) => (
+        <p key={id}>{t(`experience:${id}.role`)}</p>
+      ))}
+    </section>
+  );
+};
+```
+
+- Named exports, functional components. Keep `import React from 'react'` if the file already uses it.
+- Hooks own **structure** (ids, urls, icons, numeric scores). Locale JSON owns **copy**.
+- Section roots use `<section id="…">` matching menu hashes (`#about`, `#experience`, …).
+- Conditional UI: `@components/shared/When`. Two-column wrap: `@components/shared/Row`.
+- Emphasize terms in translated text with `@utils/highlight` `Highlight`, not manual `<strong>` splits.
+- Ambient `types.d.ts` (no import/export) is the local default; `LangSelector/types.ts` is the exception — match the folder.
