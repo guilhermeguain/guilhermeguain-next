@@ -23,11 +23,11 @@ export const useHardSkills = () => {
         value: 100,
       },
       {
-        id: 'design-layout',
-        value: 90,
+        id: 'llms-ai-agents',
+        value: 95,
       },
       {
-        id: 'git',
+        id: 'ai-assisted-development',
         value: 90,
       },
     ],

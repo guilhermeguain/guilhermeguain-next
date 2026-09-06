@@ -1,0 +1,26 @@
+{
+  "title": "Desenvolvimento Assistido por IA",
+  "workflow": {
+    "title": "Fluxo de engenharia",
+    "workflow-1": "LLMs e agentes de programação em pesquisa, arquitetura e implementação",
+    "workflow-2": "Debugging, refatoração, testes e revisão de código",
+    "workflow-3": "Documentação técnica e análise de repositórios",
+    "workflow-4": "Decisões de arquitetura e revisão de código permanecem humanas"
+  },
+  "front-end": {
+    "title": "Aplicações de front-end",
+    "front-end-1": "Desenvolvimento em React.js e Next.js com fluxos assistidos por IA",
+    "front-end-2": "Geração e refatoração de componentes e tipagem em TypeScript",
+    "front-end-3": "Design-to-code, refatoração de CSS e documentação de UI",
+    "front-end-4": "Análise de acessibilidade, performance e arquitetura front-end",
+    "front-end-5": "Geração de testes de UI e E2E, com revisão humana",
+    "front-end-6": "Modernização de React legado"
+  },
+  "impact": {
+    "title": "Impacto",
+    "impact-1": "Menos tempo em implementação repetitiva, debugging e documentação",
+    "impact-2": "Análise e modernização mais rápidas de código front-end legado",
+    "impact-3": "Maior cobertura de testes com geração assistida por IA e revisão humana",
+    "impact-4": "Responsabilidade pelas decisões técnicas, qualidade do código e arquitetura"
+  }
+}

@@ -23,13 +23,16 @@ export const CustomContent = style([
 
 export const Role = style({
   order: 2,
-  fontSize: '1.5rem',
-  lineHeight: 1,
+  fontSize: '1.25rem',
+  lineHeight: 1.2,
   color: vars.color.text.primary,
 
   '@media': {
     'screen and (min-width: 30rem)': {
-      fontSize: '3rem',
+      fontSize: '2rem',
+    },
+    'screen and (min-width: 48rem)': {
+      fontSize: '2.5rem',
     },
   },
 });

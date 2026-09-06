@@ -14,17 +14,21 @@ export const Projects = () => {
     <section id="projects" className={Container}>
       <h2 className={Title}>{t('projects:title')}</h2>
       <ul className={List}>
-        {projects.map(({ id, link }) => (
+        {projects.map(({ id, Icon }) => (
           <li key={id} className={ListItem}>
-            <Image
-              src={`/images/projects/${id}.png`}
-              alt={t(`projects:${id}`)}
-              title={t(`projects:${id}`) || id}
-              placeholder="blur"
-              blurDataURL={`/images/projects/${id}.png`}
-              width={200}
-              height={60}
-            />
+            {Icon ? (
+              <Icon title={t(`projects:${id}`) || id} />
+            ) : (
+              <Image
+                src={`/images/projects/${id}.png`}
+                alt={t(`projects:${id}`)}
+                title={t(`projects:${id}`) || id}
+                placeholder="blur"
+                blurDataURL={`/images/projects/${id}.png`}
+                width={200}
+                height={60}
+              />
+            )}
           </li>
         ))}
       </ul>

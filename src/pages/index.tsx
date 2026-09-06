@@ -9,6 +9,7 @@ import { Page } from '@components/Page';
 import { Hero } from '@components/Hero';
 import { About } from '@components/About';
 import { DataDrivenSeo } from '@components/DataDrivenSeo';
+import { FrontEndAi } from '@components/FrontEndAi';
 import { Experiences } from '@components/Experiences';
 import { Projects } from '@components/Projects';
 import { Events } from '@components/Events';
@@ -21,6 +22,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
     <Page title={t('meta:title')} description={t('meta:desc')}>
       <Hero />
       <About />
+      <FrontEndAi />
       <DataDrivenSeo />
       <Experiences />
       <Projects />
@@ -44,6 +46,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         'hard-skills',
         'soft-skills',
         'data-driven-seo',
+        'front-end-ai',
         'experience',
         'projects',
         'education',

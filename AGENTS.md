@@ -1,6 +1,6 @@
 # Agent context — guilhermeguain-next
 
-Personal portfolio for **Guilherme Guain** (Front-End Developer). A bilingual, SEO-oriented single-page site: hero, about, data-driven SEO, experience, projects, education, and events.
+Personal portfolio for **Guilherme Guain** (Front-End Developer | AI-Assisted Development). A bilingual, SEO-oriented single-page site: hero, about, front-end + AI, data-driven SEO, experience, projects, education, and events.
 
 Read this file before changing code. Prefer matching existing patterns over introducing new ones.
 
@@ -88,7 +88,7 @@ ComponentName/
 ## i18n
 
 - Files: `public/locales/{en-US,pt-BR}/{namespace}.json`.
-- Namespaces in use: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `experience`, `projects`, `education`, `events`.
+- Namespaces in use: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `front-end-ai`, `experience`, `projects`, `education`, `events`.
 - Always update **both** locales together. Keep JSON keys in sync.
 - Language switch: `LangSelector` → `router.push(asPath, asPath, { locale })`.
 - CV PDFs: `/documents/cv-guilherme-guain-${locale}.pdf`.

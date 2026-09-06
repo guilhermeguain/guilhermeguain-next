@@ -1,11 +1,24 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'next-i18next';
 
+import { Ifood } from '@assets/Ifood';
+import { Petlove } from '@assets/Petlove';
+
 export const useProjects = () => {
   const { t } = useTranslation(['projects']);
 
   const projects = useMemo(
     () => [
+      {
+        id: 'iFood',
+        link: 'https://www.ifood.com.br/',
+        Icon: Ifood,
+      },
+      {
+        id: 'Petlove',
+        link: 'https://www.petlove.com.br/',
+        Icon: Petlove,
+      },
       {
         id: 'gobrax',
         link: 'https://gobrax.com.br/',

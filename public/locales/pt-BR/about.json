@@ -1,23 +1,29 @@
 {
   "name": "Guilherme Emilio Guain Peixinho",
-  "role": "Desenvolvedor Front-End",
+  "role": "Desenvolvedor Front-End | Desenvolvimento Assistido por IA",
   "linkedin": "LinkedIn",
   "github": "GitHub",
   "instagram": "Instagram",
   "email": "E-mail",
   "curriculum": "Currículo",
   "paragraphs": {
-    "paragraph-1": "Desenvolvedor desde 2012, com experiência em React.js, Next.js, TypeScript, Node.js, Tailwind CSS, Styled Components, Git e Jest. Tenho experiência trabalhando em ambientes ágeis, utilizando Scrum, facilitando as cerimônias e contribuindo para a organização e documentação do projeto. Trabalhei por mais de 10 anos inserido dentro do Marketing, onde adquiri grande conhecimento em otimização para mecanismos de busca (SEO) e em sistemas de gestão de conteúdo (CMS) como WordPress e Strapi.",
-    "paragraph-2": "Ao longo de minha carreira também assumi tarefas em áreas relacionadas, nas quais adquiri conhecimentos em:"
+    "paragraph-1": "Desenvolvedor Front-end com mais de 14 anos de experiência no desenvolvimento de aplicações web modernas e arquiteturas front-end escaláveis, com foco em React.js, Next.js, TypeScript e Node.js.",
+    "paragraph-2": "Incorporei o desenvolvimento assistido por IA de forma profunda ao meu fluxo de trabalho, utilizando LLMs, agentes de programação baseados em IA e ferramentas de desenvolvimento com IA em diferentes etapas do ciclo de desenvolvimento de software — desde pesquisa técnica, arquitetura e implementação até debugging, refatoração, testes, revisão de código e documentação. Utilizo IA para aumentar a produtividade e acelerar a resolução de problemas, mantendo a responsabilidade pelas decisões técnicas, qualidade do código e arquitetura das soluções.",
+    "paragraph-3": "Além do desenvolvimento de software, possuo mais de 10 anos de experiência em marketing digital, com amplo conhecimento em SEO, performance web, gerenciamento de conteúdo e plataformas digitais, incluindo WordPress e Strapi. Tenho experiência em ambientes Ágeis/Scrum, colaborando com equipes multidisciplinares e contribuindo para documentação técnica, organização de projetos e processos de desenvolvimento.",
+    "paragraph-4": "Ao longo de minha carreira também assumi tarefas em áreas relacionadas, nas quais adquiri conhecimentos em:"
   },
   "highlights": {
-    "2012": "2012",
     "react-js": "React.js",
     "next-js": "Next.js",
     "typescript": "TypeScript",
     "node-js": "Node.js",
+    "ai-assisted": "desenvolvimento assistido por IA",
+    "llms": "LLMs",
+    "ai-agents": "agentes de programação baseados em IA",
     "seo": "SEO",
-    "strapi": "Strapi"
+    "wordpress": "WordPress",
+    "strapi": "Strapi",
+    "agile-scrum": "Ágeis/Scrum"
   },
   "knowledges": {
     "design": {

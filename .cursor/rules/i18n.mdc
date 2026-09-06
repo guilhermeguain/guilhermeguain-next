@@ -9,7 +9,7 @@ alwaysApply: false
 Locales: `en-US` (default, guilhermeguain.com) and `pt-BR` (guilhermeguain.com.br). Detection is off; switching uses `router.push(asPath, asPath, { locale })`.
 
 - One JSON file per namespace under `public/locales/{locale}/`.
-- Namespaces: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `experience`, `projects`, `education`, `events`.
+- Namespaces: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `front-end-ai`, `experience`, `projects`, `education`, `events`.
 - Always add/change keys in **both** `en-US` and `pt-BR`. Keep key trees identical.
 - Nested objects are fine (`experience.ifood.role`). Components read them as `t('experience:ifood.role')`.
 - New namespace: create both JSON files **and** add the name to `serverSideTranslations` in `src/pages/index.tsx`.

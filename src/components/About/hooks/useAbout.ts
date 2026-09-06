@@ -45,10 +45,18 @@ export const useAbout = () => {
     () => [
       {
         id: 'paragraph-1',
-        highlights: ['2012', 'react-js', 'next-js', 'typescript', 'node-js', 'seo', 'strapi'],
+        highlights: ['react-js', 'next-js', 'typescript', 'node-js'],
       },
       {
         id: 'paragraph-2',
+        highlights: ['ai-assisted', 'llms', 'ai-agents'],
+      },
+      {
+        id: 'paragraph-3',
+        highlights: ['seo', 'wordpress', 'strapi', 'agile-scrum'],
+      },
+      {
+        id: 'paragraph-4',
         highlights: [],
       },
     ],

@@ -1,0 +1,26 @@
+{
+  "title": "AI-Assisted Development",
+  "workflow": {
+    "title": "Engineering workflow",
+    "workflow-1": "LLMs and coding agents across research, architecture and implementation",
+    "workflow-2": "Debugging, refactoring, testing and code review",
+    "workflow-3": "Technical documentation and repository analysis",
+    "workflow-4": "Architecture decisions and code review stay human-led"
+  },
+  "front-end": {
+    "title": "Front-end applications",
+    "front-end-1": "React.js and Next.js development with AI-assisted workflows",
+    "front-end-2": "Component generation, refactoring and TypeScript typing",
+    "front-end-3": "Design-to-code, CSS refactoring and UI documentation",
+    "front-end-4": "Accessibility, performance and front-end architecture analysis",
+    "front-end-5": "UI and E2E test generation, reviewed by hand",
+    "front-end-6": "Legacy React modernization"
+  },
+  "impact": {
+    "title": "Impact",
+    "impact-1": "Less time spent on repetitive implementation, debugging and documentation",
+    "impact-2": "Faster analysis and modernization of legacy front-end code",
+    "impact-3": "Broader test coverage through AI-assisted generation, with human review",
+    "impact-4": "Ownership of technical decisions, code quality and solution architecture"
+  }
+}

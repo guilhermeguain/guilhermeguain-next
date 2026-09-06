@@ -8,7 +8,7 @@ import { LangSelector } from '@components/LangSelector';
 import { Container, ContainerContent, Texts, TextsInner, TextsInnerItem } from './styles.css';
 
 export const Footer = () => {
-  const { t } = useTranslation(['common']);
+  const { t } = useTranslation(['common', 'meta']);
 
   return (
     <footer className={Container}>
@@ -18,8 +18,8 @@ export const Footer = () => {
             src={'/images/logo.svg'}
             width={48}
             height={48}
-            alt="Front-End Developer - Guilherme Guain"
-            title="Front-End Developer - Guilherme Guain"
+            alt={t('meta:title')}
+            title={t('meta:title')}
           />
         </NextLink>
         <div className={Texts}>

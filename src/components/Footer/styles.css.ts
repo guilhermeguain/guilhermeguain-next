@@ -45,8 +45,10 @@ export const TextsInner = style({
   borderBottom: `1px solid ${vars.color.divider}`,
   paddingBottom: '1rem',
   display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
   gap: '1rem',
-  lineHeight: 1,
+  lineHeight: 1.3,
 
   '@media': {
     'screen and (min-width: 48rem)': {

@@ -2,18 +2,19 @@ import {
   SiReact,
   SiTypescript,
   SiEslint,
-  SiPostman,
-  SiTailwindcss,
-  SiPhp,
+  SiGo,
   SiMysql,
-  SiWordpress,
-  SiGraphql,
-  SiAmp,
-  SiJest,
+  SiPython,
+  SiClaude,
+  SiOpenai,
+  SiGithubcopilot,
+  SiGooglegemini,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
-import { FaGitAlt, FaNodeJs } from 'react-icons/fa';
+import { FaNodeJs } from 'react-icons/fa';
 
+import { Cursor } from '@assets/Cursor';
+import { DeepSeek } from '@assets/DeepSeek';
 import { Figma } from '@assets/Figma';
 import { Photoshop } from '@assets/Photoshop';
 import { Illustrator } from '@assets/Illustrator';
@@ -45,30 +46,36 @@ export const techs = {
       color: '#4b32c3',
     },
     {
-      id: 'tailwind',
-      title: 'Tailwind CSS',
-      icon: SiTailwindcss,
-      color: '#38bdf8',
+      id: 'claude',
+      title: 'Claude',
+      icon: SiClaude,
+      color: '#d97757',
     },
     {
-      id: 'git',
-      title: 'Git',
-      icon: FaGitAlt,
-      color: '#f14e32',
+      id: 'chatgpt',
+      title: 'ChatGPT',
+      icon: SiOpenai,
+      color: '#412991',
     },
     {
-      id: 'jest',
-      title: 'Jest',
-      icon: SiJest,
-      color: '#99425b',
+      id: 'cursor',
+      title: 'Cursor',
+      icon: Cursor,
+      color: '#000',
     },
   ],
   secondary: [
     {
-      id: 'php',
-      title: 'PHP',
-      icon: SiPhp,
-      color: '#7a86b8',
+      id: 'golang',
+      title: 'Go',
+      icon: SiGo,
+      color: '#00add8',
+    },
+    {
+      id: 'python',
+      title: 'Python',
+      icon: SiPython,
+      color: '#3776ab',
     },
     {
       id: 'nodejs',
@@ -83,28 +90,22 @@ export const techs = {
       color: '#0074a3',
     },
     {
-      id: 'wordpress',
-      title: 'WordPress',
-      icon: SiWordpress,
+      id: 'github-copilot',
+      title: 'GitHub Copilot',
+      icon: SiGithubcopilot,
       color: '#000',
     },
     {
-      id: 'graphql',
-      title: 'GraphQL',
-      icon: SiGraphql,
-      color: '#e10098',
+      id: 'gemini',
+      title: 'Gemini',
+      icon: SiGooglegemini,
+      color: '#8e75b2',
     },
     {
-      id: 'amp',
-      title: 'AMP',
-      icon: SiAmp,
-      color: '#0379c4',
-    },
-    {
-      id: 'postman',
-      title: 'Postman',
-      icon: SiPostman,
-      color: '#ff6c37',
+      id: 'deepseek',
+      title: 'DeepSeek',
+      icon: DeepSeek,
+      color: '#5786fe',
     },
   ],
   design: [
