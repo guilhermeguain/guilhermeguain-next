@@ -1,7 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
-import { SiReact, SiTypescript, SiEslint, SiJest } from 'react-icons/si';
-import { TbBrandNextjs } from 'react-icons/tb';
+import { SiReact, SiTypescript, SiOpenai, SiClaude } from 'react-icons/si';
+
+import { Cursor } from '@assets/Cursor';
 
 import { Container, CustomContent, Role, Name, Desc, Badges } from './styles.css';
 
@@ -17,9 +18,9 @@ export const Hero = () => {
         <div className={Badges}>
           <SiReact title="React.js" />
           <SiTypescript title="TypeScript" />
-          <TbBrandNextjs title="Next.js" />
-          <SiEslint title="ESLint" />
-          <SiJest title="Jest" />
+          <Cursor title="Cursor" plain />
+          <SiOpenai title="ChatGPT" />
+          <SiClaude title="Claude" />
         </div>
       </div>
     </section>
