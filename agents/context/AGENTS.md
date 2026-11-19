@@ -4,7 +4,7 @@ Personal portfolio for **Guilherme Guain** (Front-End Developer | AI-Assisted De
 
 Read this file before changing code. Match the patterns below instead of introducing a new stack.
 
-Shared agent files live in `agents/` (`context/`, `rules/`, `docs/`). This file is `agents/context/AGENTS.md`. Cursor reaches it through the repo-root `AGENTS.md` symlink, and reaches the rules through `.cursor/rules` → `agents/rules`. Edit the files under `agents/`, not copies inside a tool folder.
+Shared agent files live in `agents/` (`context/`, `rules/`, `docs/`). This file is the brief. The repo-root `AGENTS.md` and the files in `.cursor/rules/` are plain-text pointers here, not copies and not symlinks. Edit the files under `agents/`.
 
 ## Stack
 

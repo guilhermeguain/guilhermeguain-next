@@ -1,0 +1,8 @@
+---
+description: Core project identity, stack, and guardrails for this portfolio site
+alwaysApply: true
+---
+
+# Project overview
+
+Follow `agents/rules/project-overview.mdc`. That file is the source for this rule.

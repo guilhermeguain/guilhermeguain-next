@@ -1,0 +1,9 @@
+---
+description: Feature component structure, hooks, and rendering conventions
+globs: src/components/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Components
+
+Follow `agents/rules/components.mdc`. That file is the source for this rule.
