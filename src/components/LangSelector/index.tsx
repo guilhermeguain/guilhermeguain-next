@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 
 import { useLangSelector } from './hooks/useLangSelector';
 import { LangSelectorProps } from './types';
@@ -21,11 +21,12 @@ export const LangSelector = ({ id, style }: LangSelectorProps) => {
           name="lang_selector"
           id={id}
           className={Input}
+          key={locale}
           defaultValue={locale}
           onChange={handleLangChange}
           style={style}
         >
-          <option value="en-US" className={Option}>
+          <option value="en" className={Option}>
             {t('english')}
           </option>
           <option value="pt-BR" className={Option}>

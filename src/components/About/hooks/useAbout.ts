@@ -1,13 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
-import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
+import { useParams } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import TagManager from 'react-gtm-module';
 
 export const useAbout = () => {
-  const { locale } = useRouter();
+  const { locale } = useParams<{ locale: string }>();
   const { t } = useTranslation(['common', 'about']);
 
   const contacts = useMemo(
@@ -38,7 +38,7 @@ export const useAbout = () => {
         url: `/documents/cv-guilherme-guain-${locale}.pdf`,
       },
     ],
-    [],
+    [locale],
   );
 
   const paragraphs = useMemo(

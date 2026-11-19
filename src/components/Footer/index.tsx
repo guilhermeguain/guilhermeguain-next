@@ -1,19 +1,23 @@
 import React from 'react';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 import NextLink from 'next/link';
 import NextImage from 'next/image';
+import { useParams } from 'next/navigation';
+
+import { localeHref } from '@lib/locales';
 
 import { LangSelector } from '@components/LangSelector';
 
 import { Container, ContainerContent, Texts, TextsInner, TextsInnerItem } from './styles.css';
 
 export const Footer = () => {
+  const { locale } = useParams<{ locale: string }>();
   const { t } = useTranslation(['common', 'meta']);
 
   return (
     <footer className={Container}>
       <div className={ContainerContent}>
-        <NextLink href="/">
+        <NextLink href={localeHref(locale ?? 'pt-BR')}>
           <NextImage
             src={'/images/logo.svg'}
             width={48}

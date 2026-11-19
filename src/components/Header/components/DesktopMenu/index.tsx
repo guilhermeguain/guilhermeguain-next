@@ -1,7 +1,7 @@
-import React, { useCallback } from 'react';
-import { useRouter } from 'next/router';
+import React, { useCallback, useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 import TagManager from 'react-gtm-module';
 
 import { LangSelector } from '@components/LangSelector';
@@ -11,7 +11,19 @@ import { Container, Menu, MenuItem } from './styles.css';
 export const DesktopMenu = ({ items }: MenuProps) => {
   const { t } = useTranslation('menu');
 
-  const { asPath } = useRouter();
+  const pathname = usePathname();
+  const [hash, setHash] = useState('');
+
+  useEffect(() => {
+    const updateHash = () => setHash(window.location.hash);
+
+    updateHash();
+    window.addEventListener('hashchange', updateHash);
+
+    return () => window.removeEventListener('hashchange', updateHash);
+  }, []);
+
+  const currentPath = `${pathname}${hash}`;
 
   const handleMenuClick = useCallback((event: React.MouseEvent) => {
     const id = event.currentTarget.getAttribute('data-id');
@@ -32,7 +44,7 @@ export const DesktopMenu = ({ items }: MenuProps) => {
         {items.map(({ id, href }) => (
           <li key={id}>
             <NextLink
-              aria-current={asPath.includes(id)}
+              aria-current={currentPath.includes(id)}
               href={href}
               passHref
               scroll={false}
