@@ -1,0 +1,9 @@
+---
+description: react-i18next namespaces, locale files, and translation key usage
+globs: public/locales/**/*.json
+alwaysApply: false
+---
+
+# i18n
+
+Follow `agents/rules/i18n.mdc`. That file is the source for this rule.

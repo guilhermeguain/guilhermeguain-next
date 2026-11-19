@@ -1,0 +1,9 @@
+---
+description: Vanilla Extract styling, theme tokens, and layout primitives
+globs: "**/*.css.ts"
+alwaysApply: false
+---
+
+# Vanilla Extract
+
+Follow `agents/rules/vanilla-extract.mdc`. That file is the source for this rule.
