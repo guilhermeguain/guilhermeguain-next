@@ -6,10 +6,10 @@ Read this file before changing code. Prefer matching existing patterns over intr
 
 ## Stack
 
-- **Next.js 16** with the **Pages Router** (`src/pages/`). Do not migrate to the App Router unless asked.
+- **Next.js 16** with the **App Router** (`src/app/`). Do not migrate back to the Pages Router unless asked.
 - **React 19** + **TypeScript 5.9** (`strict: true`).
 - **Vanilla Extract** for all styling (`*.css.ts`). No Tailwind, CSS Modules, or styled-components.
-- **next-i18next** for copy: `pt-BR` (default) and `en`.
+- **react-i18next** for copy: `pt-BR` (default) and `en`. Locale routing is `src/proxy.ts` plus `src/app/[locale]`, not `next.config.js` `i18n`.
 - **react-icons** for most icons; custom SVGs live in `src/assets/`.
 - **Google Tag Manager** (`GTM-MFKHPQ4`) via `react-gtm-module`.
 - **next-sitemap** runs after `next build`.
@@ -19,7 +19,7 @@ Committed lockfile is `package-lock.json`. `yarn.lock` is gitignored.
 
 ## What the site is (and is not)
 
-- One static page: `src/pages/index.tsx` (ISR, 24h). No API routes, auth, CMS, or database.
+- One static page: `src/app/[locale]/page.tsx` (ISR, 24h). No API routes, auth, CMS, or database.
 - Layout shell is `Page` (`Header` + `<main>` + `Footer`).
 - Path-based locales on `https://www.guilhermeguain.com.br` (detection off):
   - `pt-BR` → `/`
@@ -30,7 +30,7 @@ Committed lockfile is `package-lock.json`. `yarn.lock` is gitignored.
 
 ```
 src/
-  pages/           # Pages Router: _app, _document, index
+  app/[locale]/   # App Router: layout + page
   components/      # Feature sections + Header/Footer/Page + shared/
   contexts/App/    # Root providers (currently HeaderProvider)
   hooks/           # Cross-cutting hooks (useWindowSize)
@@ -52,7 +52,6 @@ Path aliases (use these, not deep relatives):
 | `@contexts/*` | `src/contexts/*` |
 | `@hooks/*` | `src/hooks/*` |
 | `@lib/*` | `src/lib/*` |
-| `@pages/*` | `src/pages/*` |
 | `@styles/*` | `src/styles/*` |
 | `@utils/*` | `src/utils/*` |
 
@@ -72,8 +71,8 @@ ComponentName/
 
 - Named exports (`export const Hero = …`), functional components.
 - Copy and labels live in locale JSON. Hooks hold **structure** (ids, links, badge icons, numeric values).
-- `useTranslation(['namespace'])` + keys like `t('experience:ifood.role')`.
-- New namespaces must be added to `serverSideTranslations` in `src/pages/index.tsx`.
+- `useTranslation(['namespace'])` from `react-i18next` + keys like `t('experience:ifood.role')`.
+- New namespaces must be added to `namespaces` and `resources` in `src/lib/i18n.ts`.
 - Shared UI: `When` (conditional render), `Row` (responsive two-column section).
 - `Highlight` (`@utils/highlight`) wraps translated paragraphs and bolds query terms.
 
@@ -90,7 +89,7 @@ ComponentName/
 - Files: `public/locales/{en,pt-BR}/{namespace}.json`.
 - Namespaces in use: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `front-end-ai`, `experience`, `projects`, `education`, `events`.
 - Always update **both** locales together. Keep JSON keys in sync.
-- Language switch: `LangSelector` → `router.push(asPath, asPath, { locale })`.
+- Language switch: `LangSelector` navigates to `/` for `pt-BR` and `/en` for English.
 - CV PDFs: `/documents/cv-guilherme-guain-${locale}.pdf`.
 
 ## Analytics

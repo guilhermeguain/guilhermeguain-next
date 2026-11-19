@@ -1,6 +1,9 @@
 import React from 'react';
 import NextImage from 'next/image';
 import NextLink from 'next/link';
+import { useParams } from 'next/navigation';
+
+import { localeHref } from '@lib/locales';
 
 import { When } from '@components/shared/When';
 import { MobileMenu } from './components/MobileMenu';
@@ -11,6 +14,7 @@ import { MobileMenuProvider } from './components/MobileMenu/context';
 import { Container, ContainerOverlay, ContainerContent } from './styles.css';
 
 export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
+  const { locale } = useParams<{ locale: string }>();
   const { headerRef, headerHeight, menuItems, width, isMobile } = useHeader();
 
   return (
@@ -19,7 +23,7 @@ export const Header = ({ title, logo = '/images/logo.svg' }: HeaderProps) => {
         <div className={ContainerOverlay} style={{ height: `${headerHeight}px` }} />
         <div ref={headerRef} className={ContainerContent}>
           <div>
-            <NextLink href="/">
+            <NextLink href={localeHref(locale ?? 'pt-BR')}>
               <NextImage
                 src={logo}
                 width={48}

@@ -4,8 +4,9 @@ const siteUrl = process.env.SITE_URL || 'https://www.guilhermeguain.com.br';
 module.exports = {
   siteUrl,
   generateRobotsTxt: false,
-  exclude: ['/server-sitemap-index.xml'],
+  exclude: ['/server-sitemap-index.xml', '/pt-BR'],
   generateIndexSitemap: false,
+  additionalPaths: async (config) => [await config.transform(config, '/')],
   transform: async (config, path) => {
     const origin = String(config.siteUrl).replace(/\/$/, '');
 

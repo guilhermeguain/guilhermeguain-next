@@ -13,7 +13,6 @@
     "@vanilla-extract/css": "^1.18.0",
     "i18next": "^25.8.5",
     "next": "^16.4.6",
-    "next-i18next": "^15.4.3",
     "next-sitemap": "^4.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
