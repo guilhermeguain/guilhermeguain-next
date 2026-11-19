@@ -9,7 +9,7 @@ Read this file before changing code. Prefer matching existing patterns over intr
 - **Next.js 16** with the **Pages Router** (`src/pages/`). Do not migrate to the App Router unless asked.
 - **React 19** + **TypeScript 5.9** (`strict: true`).
 - **Vanilla Extract** for all styling (`*.css.ts`). No Tailwind, CSS Modules, or styled-components.
-- **next-i18next** for copy: `en-US` (default) and `pt-BR`.
+- **next-i18next** for copy: `pt-BR` (default) and `en`.
 - **react-icons** for most icons; custom SVGs live in `src/assets/`.
 - **Google Tag Manager** (`GTM-MFKHPQ4`) via `react-gtm-module`.
 - **next-sitemap** runs after `next build`.
@@ -21,9 +21,9 @@ Committed lockfile is `package-lock.json`. `yarn.lock` is gitignored.
 
 - One static page: `src/pages/index.tsx` (ISR, 24h). No API routes, auth, CMS, or database.
 - Layout shell is `Page` (`Header` + `<main>` + `Footer`).
-- Domain-based locales (detection off):
-  - `en-US` → `https://www.guilhermeguain.com`
-  - `pt-BR` → `https://www.guilhermeguain.com.br`
+- Path-based locales on `https://www.guilhermeguain.com.br` (detection off):
+  - `pt-BR` → `/`
+  - `en` → `/en`
 - Preview deploys send `X-Robots-Tag: noindex` when `NEXT_PUBLIC_VERCEL_ENV === 'preview'`.
 
 ## Directory map
@@ -39,7 +39,7 @@ src/
   utils/           # Helpers (text Highlight)
   assets/          # Custom SVG React components
 public/
-  locales/{en-US,pt-BR}/  # i18n JSON namespaces
+  locales/{en,pt-BR}/  # i18n JSON namespaces
   images/          # Static images (hero, avatar, project logos)
 ```
 
@@ -87,7 +87,7 @@ ComponentName/
 
 ## i18n
 
-- Files: `public/locales/{en-US,pt-BR}/{namespace}.json`.
+- Files: `public/locales/{en,pt-BR}/{namespace}.json`.
 - Namespaces in use: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `front-end-ai`, `experience`, `projects`, `education`, `events`.
 - Always update **both** locales together. Keep JSON keys in sync.
 - Language switch: `LangSelector` → `router.push(asPath, asPath, { locale })`.
@@ -111,7 +111,7 @@ yarn build
 yarn lint
 ```
 
-Env (see `.env.sample`): `NEXT_PUBLIC_EN_URL`, `NEXT_PUBLIC_PT_URL`. Sitemap uses `SITE_URL`.
+Env (see `.env.sample`): sitemap uses `SITE_URL` (`https://www.guilhermeguain.com.br`).
 
 ## Guardrails
 

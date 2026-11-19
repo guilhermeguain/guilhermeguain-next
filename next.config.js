@@ -24,6 +24,24 @@ const nextConfig = {
     }
     return headers;
   },
+  async redirects() {
+    const englishHosts = ['www.guilhermeguain.com', 'guilhermeguain.com'];
+
+    return englishHosts.flatMap((host) => [
+      {
+        source: '/',
+        has: [{ type: 'host', value: host }],
+        destination: 'https://www.guilhermeguain.com.br/en',
+        permanent: true,
+      },
+      {
+        source: '/:path+',
+        has: [{ type: 'host', value: host }],
+        destination: 'https://www.guilhermeguain.com.br/en/:path+',
+        permanent: true,
+      },
+    ]);
+  },
   i18n
 };
 

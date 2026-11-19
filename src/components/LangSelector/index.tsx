@@ -25,7 +25,7 @@ export const LangSelector = ({ id, style }: LangSelectorProps) => {
           onChange={handleLangChange}
           style={style}
         >
-          <option value="en-US" className={Option}>
+          <option value="en" className={Option}>
             {t('english')}
           </option>
           <option value="pt-BR" className={Option}>
