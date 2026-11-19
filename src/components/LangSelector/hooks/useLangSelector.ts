@@ -1,12 +1,22 @@
-import React, { useCallback } from 'react';
-import { useRouter } from 'next/router';
+import { ChangeEvent, useCallback } from 'react';
+import { useParams, useRouter } from 'next/navigation';
+
+import { defaultLocale } from '@lib/locales';
 
 export const useLangSelector = () => {
-  const { push, locale, asPath } = useRouter();
+  const router = useRouter();
+  const { locale } = useParams<{ locale: string }>();
 
-  const handleLangChange = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
-    push(asPath, asPath, { locale: event.currentTarget.value });
-  }, []);
+  const handleLangChange = useCallback(
+    (event: ChangeEvent<HTMLSelectElement>) => {
+      const nextLocale = event.currentTarget.value;
+      const hash = window.location.hash;
+      const path = nextLocale === defaultLocale ? '/' : `/${nextLocale}`;
+
+      router.push(`${path}${hash}`);
+    },
+    [router],
+  );
 
   return {
     locale,

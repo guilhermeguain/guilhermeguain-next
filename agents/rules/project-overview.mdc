@@ -1,0 +1,19 @@
+---
+description: Core project identity, stack, and guardrails for this portfolio site
+alwaysApply: true
+---
+
+# Project overview
+
+Bilingual personal portfolio (Guilherme Guain). Next.js 16 **App Router** in `src/app/`, React 19, TypeScript strict, Vanilla Extract, react-i18next (`pt-BR` default, `en` at `/en`).
+
+- Single page: `src/app/[locale]/page.tsx` (ISR 24h). Shell: `Page` → Header, main, Footer. Locale routing is `src/proxy.ts` (`/` rewrites to `pt-BR`, `/en` is English).
+- Server layout/page may import `@lib/meta` and `@lib/locales`. Do not import `@lib/i18n` there (`react-i18next` breaks the server build).
+- Use path aliases (`@components/*`, `@styles/*`, …), not deep relative imports.
+- Copy lives in `public/locales/{en,pt-BR}/*.json`. Update **both** locales. Register new namespaces in `src/lib/i18n.ts`.
+- Style only with Vanilla Extract (`*.css.ts`) and `vars` from `@styles/theme.css`.
+- Do not migrate back to the Pages Router, Tailwind, CSS Modules, or styled-components unless asked.
+- No API/auth/DB. No `console.log` (ESLint `no-console`).
+- GTM id `GTM-MFKHPQ4`. Existing dataLayer events: `contactClick`, `menuClick`.
+- Prettier: single quotes, semicolons, trailing commas, printWidth 100.
+- Match existing patterns (colocated hooks, named exports, locale keys) over inventing new ones.

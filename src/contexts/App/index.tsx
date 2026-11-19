@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import { HeaderProvider } from '@components/Header/context';

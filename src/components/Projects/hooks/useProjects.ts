@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 
 import { Ifood } from '@assets/Ifood';
 import { Petlove } from '@assets/Petlove';

@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { i18n } = require('./next-i18next.config');
-
 const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 
 const withVanillaExtract = createVanillaExtractPlugin();
@@ -24,7 +22,24 @@ const nextConfig = {
     }
     return headers;
   },
-  i18n
+  async redirects() {
+    const englishHosts = ['www.guilhermeguain.com', 'guilhermeguain.com'];
+
+    return englishHosts.flatMap((host) => [
+      {
+        source: '/',
+        has: [{ type: 'host', value: host }],
+        destination: 'https://www.guilhermeguain.com.br/en',
+        permanent: true,
+      },
+      {
+        source: '/:path+',
+        has: [{ type: 'host', value: host }],
+        destination: 'https://www.guilhermeguain.com.br/en/:path+',
+        permanent: true,
+      },
+    ]);
+  },
 };
 
 module.exports = withVanillaExtract(nextConfig);

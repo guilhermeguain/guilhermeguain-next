@@ -1,16 +1,16 @@
 ---
-description: next-i18next namespaces, locale files, and translation key usage
+description: react-i18next namespaces, locale files, and translation key usage
 globs: public/locales/**/*.json
 alwaysApply: false
 ---
 
 # i18n
 
-Locales: `en-US` (default, guilhermeguain.com) and `pt-BR` (guilhermeguain.com.br). Detection is off; switching uses `router.push(asPath, asPath, { locale })`.
+Locales: `pt-BR` (default, `https://www.guilhermeguain.com.br`) and `en` (`/en`). Detection is off. The language selector navigates to `/` or `/en`. `src/proxy.ts` rewrites `/` to the `pt-BR` segment.
 
 - One JSON file per namespace under `public/locales/{locale}/`.
 - Namespaces: `common`, `meta`, `menu`, `hero`, `about`, `hard-skills`, `soft-skills`, `data-driven-seo`, `front-end-ai`, `experience`, `projects`, `education`, `events`.
-- Always add/change keys in **both** `en-US` and `pt-BR`. Keep key trees identical.
+- Always add/change keys in **both** `en` and `pt-BR`. Keep key trees identical.
 - Nested objects are fine (`experience.ifood.role`). Components read them as `t('experience:ifood.role')`.
-- New namespace: create both JSON files **and** add the name to `serverSideTranslations` in `src/pages/index.tsx`.
+- New namespace: create both JSON files **and** register the name in `src/lib/i18n.ts`.
 - Do not put user-facing copy in hooks or JSX when it belongs in locale JSON. Tech badge titles (`React.js`) may stay in code.
