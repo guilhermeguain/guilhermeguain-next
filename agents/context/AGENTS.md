@@ -12,7 +12,7 @@ Shared agent files live in `agents/` (`context/`, `rules/`, `docs/`). This file 
 | --- | --- |
 | App | Next.js **16.4** App Router, React **19.2**, TypeScript **5.9** (`strict`) |
 | Bundler | Webpack only: `next dev --webpack` / `next build --webpack` |
-| Runtime | Node **>= 24** |
+| Runtime | Node **26** LTS |
 | Style | Vanilla Extract (`*.css.ts`) via `@vanilla-extract/next-plugin`. No Tailwind, CSS Modules, or styled-components |
 | Copy | `i18next` + `react-i18next`. JSON in `public/locales/{en,pt-BR}` |
 | Icons | `react-icons`, plus custom SVG components in `src/assets/` |
