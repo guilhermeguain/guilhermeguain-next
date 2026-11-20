@@ -4,7 +4,7 @@
     "company": "iFood",
     "role": "Engenheiro de software",
     "period": "01/2025 - presente",
-    "summary": "Contribuo para a manutenção e evolução de uma aplicação em React.js, com foco em qualidade, funcionalidade e experiência do usuário. Integro fluxos de desenvolvimento assistido por IA à minha prática de engenharia, usando LLMs e agentes de programação para implementação, refatoração, debugging, testes e documentação, mantendo a arquitetura e a revisão de código sob responsabilidade humana."
+    "summary": "Contribuo para a manutenção e evolução de uma aplicação em React.js, com foco em qualidade, funcionalidade e experiência do usuário. Nesse trabalho aplico engenharia agêntica: a tarefa, o contexto e o critério de pronto ficam definidos antes do agente, que entra na implementação, na refatoração, no debugging, nos testes e na documentação. O diff, a arquitetura e a revisão de código continuam comigo."
   },
   "gobrax": {
     "company": "Gobrax",

@@ -4,7 +4,7 @@
     "company": "iFood",
     "role": "Software Engineer",
     "period": "01/2025 - present",
-    "summary": "I contribute to the maintenance and evolution of a React.js application, focusing on quality, functionality and user experience. I integrate AI-assisted development workflows into my engineering practice, using LLMs and coding agents for implementation, refactoring, debugging, testing and documentation, while keeping architecture and code review human-led."
+    "summary": "I contribute to the maintenance and evolution of a React.js application, focusing on quality, functionality and user experience. On that work I apply agentic engineering: the task, the context, and the definition of done are set before the agent, which takes implementation, refactoring, debugging, testing, and documentation. The diff, the architecture, and the code review stay with me."
   },
   "gobrax": {
     "company": "Gobrax",
