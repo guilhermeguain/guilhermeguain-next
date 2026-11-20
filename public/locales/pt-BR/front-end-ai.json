@@ -1,26 +1,26 @@
 {
-  "title": "Desenvolvimento Assistido por IA",
+  "title": "Engenharia agêntica",
   "workflow": {
     "title": "Fluxo de engenharia",
-    "workflow-1": "LLMs e agentes de programação em pesquisa, arquitetura e implementação",
-    "workflow-2": "Debugging, refatoração, testes e revisão de código",
-    "workflow-3": "Documentação técnica e análise de repositórios",
-    "workflow-4": "Decisões de arquitetura e revisão de código permanecem humanas"
+    "workflow-1": "Tarefa, contexto e critério de pronto definidos antes do agente",
+    "workflow-2": "Agentes na implementação, refatoração, debugging e testes",
+    "workflow-3": "Diff, testes e arquitetura revisados antes de seguir",
+    "workflow-4": "Documentação e regras do repositório orientam o agente"
   },
   "front-end": {
     "title": "Aplicações de front-end",
-    "front-end-1": "Desenvolvimento em React.js e Next.js com fluxos assistidos por IA",
-    "front-end-2": "Geração e refatoração de componentes e tipagem em TypeScript",
-    "front-end-3": "Design-to-code, refatoração de CSS e documentação de UI",
-    "front-end-4": "Análise de acessibilidade, performance e arquitetura front-end",
-    "front-end-5": "Geração de testes de UI e E2E, com revisão humana",
-    "front-end-6": "Modernização de React legado"
+    "front-end-1": "React.js e Next.js com agentes no fluxo e revisão do diff",
+    "front-end-2": "Componentes e tipagem em TypeScript especificados e revisados",
+    "front-end-3": "Design-to-code, CSS e documentação de UI conferidos com o layout",
+    "front-end-4": "Acessibilidade, performance e arquitetura front-end",
+    "front-end-5": "Testes de UI e E2E definidos no escopo e checados antes do merge",
+    "front-end-6": "Modernização de React legado a partir do código existente"
   },
   "impact": {
     "title": "Impacto",
     "impact-1": "Menos tempo em implementação repetitiva, debugging e documentação",
-    "impact-2": "Análise e modernização mais rápidas de código front-end legado",
-    "impact-3": "Maior cobertura de testes com geração assistida por IA e revisão humana",
-    "impact-4": "Responsabilidade pelas decisões técnicas, qualidade do código e arquitetura"
+    "impact-2": "Leitura e modernização mais rápidas de front-end legado",
+    "impact-3": "Mais testes, com casos propostos pelo agente e filtrados na revisão",
+    "impact-4": "Decisões técnicas, qualidade do código e arquitetura seguem humanas"
   }
 }

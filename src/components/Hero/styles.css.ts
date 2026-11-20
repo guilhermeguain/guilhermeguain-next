@@ -21,6 +21,18 @@ export const CustomContent = style([
   },
 ]);
 
+export const Badge = style({
+  order: 3,
+  marginTop: '.25rem',
+  padding: '.3rem .75rem',
+  borderRadius: '999px',
+  backgroundColor: 'rgba(3, 67, 48, 0.72)',
+  color: vars.color.secondary[50],
+  fontSize: '.8125rem',
+  fontWeight: 600,
+  lineHeight: 1.2,
+});
+
 export const Role = style({
   order: 2,
   fontSize: '1.25rem',
@@ -51,7 +63,7 @@ export const Name = style({
 
 export const Desc = style({
   margin: '.5rem 0',
-  order: 3,
+  order: 4,
   color: vars.color.text.secondary,
   lineHeight: 1.5,
 
@@ -70,6 +82,6 @@ export const Badges = style({
   gap: '1rem',
   backgroundColor: vars.color.primary[400],
   fontSize: '1.5rem',
-  order: 4,
+  order: 5,
   color: '#fff',
 });

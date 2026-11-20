@@ -43,6 +43,11 @@ export const MobileMenu = ({ items }: MenuProps) => {
       },
     });
 
+    if (url && window.location.hash === url) {
+      event.preventDefault();
+      document.getElementById(url.slice(1))?.scrollIntoView();
+    }
+
     closeDrawer();
   }, []);
 
@@ -67,7 +72,6 @@ export const MobileMenu = ({ items }: MenuProps) => {
                 <NextLink
                   href={href}
                   passHref
-                  scroll={false}
                   aria-current={path?.includes(id)}
                   onClick={handleMenuClick}
                   className={Link}

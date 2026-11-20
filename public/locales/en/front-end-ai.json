@@ -1,26 +1,26 @@
 {
-  "title": "AI-Assisted Development",
+  "title": "Agentic engineering",
   "workflow": {
     "title": "Engineering workflow",
-    "workflow-1": "LLMs and coding agents across research, architecture and implementation",
-    "workflow-2": "Debugging, refactoring, testing and code review",
-    "workflow-3": "Technical documentation and repository analysis",
-    "workflow-4": "Architecture decisions and code review stay human-led"
+    "workflow-1": "Task, context and definition of done set before the agent runs",
+    "workflow-2": "Agents used for implementation, refactoring, debugging and tests",
+    "workflow-3": "Diff, tests and architecture reviewed before anything moves on",
+    "workflow-4": "Repository docs and rules guide the agent"
   },
   "front-end": {
     "title": "Front-end applications",
-    "front-end-1": "React.js and Next.js development with AI-assisted workflows",
-    "front-end-2": "Component generation, refactoring and TypeScript typing",
-    "front-end-3": "Design-to-code, CSS refactoring and UI documentation",
-    "front-end-4": "Accessibility, performance and front-end architecture analysis",
-    "front-end-5": "UI and E2E test generation, reviewed by hand",
-    "front-end-6": "Legacy React modernization"
+    "front-end-1": "React.js and Next.js, with agents in the flow and the diff reviewed",
+    "front-end-2": "TypeScript components and types specified, then reviewed",
+    "front-end-3": "Design-to-code, CSS and UI docs checked against the layout",
+    "front-end-4": "Accessibility, performance and front-end architecture",
+    "front-end-5": "UI and E2E tests scoped first and checked before merge",
+    "front-end-6": "Legacy React modernization from the existing code"
   },
   "impact": {
     "title": "Impact",
-    "impact-1": "Less time spent on repetitive implementation, debugging and documentation",
-    "impact-2": "Faster analysis and modernization of legacy front-end code",
-    "impact-3": "Broader test coverage through AI-assisted generation, with human review",
-    "impact-4": "Ownership of technical decisions, code quality and solution architecture"
+    "impact-1": "Less time on repetitive implementation, debugging and documentation",
+    "impact-2": "Faster reading and modernization of legacy front-end code",
+    "impact-3": "More tests, with cases proposed by the agent and filtered in review",
+    "impact-4": "Technical decisions, code quality and architecture stay human"
   }
 }

@@ -36,6 +36,11 @@ export const DesktopMenu = ({ items }: MenuProps) => {
         menuUrl: url,
       },
     });
+
+    if (!url || window.location.hash !== url) return;
+
+    event.preventDefault();
+    document.getElementById(url.slice(1))?.scrollIntoView();
   }, []);
 
   return (
@@ -47,7 +52,6 @@ export const DesktopMenu = ({ items }: MenuProps) => {
               aria-current={currentPath.includes(id)}
               href={href}
               passHref
-              scroll={false}
               data-id={id}
               onClick={handleMenuClick}
               className={MenuItem}
